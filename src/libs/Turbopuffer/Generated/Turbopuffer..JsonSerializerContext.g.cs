@@ -14,30 +14,55 @@ namespace Turbopuffer
         Converters = new global::System.Type[]
         {
             typeof(global::Turbopuffer.JsonConverters.QueryResultJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.IdJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.Vector2JsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.VectorEncodingJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.DistanceMetricJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.IncludeAttributesJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.AttributeSchemaJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.FullTextSearchJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.LanguageJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.TokenizerJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.AnnJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.AggregateByJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.ExprJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.FilterJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.RankByTextJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.RankByAttributeOrderJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.RankByJsonConverter),
+
             typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2>),
+
             typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating>),
+
             typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<string, global::Turbopuffer.WriteCopyFromNamespace>),
+
             typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit2>),
+
             typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>),
+
             typeof(global::Turbopuffer.JsonConverters.AllOfJsonConverter<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>),
+
             typeof(global::Turbopuffer.JsonConverters.AllOfJsonConverter<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>),
+
             typeof(global::Turbopuffer.JsonConverters.AllOfJsonConverter<global::Turbopuffer.QueryConfig, global::Turbopuffer.CreateNamespacesMultiQueryRequest2>),
+
             typeof(global::Turbopuffer.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.JsonSerializerContextTypes))]
