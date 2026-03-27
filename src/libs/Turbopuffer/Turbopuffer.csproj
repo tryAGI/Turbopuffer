@@ -5,8 +5,9 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Nuget">
+    <PackageId>tryAGI.Turbopuffer</PackageId>
     <Description>C# SDK based on Turbopuffer OpenAPI specification.</Description>
-    <PackageTags>api;client;sdk;dotnet;swagger;openapi;specification;generated;nswag</PackageTags>
+    <PackageTags>api;client;sdk;dotnet;openapi;turbopuffer;vector-database</PackageTags>
   </PropertyGroup>
 
 </Project>
