@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# OpenAPI spec: https://raw.githubusercontent.com/turbopuffer/turbopuffer-openapi/main/openapi.yml
+
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
 curl --fail --silent --show-error -L -o openapi.yaml https://raw.githubusercontent.com/turbopuffer/turbopuffer-openapi/main/openapi.yml
