@@ -18,7 +18,7 @@ namespace Turbopuffer
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aggregation_groups")]
-        public global::System.Collections.Generic.IList<object>? AggregationGroups { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.AggregationGroup>? AggregationGroups { get; set; }
 
         /// <summary>
         /// 
@@ -43,7 +43,7 @@ namespace Turbopuffer
 #endif
         public SingleQueryResult(
             object? aggregations,
-            global::System.Collections.Generic.IList<object>? aggregationGroups,
+            global::System.Collections.Generic.IList<global::Turbopuffer.AggregationGroup>? aggregationGroups,
             global::System.Collections.Generic.IList<global::Turbopuffer.Row>? rows)
         {
             this.Aggregations = aggregations;

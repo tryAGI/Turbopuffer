@@ -216,171 +216,179 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<object>? Type47 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.AggregationGroup>? Type47 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? Type48 { get; set; }
+        public global::Turbopuffer.AggregationGroup? Type48 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>? Type49 { get; set; }
+        public global::System.Collections.Generic.IList<object>? Type49 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Vector2? Type50 { get; set; }
+        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? Type50 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Guid? Type51 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>? Type51 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<double>? Type52 { get; set; }
+        public global::Turbopuffer.Vector2? Type52 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.LimitPer? Type53 { get; set; }
+        public global::System.Guid? Type53 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.FullTextSearch? Type54 { get; set; }
+        public global::System.Collections.Generic.IList<double>? Type54 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Ann? Type55 { get; set; }
+        public global::Turbopuffer.LimitPer? Type55 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.FullTextSearchConfig? Type56 { get; set; }
+        public global::Turbopuffer.FullTextSearch? Type56 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Language? Type57 { get; set; }
+        public global::Turbopuffer.Ann? Type57 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Tokenizer? Type58 { get; set; }
+        public global::Turbopuffer.FullTextSearchConfig? Type58 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.AnnConfig? Type59 { get; set; }
+        public global::Turbopuffer.Language? Type59 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.EncryptionCmek? Type60 { get; set; }
+        public global::Turbopuffer.Tokenizer? Type60 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.ErrorResponse? Type61 { get; set; }
+        public global::Turbopuffer.AnnConfig? Type61 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.AggregateBy? Type62 { get; set; }
+        public global::Turbopuffer.EncryptionCmek? Type62 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public byte[]? Type63 { get; set; }
+        public global::Turbopuffer.ErrorResponse? Type63 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Expr? Type64 { get; set; }
+        public global::Turbopuffer.AggregateBy? Type64 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.ExprRefNew? Type65 { get; set; }
+        public byte[]? Type65 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Bm25ClauseParams? Type66 { get; set; }
+        public global::Turbopuffer.Expr? Type66 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.ContainsAllTokensFilterParams? Type67 { get; set; }
+        public global::Turbopuffer.ExprRefNew? Type67 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.ContainsAnyTokenFilterParams? Type68 { get; set; }
+        public global::Turbopuffer.Bm25ClauseParams? Type68 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.SaturateParams? Type69 { get; set; }
+        public global::Turbopuffer.ContainsAllTokensFilterParams? Type69 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.DecayParams? Type70 { get; set; }
+        public global::Turbopuffer.ContainsAnyTokenFilterParams? Type70 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.Filter? Type71 { get; set; }
+        public global::Turbopuffer.SaturateParams? Type71 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.RankByText? Type72 { get; set; }
+        public global::Turbopuffer.DecayParams? Type72 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.RankByAttributeOrder? Type73 { get; set; }
+        public global::Turbopuffer.Filter? Type73 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<byte[]>? Type74 { get; set; }
+        public global::Turbopuffer.RankByText? Type74 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.RankBy? Type75 { get; set; }
+        public global::Turbopuffer.RankByAttributeOrder? Type75 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.CreateNamespacesDebugRecallRequest? Type76 { get; set; }
+        public global::System.Collections.Generic.IList<byte[]>? Type76 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>? Type77 { get; set; }
+        public global::Turbopuffer.RankBy? Type77 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.CreateNamespacesMultiQueryRequest2>? Type78 { get; set; }
+        public global::Turbopuffer.CreateNamespacesDebugRecallRequest? Type78 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.CreateNamespacesMultiQueryRequest2? Type79 { get; set; }
+        public global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>? Type79 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Turbopuffer.Query>? Type80 { get; set; }
+        public global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.CreateNamespacesMultiQueryRequest2>? Type80 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.GetNamespacesResponse? Type81 { get; set; }
+        public global::Turbopuffer.CreateNamespacesMultiQueryRequest2? Type81 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Turbopuffer.NamespaceSummary>? Type82 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.Query>? Type82 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.GetNamespacesHintCacheWarmResponse? Type83 { get; set; }
+        public global::Turbopuffer.GetNamespacesResponse? Type83 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.CreateNamespacesDebugRecallResponse? Type84 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.NamespaceSummary>? Type84 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem>? Type85 { get; set; }
+        public global::Turbopuffer.GetNamespacesHintCacheWarmResponse? Type85 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem? Type86 { get; set; }
+        public global::Turbopuffer.CreateNamespacesDebugRecallResponse? Type86 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.DeleteNamespacesResponse? Type87 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem>? Type87 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.CreateNamespacesExplainQueryResponse? Type88 { get; set; }
+        public global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem? Type88 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.DeleteNamespacesResponse? Type89 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.CreateNamespacesExplainQueryResponse? Type90 { get; set; }
 
         /// <summary>
         /// 
@@ -401,34 +409,38 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<object>? ListType4 { get; set; }
+        public global::System.Collections.Generic.List<global::Turbopuffer.AggregationGroup>? ListType4 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? ListType5 { get; set; }
+        public global::System.Collections.Generic.List<object>? ListType5 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Turbopuffer.Vector2>? ListType6 { get; set; }
+        public global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? ListType6 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<double>? ListType7 { get; set; }
+        public global::System.Collections.Generic.List<global::Turbopuffer.Vector2>? ListType7 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<byte[]>? ListType8 { get; set; }
+        public global::System.Collections.Generic.List<double>? ListType8 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Turbopuffer.Query>? ListType9 { get; set; }
+        public global::System.Collections.Generic.List<byte[]>? ListType9 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Turbopuffer.NamespaceSummary>? ListType10 { get; set; }
+        public global::System.Collections.Generic.List<global::Turbopuffer.Query>? ListType10 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.List<global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem>? ListType11 { get; set; }
+        public global::System.Collections.Generic.List<global::Turbopuffer.NamespaceSummary>? ListType11 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Turbopuffer.CreateNamespacesDebugRecallResponseGroundTruthItem>? ListType12 { get; set; }
     }
 }
