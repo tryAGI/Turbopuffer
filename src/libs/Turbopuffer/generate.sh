@@ -3,7 +3,7 @@ set -euo pipefail
 
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl --fail --silent --show-error -o openapi.yaml https://raw.githubusercontent.com/turbopuffer/turbopuffer-openapi/main/openapi.yml
+curl --fail --silent --show-error -L -o openapi.yaml https://raw.githubusercontent.com/turbopuffer/turbopuffer-openapi/main/openapi.yml
 
 # Fix 1: Rename the path with '?' (Stainless overload convention) to a clean path
 # /v2/namespaces/{namespace}/query?stainless_overload=multiQuery -> /v2/namespaces/{namespace}/multi-query
