@@ -30,10 +30,10 @@ namespace Turbopuffer
         /// <summary>
         /// Initializes a new instance of the <see cref="GetNamespacesHintCacheWarmResponse" /> class.
         /// </summary>
+        /// <param name="message"></param>
         /// <param name="status">
         /// The status of the request.
         /// </param>
-        /// <param name="message"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

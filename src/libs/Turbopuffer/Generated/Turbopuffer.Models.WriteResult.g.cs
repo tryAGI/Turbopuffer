@@ -87,14 +87,14 @@ namespace Turbopuffer
         /// <summary>
         /// Initializes a new instance of the <see cref="WriteResult" /> class.
         /// </summary>
-        /// <param name="status">
-        /// The status of the request.
-        /// </param>
         /// <param name="message">
         /// A message describing the result of the write request.
         /// </param>
         /// <param name="rowsAffected">
         /// The number of rows affected by the write request.
+        /// </param>
+        /// <param name="billing">
+        /// The billing information for a write request.
         /// </param>
         /// <param name="rowsUpserted">
         /// The number of rows upserted by the write request.
@@ -117,8 +117,8 @@ namespace Turbopuffer
         /// <param name="deletedIds">
         /// The IDs of documents that were deleted. Only included when `return_affected_ids` is true and at least one document was deleted.
         /// </param>
-        /// <param name="billing">
-        /// The billing information for a write request.
+        /// <param name="status">
+        /// The status of the request.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -136,10 +136,9 @@ namespace Turbopuffer
             global::System.Collections.Generic.IList<global::Turbopuffer.Id>? deletedIds,
             string status = "OK")
         {
+            this.Status = status;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.RowsAffected = rowsAffected;
-            this.Billing = billing ?? throw new global::System.ArgumentNullException(nameof(billing));
-            this.Status = status;
             this.RowsUpserted = rowsUpserted;
             this.RowsPatched = rowsPatched;
             this.RowsDeleted = rowsDeleted;
@@ -147,6 +146,7 @@ namespace Turbopuffer
             this.UpsertedIds = upsertedIds;
             this.PatchedIds = patchedIds;
             this.DeletedIds = deletedIds;
+            this.Billing = billing ?? throw new global::System.ArgumentNullException(nameof(billing));
         }
 
         /// <summary>
