@@ -31,11 +31,11 @@ namespace Turbopuffer
         /// <summary>
         /// Initializes a new instance of the <see cref="ErrorResponse" /> class.
         /// </summary>
-        /// <param name="status">
-        /// The status of the request.
-        /// </param>
         /// <param name="error">
         /// The error message.
+        /// </param>
+        /// <param name="status">
+        /// The status of the request.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Turbopuffer
             string error,
             string status = "error")
         {
-            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
             this.Status = status;
+            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
         }
 
         /// <summary>

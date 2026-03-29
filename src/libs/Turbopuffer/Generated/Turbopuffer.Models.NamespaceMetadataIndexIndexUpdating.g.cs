@@ -31,10 +31,10 @@ namespace Turbopuffer
         /// <summary>
         /// Initializes a new instance of the <see cref="NamespaceMetadataIndexIndexUpdating" /> class.
         /// </summary>
-        /// <param name="status"></param>
         /// <param name="unindexedBytes">
         /// The number of bytes in the namespace that are in the write-ahead log but have not yet been indexed.
         /// </param>
+        /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -42,8 +42,8 @@ namespace Turbopuffer
             long unindexedBytes,
             string status = "updating")
         {
-            this.UnindexedBytes = unindexedBytes;
             this.Status = status;
+            this.UnindexedBytes = unindexedBytes;
         }
 
         /// <summary>
