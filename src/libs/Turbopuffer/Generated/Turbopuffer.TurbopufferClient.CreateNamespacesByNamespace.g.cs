@@ -298,6 +298,7 @@ namespace Turbopuffer
             bool? disableBackpressure = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Turbopuffer.Write
             {
                 UpsertColumns = upsertColumns,
