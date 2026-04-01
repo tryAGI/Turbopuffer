@@ -231,7 +231,6 @@ namespace Turbopuffer
             string @namespace,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>
             {
             };
