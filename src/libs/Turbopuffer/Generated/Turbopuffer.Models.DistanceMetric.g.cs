@@ -13,35 +13,35 @@ namespace Turbopuffer
         /// Defined as `1 - cosine_similarity` and ranges from 0 to 2. Lower is better.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value1 { get; init; }
+        public string? DistanceMetricVariant1 { get; init; }
 #else
-        public string? Value1 { get; }
+        public string? DistanceMetricVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DistanceMetricVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsDistanceMetricVariant1 => DistanceMetricVariant1 != null;
 
         /// <summary>
         /// Defined as `sum((x - y)^2)`. Lower is better.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? DistanceMetricVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? DistanceMetricVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DistanceMetricVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsDistanceMetricVariant2 => DistanceMetricVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(DistanceMetric @this) => @this.Value1;
+        public static implicit operator string?(DistanceMetric @this) => @this.DistanceMetricVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public DistanceMetric(string? value)
         {
-            Value1 = value;
+            DistanceMetricVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public DistanceMetric(
-            string? value1,
-            string? value2
+            string? distanceMetricVariant1,
+            string? distanceMetricVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            DistanceMetricVariant1 = distanceMetricVariant1;
+            DistanceMetricVariant2 = distanceMetricVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            DistanceMetricVariant2 as object ??
+            DistanceMetricVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            DistanceMetricVariant1?.ToString() ??
+            DistanceMetricVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsDistanceMetricVariant1 || IsDistanceMetricVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<string?, TResult>? distanceMetricVariant1 = null,
+            global::System.Func<string?, TResult>? distanceMetricVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsDistanceMetricVariant1 && distanceMetricVariant1 != null)
             {
-                return value1(Value1!);
+                return distanceMetricVariant1(DistanceMetricVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsDistanceMetricVariant2 && distanceMetricVariant2 != null)
             {
-                return value2(Value2!);
+                return distanceMetricVariant2(DistanceMetricVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<string?>? distanceMetricVariant1 = null,
+            global::System.Action<string?>? distanceMetricVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsDistanceMetricVariant1)
             {
-                value1?.Invoke(Value1!);
+                distanceMetricVariant1?.Invoke(DistanceMetricVariant1!);
             }
-            else if (IsValue2)
+            else if (IsDistanceMetricVariant2)
             {
-                value2?.Invoke(Value2!);
+                distanceMetricVariant2?.Invoke(DistanceMetricVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Turbopuffer
         {
             var fields = new object?[]
             {
-                Value1,
+                DistanceMetricVariant1,
                 typeof(string),
-                Value2,
+                DistanceMetricVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Turbopuffer
         public bool Equals(DistanceMetric other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DistanceMetricVariant1, other.DistanceMetricVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DistanceMetricVariant2, other.DistanceMetricVariant2) 
                 ;
         }
 

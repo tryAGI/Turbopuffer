@@ -38,8 +38,8 @@ namespace Turbopuffer.JsonConverters
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
 
-            global::Turbopuffer.SingleQueryResult? value1 = default;
-            global::Turbopuffer.QueryResultVariant2? value2 = default;
+            global::Turbopuffer.SingleQueryResult? single = default;
+            global::Turbopuffer.QueryResultVariant2? queryResultVariant2 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -48,7 +48,7 @@ namespace Turbopuffer.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.SingleQueryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.SingleQueryResult> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.SingleQueryResult).Name}");
-                        value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        single = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -63,7 +63,7 @@ namespace Turbopuffer.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.QueryResultVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.QueryResultVariant2> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.QueryResultVariant2).Name}");
-                        value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        queryResultVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -74,13 +74,13 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (value1 == null && value2 == null)
+            if (single == null && queryResultVariant2 == null)
             {
                 try
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.SingleQueryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.SingleQueryResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.SingleQueryResult).Name}");
-                    value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    single = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -93,7 +93,7 @@ namespace Turbopuffer.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.QueryResultVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.QueryResultVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.QueryResultVariant2).Name}");
-                    value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    queryResultVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -104,9 +104,9 @@ namespace Turbopuffer.JsonConverters
             }
 
             var __value = new global::Turbopuffer.QueryResult(
-                value1,
+                single,
 
-                value2
+                queryResultVariant2
                 );
 
             return __value;
@@ -121,17 +121,17 @@ namespace Turbopuffer.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsValue1)
+            if (value.IsSingle)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.SingleQueryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.SingleQueryResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.SingleQueryResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Single!, typeInfo);
             }
-            else if (value.IsValue2)
+            else if (value.IsQueryResultVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.QueryResultVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.QueryResultVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.QueryResultVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.QueryResultVariant2!, typeInfo);
             }
         }
     }
