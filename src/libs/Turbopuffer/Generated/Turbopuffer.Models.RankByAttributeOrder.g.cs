@@ -13,35 +13,35 @@ namespace Turbopuffer
         /// Ascending order.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value1 { get; init; }
+        public string? RankByAttributeOrderVariant1 { get; init; }
 #else
-        public string? Value1 { get; }
+        public string? RankByAttributeOrderVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByAttributeOrderVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsRankByAttributeOrderVariant1 => RankByAttributeOrderVariant1 != null;
 
         /// <summary>
         /// Descending order.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? RankByAttributeOrderVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? RankByAttributeOrderVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByAttributeOrderVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsRankByAttributeOrderVariant2 => RankByAttributeOrderVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(RankByAttributeOrder @this) => @this.Value1;
+        public static implicit operator string?(RankByAttributeOrder @this) => @this.RankByAttributeOrderVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public RankByAttributeOrder(string? value)
         {
-            Value1 = value;
+            RankByAttributeOrderVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public RankByAttributeOrder(
-            string? value1,
-            string? value2
+            string? rankByAttributeOrderVariant1,
+            string? rankByAttributeOrderVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            RankByAttributeOrderVariant1 = rankByAttributeOrderVariant1;
+            RankByAttributeOrderVariant2 = rankByAttributeOrderVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            RankByAttributeOrderVariant2 as object ??
+            RankByAttributeOrderVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            RankByAttributeOrderVariant1?.ToString() ??
+            RankByAttributeOrderVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsRankByAttributeOrderVariant1 || IsRankByAttributeOrderVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<string?, TResult>? rankByAttributeOrderVariant1 = null,
+            global::System.Func<string?, TResult>? rankByAttributeOrderVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsRankByAttributeOrderVariant1 && rankByAttributeOrderVariant1 != null)
             {
-                return value1(Value1!);
+                return rankByAttributeOrderVariant1(RankByAttributeOrderVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsRankByAttributeOrderVariant2 && rankByAttributeOrderVariant2 != null)
             {
-                return value2(Value2!);
+                return rankByAttributeOrderVariant2(RankByAttributeOrderVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<string?>? rankByAttributeOrderVariant1 = null,
+            global::System.Action<string?>? rankByAttributeOrderVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsRankByAttributeOrderVariant1)
             {
-                value1?.Invoke(Value1!);
+                rankByAttributeOrderVariant1?.Invoke(RankByAttributeOrderVariant1!);
             }
-            else if (IsValue2)
+            else if (IsRankByAttributeOrderVariant2)
             {
-                value2?.Invoke(Value2!);
+                rankByAttributeOrderVariant2?.Invoke(RankByAttributeOrderVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Turbopuffer
         {
             var fields = new object?[]
             {
-                Value1,
+                RankByAttributeOrderVariant1,
                 typeof(string),
-                Value2,
+                RankByAttributeOrderVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Turbopuffer
         public bool Equals(RankByAttributeOrder other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(RankByAttributeOrderVariant1, other.RankByAttributeOrderVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(RankByAttributeOrderVariant2, other.RankByAttributeOrderVariant2) 
                 ;
         }
 

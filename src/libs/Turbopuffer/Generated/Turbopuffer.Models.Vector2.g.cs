@@ -13,35 +13,35 @@ namespace Turbopuffer
         /// A dense vector encoded as an array of floats.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<double>? Value1 { get; init; }
+        public global::System.Collections.Generic.IList<double>? VectorVariant1 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<double>? Value1 { get; }
+        public global::System.Collections.Generic.IList<double>? VectorVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsVectorVariant1 => VectorVariant1 != null;
 
         /// <summary>
         /// A dense vector encoded as a base64 string.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? VectorVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? VectorVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsVectorVariant2 => VectorVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(Vector2 @this) => @this.Value2;
+        public static implicit operator string?(Vector2 @this) => @this.VectorVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public Vector2(string? value)
         {
-            Value2 = value;
+            VectorVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public Vector2(
-            global::System.Collections.Generic.IList<double>? value1,
-            string? value2
+            global::System.Collections.Generic.IList<double>? vectorVariant1,
+            string? vectorVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            VectorVariant1 = vectorVariant1;
+            VectorVariant2 = vectorVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            VectorVariant2 as object ??
+            VectorVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            VectorVariant1?.ToString() ??
+            VectorVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 || !IsValue1 && IsValue2;
+            return IsVectorVariant1 && !IsVectorVariant2 || !IsVectorVariant1 && IsVectorVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::System.Collections.Generic.IList<double>?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<global::System.Collections.Generic.IList<double>?, TResult>? vectorVariant1 = null,
+            global::System.Func<string?, TResult>? vectorVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsVectorVariant1 && vectorVariant1 != null)
             {
-                return value1(Value1!);
+                return vectorVariant1(VectorVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsVectorVariant2 && vectorVariant2 != null)
             {
-                return value2(Value2!);
+                return vectorVariant2(VectorVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::System.Collections.Generic.IList<double>?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<global::System.Collections.Generic.IList<double>?>? vectorVariant1 = null,
+            global::System.Action<string?>? vectorVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsVectorVariant1)
             {
-                value1?.Invoke(Value1!);
+                vectorVariant1?.Invoke(VectorVariant1!);
             }
-            else if (IsValue2)
+            else if (IsVectorVariant2)
             {
-                value2?.Invoke(Value2!);
+                vectorVariant2?.Invoke(VectorVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Turbopuffer
         {
             var fields = new object?[]
             {
-                Value1,
+                VectorVariant1,
                 typeof(global::System.Collections.Generic.IList<double>),
-                Value2,
+                VectorVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Turbopuffer
         public bool Equals(Vector2 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<double>?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<double>?>.Default.Equals(VectorVariant1, other.VectorVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorVariant2, other.VectorVariant2) 
                 ;
         }
 

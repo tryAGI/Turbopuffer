@@ -30,18 +30,18 @@ namespace Turbopuffer
         /// Detailed configuration for an attribute attached to a document.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Turbopuffer.AttributeSchemaConfig? Value2 { get; init; }
+        public global::Turbopuffer.AttributeSchemaConfig? Config { get; init; }
 #else
-        public global::Turbopuffer.AttributeSchemaConfig? Value2 { get; }
+        public global::Turbopuffer.AttributeSchemaConfig? Config { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsConfig => Config != null;
         /// <summary>
         /// 
         /// </summary>
@@ -68,14 +68,14 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Turbopuffer.AttributeSchemaConfig?(AttributeSchema @this) => @this.Value2;
+        public static implicit operator global::Turbopuffer.AttributeSchemaConfig?(AttributeSchema @this) => @this.Config;
 
         /// <summary>
         /// 
         /// </summary>
         public AttributeSchema(global::Turbopuffer.AttributeSchemaConfig? value)
         {
-            Value2 = value;
+            Config = value;
         }
 
         /// <summary>
@@ -83,18 +83,18 @@ namespace Turbopuffer
         /// </summary>
         public AttributeSchema(
             string? attributeTypeName,
-            global::Turbopuffer.AttributeSchemaConfig? value2
+            global::Turbopuffer.AttributeSchemaConfig? config
             )
         {
             AttributeTypeName = attributeTypeName;
-            Value2 = value2;
+            Config = config;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
+            Config as object ??
             AttributeTypeName as object 
             ;
 
@@ -103,7 +103,7 @@ namespace Turbopuffer
         /// </summary>
         public override string? ToString() =>
             AttributeTypeName?.ToString() ??
-            Value2?.ToString() 
+            Config?.ToString() 
             ;
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsAttributeTypeName || IsValue2;
+            return IsAttributeTypeName || IsConfig;
         }
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string?, TResult>? attributeTypeName = null,
-            global::System.Func<global::Turbopuffer.AttributeSchemaConfig?, TResult>? value2 = null,
+            global::System.Func<global::Turbopuffer.AttributeSchemaConfig?, TResult>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -131,9 +131,9 @@ namespace Turbopuffer
             {
                 return attributeTypeName(AttributeTypeName!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsConfig && config != null)
             {
-                return value2(Value2!);
+                return config(Config!);
             }
 
             return default(TResult);
@@ -144,7 +144,7 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<string?>? attributeTypeName = null,
-            global::System.Action<global::Turbopuffer.AttributeSchemaConfig?>? value2 = null,
+            global::System.Action<global::Turbopuffer.AttributeSchemaConfig?>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -156,9 +156,9 @@ namespace Turbopuffer
             {
                 attributeTypeName?.Invoke(AttributeTypeName!);
             }
-            else if (IsValue2)
+            else if (IsConfig)
             {
-                value2?.Invoke(Value2!);
+                config?.Invoke(Config!);
             }
         }
 
@@ -171,7 +171,7 @@ namespace Turbopuffer
             {
                 AttributeTypeName,
                 typeof(string),
-                Value2,
+                Config,
                 typeof(global::Turbopuffer.AttributeSchemaConfig),
             };
             const int offset = unchecked((int)2166136261);
@@ -190,7 +190,7 @@ namespace Turbopuffer
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(AttributeTypeName, other.AttributeTypeName) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Config, other.Config) 
                 ;
         }
 
