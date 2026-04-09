@@ -5,6 +5,25 @@ namespace Turbopuffer
 {
     public partial class TurbopufferClient
     {
+
+
+        private static readonly global::Turbopuffer.EndPointSecurityRequirement s_GetNamespacesSecurityRequirement0 =
+            new global::Turbopuffer.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Turbopuffer.EndPointAuthorizationRequirement[]
+                {                    new global::Turbopuffer.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Turbopuffer.EndPointSecurityRequirement[] s_GetNamespacesSecurityRequirements =
+            new global::Turbopuffer.EndPointSecurityRequirement[]
+            {                s_GetNamespacesSecurityRequirement0,
+            };
         partial void PrepareGetNamespacesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? cursor,
@@ -47,6 +66,12 @@ namespace Turbopuffer
                 prefix: ref prefix,
                 pageSize: ref pageSize);
 
+
+            var __authorizations = global::Turbopuffer.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetNamespacesSecurityRequirements,
+                operationName: "GetNamespacesAsync");
+
             var __pathBuilder = new global::Turbopuffer.PathBuilder(
                 path: "/v1/namespaces",
                 baseUri: HttpClient.BaseAddress); 
@@ -54,7 +79,7 @@ namespace Turbopuffer
                 .AddOptionalParameter("cursor", cursor)
                 .AddOptionalParameter("prefix", prefix)
                 .AddOptionalParameter("page_size", pageSize?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -64,7 +89,7 @@ namespace Turbopuffer
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
