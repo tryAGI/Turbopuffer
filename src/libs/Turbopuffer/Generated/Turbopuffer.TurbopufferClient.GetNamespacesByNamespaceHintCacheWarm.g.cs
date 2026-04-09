@@ -5,6 +5,25 @@ namespace Turbopuffer
 {
     public partial class TurbopufferClient
     {
+
+
+        private static readonly global::Turbopuffer.EndPointSecurityRequirement s_GetNamespacesByNamespaceHintCacheWarmSecurityRequirement0 =
+            new global::Turbopuffer.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Turbopuffer.EndPointAuthorizationRequirement[]
+                {                    new global::Turbopuffer.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Turbopuffer.EndPointSecurityRequirement[] s_GetNamespacesByNamespaceHintCacheWarmSecurityRequirements =
+            new global::Turbopuffer.EndPointSecurityRequirement[]
+            {                s_GetNamespacesByNamespaceHintCacheWarmSecurityRequirement0,
+            };
         partial void PrepareGetNamespacesByNamespaceHintCacheWarmArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @namespace);
@@ -37,9 +56,15 @@ namespace Turbopuffer
                 httpClient: HttpClient,
                 @namespace: ref @namespace);
 
+
+            var __authorizations = global::Turbopuffer.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetNamespacesByNamespaceHintCacheWarmSecurityRequirements,
+                operationName: "GetNamespacesByNamespaceHintCacheWarmAsync");
+
             var __pathBuilder = new global::Turbopuffer.PathBuilder(
                 path: $"/v1/namespaces/{@namespace}/hint_cache_warm",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -49,7 +74,7 @@ namespace Turbopuffer
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

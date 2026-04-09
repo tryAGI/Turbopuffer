@@ -6,6 +6,7 @@ namespace Turbopuffer
     public sealed partial class TurbopufferClient
     {
         /// <inheritdoc cref="TurbopufferClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Turbopuffer.EndPointAuthorization}?, bool)"/>
+
         public TurbopufferClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,
