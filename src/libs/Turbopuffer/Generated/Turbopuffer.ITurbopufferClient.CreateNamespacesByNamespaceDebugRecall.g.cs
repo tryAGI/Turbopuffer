@@ -9,12 +9,14 @@ namespace Turbopuffer
         /// </summary>
         /// <param name="namespace"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Turbopuffer.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Turbopuffer.CreateNamespacesDebugRecallResponse> CreateNamespacesByNamespaceDebugRecallAsync(
             string @namespace,
 
             global::Turbopuffer.CreateNamespacesDebugRecallRequest request,
+            global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Evaluate recall.
@@ -33,6 +35,7 @@ namespace Turbopuffer
         /// Include ground truth data (query vectors and true nearest neighbors) in the response.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Turbopuffer.CreateNamespacesDebugRecallResponse> CreateNamespacesByNamespaceDebugRecallAsync(
@@ -41,6 +44,7 @@ namespace Turbopuffer
             int? topK = default,
             object? filters = default,
             bool? includeGroundTruth = default,
+            global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
