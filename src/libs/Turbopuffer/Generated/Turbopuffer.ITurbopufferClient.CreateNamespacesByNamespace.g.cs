@@ -9,12 +9,14 @@ namespace Turbopuffer
         /// </summary>
         /// <param name="namespace"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Turbopuffer.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Turbopuffer.WriteResult> CreateNamespacesByNamespaceAsync(
             string @namespace,
 
             global::Turbopuffer.Write request,
+            global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create, update, or delete documents.
@@ -67,6 +69,7 @@ namespace Turbopuffer
         /// <param name="disableBackpressure">
         /// Disables write throttling (HTTP 429 responses) during high-volume ingestion.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Turbopuffer.WriteResult> CreateNamespacesByNamespaceAsync(
@@ -89,6 +92,7 @@ namespace Turbopuffer
             bool? returnAffectedIds = default,
             global::Turbopuffer.Encryption2? encryption = default,
             bool? disableBackpressure = default,
+            global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

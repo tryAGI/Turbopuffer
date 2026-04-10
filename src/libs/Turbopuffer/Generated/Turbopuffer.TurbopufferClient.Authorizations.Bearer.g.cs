@@ -25,6 +25,7 @@ namespace Turbopuffer
             Authorizations.Add(new global::Turbopuffer.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "BearerAuth",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,
