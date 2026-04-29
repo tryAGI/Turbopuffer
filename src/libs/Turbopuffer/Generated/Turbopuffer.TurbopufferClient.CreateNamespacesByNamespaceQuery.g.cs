@@ -136,7 +136,7 @@ namespace Turbopuffer
                 PrepareCreateNamespacesByNamespaceQueryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @namespace: @namespace,
+                    @namespace: @namespace!,
                     request: request);
 
                 return __httpRequest;

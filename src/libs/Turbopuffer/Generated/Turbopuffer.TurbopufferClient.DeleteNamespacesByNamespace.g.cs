@@ -124,7 +124,7 @@ namespace Turbopuffer
                 PrepareDeleteNamespacesByNamespaceRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @namespace: @namespace);
+                    @namespace: @namespace!);
 
                 return __httpRequest;
             }
