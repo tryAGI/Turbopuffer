@@ -29,6 +29,19 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickVectorEncodingVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = VectorEncodingVariant1;
+            return IsVectorEncodingVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? VectorEncodingVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorEncodingVariant2))]
 #endif
         public bool IsVectorEncodingVariant2 => VectorEncodingVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVectorEncodingVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = VectorEncodingVariant2;
+            return IsVectorEncodingVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? vectorEncodingVariant1 = null,
-            global::System.Func<string?, TResult>? vectorEncodingVariant2 = null,
+            global::System.Func<string, TResult>? vectorEncodingVariant1 = null,
+            global::System.Func<string, TResult>? vectorEncodingVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? vectorEncodingVariant1 = null,
-            global::System.Action<string?>? vectorEncodingVariant2 = null,
+            global::System.Action<string>? vectorEncodingVariant1 = null,
+
+            global::System.Action<string>? vectorEncodingVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsVectorEncodingVariant1)
+            {
+                vectorEncodingVariant1?.Invoke(VectorEncodingVariant1!);
+            }
+            else if (IsVectorEncodingVariant2)
+            {
+                vectorEncodingVariant2?.Invoke(VectorEncodingVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? vectorEncodingVariant1 = null,
+            global::System.Action<string>? vectorEncodingVariant2 = null,
             bool validate = true)
         {
             if (validate)
