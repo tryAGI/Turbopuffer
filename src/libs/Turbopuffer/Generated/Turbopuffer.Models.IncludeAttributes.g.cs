@@ -27,6 +27,19 @@ namespace Turbopuffer
         public bool IsIncludeAttributesVariant1 => IncludeAttributesVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIncludeAttributesVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = IncludeAttributesVariant1;
+            return IsIncludeAttributesVariant1;
+        }
+
+        /// <summary>
         /// Include exactly the specified attributes in the response.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IncludeAttributesVariant2))]
 #endif
         public bool IsIncludeAttributesVariant2 => IncludeAttributesVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIncludeAttributesVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = IncludeAttributesVariant2;
+            return IsIncludeAttributesVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -101,7 +127,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? includeAttributesVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? includeAttributesVariant2 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? includeAttributesVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -126,7 +152,31 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<bool?>? includeAttributesVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? includeAttributesVariant2 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? includeAttributesVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsIncludeAttributesVariant1)
+            {
+                includeAttributesVariant1?.Invoke(IncludeAttributesVariant1!);
+            }
+            else if (IsIncludeAttributesVariant2)
+            {
+                includeAttributesVariant2?.Invoke(IncludeAttributesVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<bool?>? includeAttributesVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? includeAttributesVariant2 = null,
             bool validate = true)
         {
             if (validate)

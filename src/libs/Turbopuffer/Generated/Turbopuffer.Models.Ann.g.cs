@@ -27,6 +27,19 @@ namespace Turbopuffer
         public bool IsAnnVariant1 => AnnVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnnVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = AnnVariant1;
+            return IsAnnVariant1;
+        }
+
+        /// <summary>
         /// Configuration options for ANN (Approximate Nearest Neighbor) indexing.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
 #endif
         public bool IsConfig => Config != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConfig(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.AnnConfig? value)
+        {
+            value = Config;
+            return IsConfig;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -119,7 +145,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? annVariant1 = null,
-            global::System.Func<global::Turbopuffer.AnnConfig?, TResult>? config = null,
+            global::System.Func<global::Turbopuffer.AnnConfig, TResult>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -144,7 +170,31 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<bool?>? annVariant1 = null,
-            global::System.Action<global::Turbopuffer.AnnConfig?>? config = null,
+
+            global::System.Action<global::Turbopuffer.AnnConfig>? config = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAnnVariant1)
+            {
+                annVariant1?.Invoke(AnnVariant1!);
+            }
+            else if (IsConfig)
+            {
+                config?.Invoke(Config!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<bool?>? annVariant1 = null,
+            global::System.Action<global::Turbopuffer.AnnConfig>? config = null,
             bool validate = true)
         {
             if (validate)

@@ -25,6 +25,19 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RefNew))]
 #endif
         public bool IsRefNew => RefNew != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRefNew(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.ExprRefNew? value)
+        {
+            value = RefNew;
+            return IsRefNew;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -69,7 +82,7 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Turbopuffer.ExprRefNew?, TResult>? refNew = null,
+            global::System.Func<global::Turbopuffer.ExprRefNew, TResult>? refNew = null,
             bool validate = true)
         {
             if (validate)
@@ -89,7 +102,25 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Turbopuffer.ExprRefNew?>? refNew = null,
+            global::System.Action<global::Turbopuffer.ExprRefNew>? refNew = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsRefNew)
+            {
+                refNew?.Invoke(RefNew!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Turbopuffer.ExprRefNew>? refNew = null,
             bool validate = true)
         {
             if (validate)
