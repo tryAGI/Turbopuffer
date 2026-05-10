@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static IncludeAttributes FromIncludeAttributesVariant1(bool? value) => new IncludeAttributes(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public IncludeAttributes(
             bool? includeAttributesVariant1,
             global::System.Collections.Generic.IList<string>? includeAttributesVariant2

@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static DistanceMetric FromDistanceMetricVariant1(string? value) => new DistanceMetric(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DistanceMetric(
             string? distanceMetricVariant1,
             string? distanceMetricVariant2

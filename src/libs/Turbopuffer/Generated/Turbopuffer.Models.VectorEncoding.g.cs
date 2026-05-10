@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static VectorEncoding FromVectorEncodingVariant1(string? value) => new VectorEncoding(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public VectorEncoding(
             string? vectorEncodingVariant1,
             string? vectorEncodingVariant2

@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static FullTextSearch FromFullTextSearchVariant1(bool? value) => new FullTextSearch(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FullTextSearch(global::Turbopuffer.FullTextSearchConfig value) => new FullTextSearch((global::Turbopuffer.FullTextSearchConfig?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FullTextSearch FromConfig(global::Turbopuffer.FullTextSearchConfig? value) => new FullTextSearch(value);
 
         /// <summary>
         /// 

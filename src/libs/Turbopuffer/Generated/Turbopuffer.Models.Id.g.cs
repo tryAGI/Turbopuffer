@@ -119,6 +119,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Id FromGuid(global::System.Guid? value) => new Id(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Id(string value) => new Id((string?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Id FromIdVariant2(string? value) => new Id(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Id(int value) => new Id((int?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Turbopuffer
         {
             IdVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Id FromIdVariant3(int? value) => new Id(value);
 
         /// <summary>
         /// 

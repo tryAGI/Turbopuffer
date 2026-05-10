@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Ann FromAnnVariant1(bool? value) => new Ann(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Ann(global::Turbopuffer.AnnConfig value) => new Ann((global::Turbopuffer.AnnConfig?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Ann FromConfig(global::Turbopuffer.AnnConfig? value) => new Ann(value);
 
         /// <summary>
         /// 

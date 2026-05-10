@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static QueryResult FromSingle(global::Turbopuffer.SingleQueryResult? value) => new QueryResult(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator QueryResult(global::Turbopuffer.QueryResultVariant2 value) => new QueryResult((global::Turbopuffer.QueryResultVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Turbopuffer
         {
             QueryResultVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static QueryResult FromQueryResultVariant2(global::Turbopuffer.QueryResultVariant2? value) => new QueryResult(value);
 
         /// <summary>
         /// 

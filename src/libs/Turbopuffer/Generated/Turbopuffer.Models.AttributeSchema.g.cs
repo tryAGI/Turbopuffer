@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static AttributeSchema FromAttributeTypeName(string? value) => new AttributeSchema(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AttributeSchema(global::Turbopuffer.AttributeSchemaConfig value) => new AttributeSchema((global::Turbopuffer.AttributeSchemaConfig?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AttributeSchema FromConfig(global::Turbopuffer.AttributeSchemaConfig? value) => new AttributeSchema(value);
 
         /// <summary>
         /// 

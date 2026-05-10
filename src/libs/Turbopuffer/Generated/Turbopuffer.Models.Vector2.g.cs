@@ -89,6 +89,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Vector2 FromVectorVariant2(string? value) => new Vector2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Vector2(
             global::System.Collections.Generic.IList<double>? vectorVariant1,
             string? vectorVariant2
