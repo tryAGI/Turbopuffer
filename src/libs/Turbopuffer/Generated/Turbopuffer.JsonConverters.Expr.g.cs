@@ -57,6 +57,7 @@ namespace Turbopuffer.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.ExprRefNew), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.ExprRefNew> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.ExprRefNew).Name}");
                     refNew = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

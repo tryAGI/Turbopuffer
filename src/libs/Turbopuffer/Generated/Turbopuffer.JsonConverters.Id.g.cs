@@ -138,7 +138,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (guid == null && idVariant2 == null && idVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (guid == null && idVariant2 == null && idVariant3 == null)
+            {
                 try
                 {
 

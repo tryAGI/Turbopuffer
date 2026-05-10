@@ -75,6 +75,7 @@ namespace Turbopuffer.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(bool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<bool> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(bool).Name}");
                     annVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -85,9 +86,13 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (annVariant1 == null && config == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Turbopuffer.AnnConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Turbopuffer.AnnConfig> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Turbopuffer.AnnConfig).Name}");
                     config = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
