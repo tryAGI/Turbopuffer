@@ -1049,6 +1049,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Filter FromFilterVariant1(byte[]? value) => new Filter(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Filter(
             byte[]? filterVariant1,
             byte[]? filterVariant2,

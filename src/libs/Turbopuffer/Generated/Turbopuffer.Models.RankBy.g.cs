@@ -179,6 +179,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static RankBy FromVector(byte[]? value) => new RankBy(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RankBy(global::Turbopuffer.RankByText value) => new RankBy((global::Turbopuffer.RankByText?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace Turbopuffer
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RankBy FromText(global::Turbopuffer.RankByText? value) => new RankBy(value);
 
         /// <summary>
         /// 

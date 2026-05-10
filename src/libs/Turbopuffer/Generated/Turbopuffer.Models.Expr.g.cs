@@ -59,6 +59,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Expr FromRefNew(global::Turbopuffer.ExprRefNew? value) => new Expr(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public object? Object =>
             RefNew as object 
             ;

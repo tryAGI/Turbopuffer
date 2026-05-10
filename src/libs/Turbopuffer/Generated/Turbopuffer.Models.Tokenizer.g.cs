@@ -179,6 +179,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Tokenizer FromTokenizerVariant1(string? value) => new Tokenizer(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Tokenizer(
             string? tokenizerVariant1,
             string? tokenizerVariant2,
