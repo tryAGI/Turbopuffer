@@ -108,7 +108,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (includeAttributesVariant1 == null && includeAttributesVariant2 == null)
+            {
                 try
                 {
 

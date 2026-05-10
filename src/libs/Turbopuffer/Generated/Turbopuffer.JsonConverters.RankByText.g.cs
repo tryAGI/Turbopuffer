@@ -438,7 +438,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -452,7 +455,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -466,7 +472,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -480,7 +489,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -494,7 +506,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -508,7 +523,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -522,7 +540,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -536,7 +557,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -550,7 +574,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -564,7 +591,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -578,7 +608,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
@@ -592,7 +625,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (rankByTextVariant1 == null && rankByTextVariant2 == null && rankByTextVariant3 == null && rankByTextVariant4 == null && rankByTextVariant5 == null && rankByTextVariant6 == null && rankByTextVariant7 == null && rankByTextVariant8 == null && filter == null && rankByTextVariant10 == null && rankByTextVariant11 == null && rankByTextVariant12 == null && rankByTextVariant13 == null)
+            {
                 try
                 {
 
