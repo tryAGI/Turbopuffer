@@ -54,5 +54,6 @@ namespace Turbopuffer
         public CreateNamespacesDebugRecallResponseGroundTruthItem()
         {
         }
+
     }
 }

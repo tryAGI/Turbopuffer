@@ -76,5 +76,6 @@ namespace Turbopuffer
         public CreateNamespacesDebugRecallRequest()
         {
         }
+
     }
 }

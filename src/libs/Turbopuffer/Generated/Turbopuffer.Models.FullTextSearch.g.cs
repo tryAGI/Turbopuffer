@@ -40,6 +40,13 @@ namespace Turbopuffer
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool PickFullTextSearchVariant1() => IsFullTextSearchVariant1
+            ? FullTextSearchVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FullTextSearchVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Configuration options for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Turbopuffer
             value = Config;
             return IsConfig;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.FullTextSearchConfig PickConfig() => IsConfig
+            ? Config!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

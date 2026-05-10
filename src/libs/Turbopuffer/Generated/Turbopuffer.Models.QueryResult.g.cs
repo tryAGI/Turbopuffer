@@ -42,6 +42,13 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public global::Turbopuffer.SingleQueryResult PickSingle() => IsSingle
+            ? Single!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Single' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Turbopuffer.QueryResultVariant2? QueryResultVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Turbopuffer
             value = QueryResultVariant2;
             return IsQueryResultVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.QueryResultVariant2 PickQueryResultVariant2() => IsQueryResultVariant2
+            ? QueryResultVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'QueryResultVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

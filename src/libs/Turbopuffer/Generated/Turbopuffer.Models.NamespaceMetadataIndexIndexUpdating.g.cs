@@ -52,5 +52,18 @@ namespace Turbopuffer
         public NamespaceMetadataIndexIndexUpdating()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="NamespaceMetadataIndexIndexUpdating"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static NamespaceMetadataIndexIndexUpdating FromUnindexedBytes(long unindexedBytes)
+        {
+            return new NamespaceMetadataIndexIndexUpdating
+            {
+                UnindexedBytes = unindexedBytes,
+            };
+        }
+
     }
 }

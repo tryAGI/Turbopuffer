@@ -40,6 +40,13 @@ namespace Turbopuffer
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public string PickRankByAttributeOrderVariant1() => IsRankByAttributeOrderVariant1
+            ? RankByAttributeOrderVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RankByAttributeOrderVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Descending order.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Turbopuffer
             value = RankByAttributeOrderVariant2;
             return IsRankByAttributeOrderVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickRankByAttributeOrderVariant2() => IsRankByAttributeOrderVariant2
+            ? RankByAttributeOrderVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RankByAttributeOrderVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
