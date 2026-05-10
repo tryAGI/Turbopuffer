@@ -40,6 +40,13 @@ namespace Turbopuffer
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<double> PickVectorVariant1() => IsVectorVariant1
+            ? VectorVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VectorVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// A dense vector encoded as a base64 string.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Turbopuffer
             value = VectorVariant2;
             return IsVectorVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickVectorVariant2() => IsVectorVariant2
+            ? VectorVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VectorVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

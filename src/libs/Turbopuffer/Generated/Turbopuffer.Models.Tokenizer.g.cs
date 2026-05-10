@@ -42,6 +42,13 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public string PickTokenizerVariant1() => IsTokenizerVariant1
+            ? TokenizerVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Turbopuffer
             value = TokenizerVariant2;
             return IsTokenizerVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickTokenizerVariant2() => IsTokenizerVariant2
+            ? TokenizerVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public string PickTokenizerVariant3() => IsTokenizerVariant3
+            ? TokenizerVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant4 { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public string PickTokenizerVariant4() => IsTokenizerVariant4
+            ? TokenizerVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant5 { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Turbopuffer
             value = TokenizerVariant5;
             return IsTokenizerVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickTokenizerVariant5() => IsTokenizerVariant5
+            ? TokenizerVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

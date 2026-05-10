@@ -131,5 +131,6 @@ namespace Turbopuffer
         public FullTextSearchConfig()
         {
         }
+
     }
 }

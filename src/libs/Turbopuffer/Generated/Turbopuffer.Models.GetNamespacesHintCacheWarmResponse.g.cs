@@ -51,5 +51,6 @@ namespace Turbopuffer
         public GetNamespacesHintCacheWarmResponse()
         {
         }
+
     }
 }

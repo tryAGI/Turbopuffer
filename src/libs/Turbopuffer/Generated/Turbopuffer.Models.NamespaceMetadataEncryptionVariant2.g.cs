@@ -40,5 +40,6 @@ namespace Turbopuffer
         public NamespaceMetadataEncryptionVariant2()
         {
         }
+
     }
 }

@@ -38,6 +38,13 @@ namespace Turbopuffer
             value = RefNew;
             return IsRefNew;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.ExprRefNew PickRefNew() => IsRefNew
+            ? RefNew!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RefNew' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

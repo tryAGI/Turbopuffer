@@ -88,5 +88,6 @@ namespace Turbopuffer
         public AttributeSchemaConfig()
         {
         }
+
     }
 }

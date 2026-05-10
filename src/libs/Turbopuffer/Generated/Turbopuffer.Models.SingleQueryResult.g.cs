@@ -57,5 +57,6 @@ namespace Turbopuffer
         public SingleQueryResult()
         {
         }
+
     }
 }
