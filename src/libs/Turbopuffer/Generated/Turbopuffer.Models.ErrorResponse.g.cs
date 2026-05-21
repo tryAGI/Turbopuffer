@@ -54,5 +54,18 @@ namespace Turbopuffer
         public ErrorResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ErrorResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ErrorResponse FromError(string error)
+        {
+            return new ErrorResponse
+            {
+                Error = error,
+            };
+        }
+
     }
 }

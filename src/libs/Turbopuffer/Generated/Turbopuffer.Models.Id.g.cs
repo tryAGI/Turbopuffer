@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsGuid => Guid != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGuid(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Guid? value)
+        {
+            value = Guid;
+            return IsGuid;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Guid PickGuid() => IsGuid
+            ? Guid!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
+
+        /// <summary>
         /// A string ID.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +64,26 @@ namespace Turbopuffer
         public bool IsIdVariant2 => IdVariant2 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIdVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = IdVariant2;
+            return IsIdVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickIdVariant2() => IsIdVariant2
+            ? IdVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'IdVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// An integer ID.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -59,6 +99,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IdVariant3))]
 #endif
         public bool IsIdVariant3 => IdVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIdVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out int? value)
+        {
+            value = IdVariant3;
+            return IsIdVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int PickIdVariant3() => IsIdVariant3
+            ? IdVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'IdVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -76,6 +136,11 @@ namespace Turbopuffer
         {
             Guid = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Id FromGuid(global::System.Guid? value) => new Id(value);
 
         /// <summary>
         /// 
@@ -98,6 +163,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Id FromIdVariant2(string? value) => new Id(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Id(int value) => new Id((int?)value);
 
         /// <summary>
@@ -112,6 +182,11 @@ namespace Turbopuffer
         {
             IdVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Id FromIdVariant3(int? value) => new Id(value);
 
         /// <summary>
         /// 
@@ -158,7 +233,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Guid?, TResult>? guid = null,
-            global::System.Func<string?, TResult>? idVariant2 = null,
+            global::System.Func<string, TResult>? idVariant2 = null,
             global::System.Func<int?, TResult>? idVariant3 = null,
             bool validate = true)
         {
@@ -188,7 +263,37 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<global::System.Guid?>? guid = null,
-            global::System.Action<string?>? idVariant2 = null,
+
+            global::System.Action<string>? idVariant2 = null,
+
+            global::System.Action<int?>? idVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGuid)
+            {
+                guid?.Invoke(Guid!);
+            }
+            else if (IsIdVariant2)
+            {
+                idVariant2?.Invoke(IdVariant2!);
+            }
+            else if (IsIdVariant3)
+            {
+                idVariant3?.Invoke(IdVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::System.Guid?>? guid = null,
+            global::System.Action<string>? idVariant2 = null,
             global::System.Action<int?>? idVariant3 = null,
             bool validate = true)
         {

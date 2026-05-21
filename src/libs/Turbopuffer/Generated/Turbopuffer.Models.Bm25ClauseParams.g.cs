@@ -41,5 +41,6 @@ namespace Turbopuffer
         public Bm25ClauseParams()
         {
         }
+
     }
 }

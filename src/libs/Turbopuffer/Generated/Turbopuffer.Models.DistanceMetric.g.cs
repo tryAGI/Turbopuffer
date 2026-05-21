@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsDistanceMetricVariant1 => DistanceMetricVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDistanceMetricVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = DistanceMetricVariant1;
+            return IsDistanceMetricVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickDistanceMetricVariant1() => IsDistanceMetricVariant1
+            ? DistanceMetricVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DistanceMetricVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Defined as `sum((x - y)^2)`. Lower is better.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DistanceMetricVariant2))]
 #endif
         public bool IsDistanceMetricVariant2 => DistanceMetricVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDistanceMetricVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = DistanceMetricVariant2;
+            return IsDistanceMetricVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickDistanceMetricVariant2() => IsDistanceMetricVariant2
+            ? DistanceMetricVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DistanceMetricVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Turbopuffer
         {
             DistanceMetricVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DistanceMetric FromDistanceMetricVariant1(string? value) => new DistanceMetric(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? distanceMetricVariant1 = null,
-            global::System.Func<string?, TResult>? distanceMetricVariant2 = null,
+            global::System.Func<string, TResult>? distanceMetricVariant1 = null,
+            global::System.Func<string, TResult>? distanceMetricVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? distanceMetricVariant1 = null,
-            global::System.Action<string?>? distanceMetricVariant2 = null,
+            global::System.Action<string>? distanceMetricVariant1 = null,
+
+            global::System.Action<string>? distanceMetricVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsDistanceMetricVariant1)
+            {
+                distanceMetricVariant1?.Invoke(DistanceMetricVariant1!);
+            }
+            else if (IsDistanceMetricVariant2)
+            {
+                distanceMetricVariant2?.Invoke(DistanceMetricVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? distanceMetricVariant1 = null,
+            global::System.Action<string>? distanceMetricVariant2 = null,
             bool validate = true)
         {
             if (validate)

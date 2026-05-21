@@ -588,7 +588,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -602,7 +605,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -616,7 +622,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -630,7 +639,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -644,7 +656,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -658,7 +673,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -672,7 +690,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -686,7 +707,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -700,7 +724,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -714,7 +741,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -728,7 +758,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -742,7 +775,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -756,7 +792,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -770,7 +809,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -784,7 +826,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -798,7 +843,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 
@@ -812,7 +860,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (languageVariant1 == null && languageVariant2 == null && languageVariant3 == null && languageVariant4 == null && languageVariant5 == null && languageVariant6 == null && languageVariant7 == null && languageVariant8 == null && languageVariant9 == null && languageVariant10 == null && languageVariant11 == null && languageVariant12 == null && languageVariant13 == null && languageVariant14 == null && languageVariant15 == null && languageVariant16 == null && languageVariant17 == null && languageVariant18 == null)
+            {
                 try
                 {
 

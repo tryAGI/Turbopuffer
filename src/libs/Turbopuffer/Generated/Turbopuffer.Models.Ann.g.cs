@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsAnnVariant1 => AnnVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnnVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = AnnVariant1;
+            return IsAnnVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickAnnVariant1() => IsAnnVariant1
+            ? AnnVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnnVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Configuration options for ANN (Approximate Nearest Neighbor) indexing.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
 #endif
         public bool IsConfig => Config != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConfig(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.AnnConfig? value)
+        {
+            value = Config;
+            return IsConfig;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.AnnConfig PickConfig() => IsConfig
+            ? Config!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static Ann FromAnnVariant1(bool? value) => new Ann(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Ann(global::Turbopuffer.AnnConfig value) => new Ann((global::Turbopuffer.AnnConfig?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Ann FromConfig(global::Turbopuffer.AnnConfig? value) => new Ann(value);
 
         /// <summary>
         /// 
@@ -119,7 +169,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? annVariant1 = null,
-            global::System.Func<global::Turbopuffer.AnnConfig?, TResult>? config = null,
+            global::System.Func<global::Turbopuffer.AnnConfig, TResult>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -144,7 +194,31 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<bool?>? annVariant1 = null,
-            global::System.Action<global::Turbopuffer.AnnConfig?>? config = null,
+
+            global::System.Action<global::Turbopuffer.AnnConfig>? config = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAnnVariant1)
+            {
+                annVariant1?.Invoke(AnnVariant1!);
+            }
+            else if (IsConfig)
+            {
+                config?.Invoke(Config!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<bool?>? annVariant1 = null,
+            global::System.Action<global::Turbopuffer.AnnConfig>? config = null,
             bool validate = true)
         {
             if (validate)

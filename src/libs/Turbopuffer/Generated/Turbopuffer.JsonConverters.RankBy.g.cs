@@ -198,7 +198,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (vector == null && knn == null && text == null && attribute == null && attributes == null)
+            {
                 try
                 {
 
@@ -212,7 +215,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (vector == null && knn == null && text == null && attribute == null && attributes == null)
+            {
                 try
                 {
 
@@ -226,7 +232,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (vector == null && knn == null && text == null && attribute == null && attributes == null)
+            {
                 try
                 {
 
@@ -240,7 +249,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (vector == null && knn == null && text == null && attribute == null && attributes == null)
+            {
                 try
                 {
 

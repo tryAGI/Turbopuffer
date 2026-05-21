@@ -29,6 +29,26 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickVector(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = Vector;
+            return IsVector;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] PickVector() => IsVector
+            ? Vector!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Vector' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? Knn { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Knn))]
 #endif
         public bool IsKnn => Knn != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickKnn(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = Knn;
+            return IsKnn;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] PickKnn() => IsKnn
+            ? Knn!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Knn' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.RankByText? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.RankByText PickText() => IsText
+            ? Text!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? Attribute { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Attribute))]
 #endif
         public bool IsAttribute => Attribute != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAttribute(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = Attribute;
+            return IsAttribute;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte[] PickAttribute() => IsAttribute
+            ? Attribute!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Attribute' but the value was {ToString()}.");
 
         /// <summary>
         /// Order by multiple attributes. Results are sorted by the first attribute, then by the second attribute for ties, and so on.
@@ -93,6 +173,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Attributes))]
 #endif
         public bool IsAttributes => Attributes != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAttributes(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<byte[]>? value)
+        {
+            value = Attributes;
+            return IsAttributes;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<byte[]> PickAttributes() => IsAttributes
+            ? Attributes!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Attributes' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -114,6 +214,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static RankBy FromVector(byte[]? value) => new RankBy(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RankBy(global::Turbopuffer.RankByText value) => new RankBy((global::Turbopuffer.RankByText?)value);
 
         /// <summary>
@@ -128,6 +233,11 @@ namespace Turbopuffer
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RankBy FromText(global::Turbopuffer.RankByText? value) => new RankBy(value);
 
         /// <summary>
         /// 
@@ -181,11 +291,11 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<byte[]?, TResult>? vector = null,
-            global::System.Func<byte[]?, TResult>? knn = null,
+            global::System.Func<byte[], TResult>? vector = null,
+            global::System.Func<byte[], TResult>? knn = null,
             global::System.Func<global::Turbopuffer.RankByText?, TResult>? text = null,
-            global::System.Func<byte[]?, TResult>? attribute = null,
-            global::System.Func<global::System.Collections.Generic.IList<byte[]>?, TResult>? attributes = null,
+            global::System.Func<byte[], TResult>? attribute = null,
+            global::System.Func<global::System.Collections.Generic.IList<byte[]>, TResult>? attributes = null,
             bool validate = true)
         {
             if (validate)
@@ -221,11 +331,53 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<byte[]?>? vector = null,
-            global::System.Action<byte[]?>? knn = null,
+            global::System.Action<byte[]>? vector = null,
+
+            global::System.Action<byte[]>? knn = null,
+
             global::System.Action<global::Turbopuffer.RankByText?>? text = null,
-            global::System.Action<byte[]?>? attribute = null,
-            global::System.Action<global::System.Collections.Generic.IList<byte[]>?>? attributes = null,
+
+            global::System.Action<byte[]>? attribute = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<byte[]>>? attributes = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsVector)
+            {
+                vector?.Invoke(Vector!);
+            }
+            else if (IsKnn)
+            {
+                knn?.Invoke(Knn!);
+            }
+            else if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsAttribute)
+            {
+                attribute?.Invoke(Attribute!);
+            }
+            else if (IsAttributes)
+            {
+                attributes?.Invoke(Attributes!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<byte[]>? vector = null,
+            global::System.Action<byte[]>? knn = null,
+            global::System.Action<global::Turbopuffer.RankByText?>? text = null,
+            global::System.Action<byte[]>? attribute = null,
+            global::System.Action<global::System.Collections.Generic.IList<byte[]>>? attributes = null,
             bool validate = true)
         {
             if (validate)

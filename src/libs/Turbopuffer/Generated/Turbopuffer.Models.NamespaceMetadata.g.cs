@@ -112,5 +112,6 @@ namespace Turbopuffer
         public NamespaceMetadata()
         {
         }
+
     }
 }

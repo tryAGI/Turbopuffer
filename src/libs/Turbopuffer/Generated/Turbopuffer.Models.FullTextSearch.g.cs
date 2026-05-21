@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsFullTextSearchVariant1 => FullTextSearchVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFullTextSearchVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = FullTextSearchVariant1;
+            return IsFullTextSearchVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickFullTextSearchVariant1() => IsFullTextSearchVariant1
+            ? FullTextSearchVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FullTextSearchVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Configuration options for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
 #endif
         public bool IsConfig => Config != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConfig(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.FullTextSearchConfig? value)
+        {
+            value = Config;
+            return IsConfig;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.FullTextSearchConfig PickConfig() => IsConfig
+            ? Config!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static FullTextSearch FromFullTextSearchVariant1(bool? value) => new FullTextSearch(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FullTextSearch(global::Turbopuffer.FullTextSearchConfig value) => new FullTextSearch((global::Turbopuffer.FullTextSearchConfig?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FullTextSearch FromConfig(global::Turbopuffer.FullTextSearchConfig? value) => new FullTextSearch(value);
 
         /// <summary>
         /// 
@@ -119,7 +169,7 @@ namespace Turbopuffer
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? fullTextSearchVariant1 = null,
-            global::System.Func<global::Turbopuffer.FullTextSearchConfig?, TResult>? config = null,
+            global::System.Func<global::Turbopuffer.FullTextSearchConfig, TResult>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -144,7 +194,31 @@ namespace Turbopuffer
         /// </summary>
         public void Match(
             global::System.Action<bool?>? fullTextSearchVariant1 = null,
-            global::System.Action<global::Turbopuffer.FullTextSearchConfig?>? config = null,
+
+            global::System.Action<global::Turbopuffer.FullTextSearchConfig>? config = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFullTextSearchVariant1)
+            {
+                fullTextSearchVariant1?.Invoke(FullTextSearchVariant1!);
+            }
+            else if (IsConfig)
+            {
+                config?.Invoke(Config!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<bool?>? fullTextSearchVariant1 = null,
+            global::System.Action<global::Turbopuffer.FullTextSearchConfig>? config = null,
             bool validate = true)
         {
             if (validate)

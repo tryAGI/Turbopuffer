@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsRankByAttributeOrderVariant1 => RankByAttributeOrderVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRankByAttributeOrderVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = RankByAttributeOrderVariant1;
+            return IsRankByAttributeOrderVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickRankByAttributeOrderVariant1() => IsRankByAttributeOrderVariant1
+            ? RankByAttributeOrderVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RankByAttributeOrderVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Descending order.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByAttributeOrderVariant2))]
 #endif
         public bool IsRankByAttributeOrderVariant2 => RankByAttributeOrderVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRankByAttributeOrderVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = RankByAttributeOrderVariant2;
+            return IsRankByAttributeOrderVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickRankByAttributeOrderVariant2() => IsRankByAttributeOrderVariant2
+            ? RankByAttributeOrderVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RankByAttributeOrderVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Turbopuffer
         {
             RankByAttributeOrderVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RankByAttributeOrder FromRankByAttributeOrderVariant1(string? value) => new RankByAttributeOrder(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? rankByAttributeOrderVariant1 = null,
-            global::System.Func<string?, TResult>? rankByAttributeOrderVariant2 = null,
+            global::System.Func<string, TResult>? rankByAttributeOrderVariant1 = null,
+            global::System.Func<string, TResult>? rankByAttributeOrderVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? rankByAttributeOrderVariant1 = null,
-            global::System.Action<string?>? rankByAttributeOrderVariant2 = null,
+            global::System.Action<string>? rankByAttributeOrderVariant1 = null,
+
+            global::System.Action<string>? rankByAttributeOrderVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsRankByAttributeOrderVariant1)
+            {
+                rankByAttributeOrderVariant1?.Invoke(RankByAttributeOrderVariant1!);
+            }
+            else if (IsRankByAttributeOrderVariant2)
+            {
+                rankByAttributeOrderVariant2?.Invoke(RankByAttributeOrderVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? rankByAttributeOrderVariant1 = null,
+            global::System.Action<string>? rankByAttributeOrderVariant2 = null,
             bool validate = true)
         {
             if (validate)

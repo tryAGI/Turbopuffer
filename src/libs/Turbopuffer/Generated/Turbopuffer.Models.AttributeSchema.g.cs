@@ -27,6 +27,26 @@ namespace Turbopuffer
         public bool IsAttributeTypeName => AttributeTypeName != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAttributeTypeName(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = AttributeTypeName;
+            return IsAttributeTypeName;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickAttributeTypeName() => IsAttributeTypeName
+            ? AttributeTypeName!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AttributeTypeName' but the value was {ToString()}.");
+
+        /// <summary>
         /// Detailed configuration for an attribute attached to a document.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Turbopuffer
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
 #endif
         public bool IsConfig => Config != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConfig(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.AttributeSchemaConfig? value)
+        {
+            value = Config;
+            return IsConfig;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Turbopuffer.AttributeSchemaConfig PickConfig() => IsConfig
+            ? Config!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Turbopuffer
         /// <summary>
         /// 
         /// </summary>
+        public static AttributeSchema FromAttributeTypeName(string? value) => new AttributeSchema(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AttributeSchema(global::Turbopuffer.AttributeSchemaConfig value) => new AttributeSchema((global::Turbopuffer.AttributeSchemaConfig?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Turbopuffer
         {
             Config = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AttributeSchema FromConfig(global::Turbopuffer.AttributeSchemaConfig? value) => new AttributeSchema(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? attributeTypeName = null,
-            global::System.Func<global::Turbopuffer.AttributeSchemaConfig?, TResult>? config = null,
+            global::System.Func<string, TResult>? attributeTypeName = null,
+            global::System.Func<global::Turbopuffer.AttributeSchemaConfig, TResult>? config = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Turbopuffer
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? attributeTypeName = null,
-            global::System.Action<global::Turbopuffer.AttributeSchemaConfig?>? config = null,
+            global::System.Action<string>? attributeTypeName = null,
+
+            global::System.Action<global::Turbopuffer.AttributeSchemaConfig>? config = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAttributeTypeName)
+            {
+                attributeTypeName?.Invoke(AttributeTypeName!);
+            }
+            else if (IsConfig)
+            {
+                config?.Invoke(Config!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? attributeTypeName = null,
+            global::System.Action<global::Turbopuffer.AttributeSchemaConfig>? config = null,
             bool validate = true)
         {
             if (validate)
