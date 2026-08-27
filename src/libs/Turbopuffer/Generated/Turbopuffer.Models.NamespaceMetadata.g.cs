@@ -44,7 +44,7 @@ namespace Turbopuffer
         public required global::System.DateTime UpdatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("encryption")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2>))]
@@ -52,7 +52,7 @@ namespace Turbopuffer
         public required global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2> Encryption { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("index")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating>))]

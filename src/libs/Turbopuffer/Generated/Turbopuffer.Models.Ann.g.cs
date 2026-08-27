@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct Ann : global::System.IEquatable<Ann>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? AnnVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnnVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsAnnVariant1 => AnnVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAnnVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickAnnVariant1() => IsAnnVariant1
             ? AnnVariant1!.Value
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsConfig => Config != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConfig(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.AnnConfig PickConfig() => IsConfig
             ? Config!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Ann(bool value) => new Ann((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(Ann @this) => @this.AnnVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Ann(bool? value)
         {
@@ -101,22 +101,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Ann FromAnnVariant1(bool? value) => new Ann(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Ann(global::Turbopuffer.AnnConfig value) => new Ann((global::Turbopuffer.AnnConfig?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.AnnConfig?(Ann @this) => @this.Config;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Ann(global::Turbopuffer.AnnConfig? value)
         {
@@ -124,12 +124,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Ann FromConfig(global::Turbopuffer.AnnConfig? value) => new Ann(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Ann(
             bool? annVariant1,
@@ -141,23 +141,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Config as object ??
-            AnnVariant1 as object 
+            AnnVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AnnVariant1?.ToString().ToLowerInvariant() ??
-            Config?.ToString() 
+            Config?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? annVariant1 = null,
@@ -190,7 +190,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<bool?>? annVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<bool?>? annVariant1 = null,
@@ -237,7 +237,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Ann other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(AnnVariant1, other.AnnVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AnnConfig?>.Default.Equals(Config, other.Config) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AnnConfig?>.Default.Equals(Config, other.Config)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Ann obj1, Ann obj2)
         {
@@ -277,7 +277,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Ann obj1, Ann obj2)
         {
@@ -285,7 +285,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct Language : global::System.IEquatable<Language>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant1 => LanguageVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant1() => IsLanguageVariant1
             ? LanguageVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant2 => LanguageVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant2() => IsLanguageVariant2
             ? LanguageVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant3 => LanguageVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant3() => IsLanguageVariant3
             ? LanguageVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant4))]
@@ -138,7 +138,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant4 => LanguageVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant4() => IsLanguageVariant4
             ? LanguageVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant5))]
@@ -175,7 +175,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant5 => LanguageVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant5() => IsLanguageVariant5
             ? LanguageVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant6))]
@@ -212,7 +212,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant6 => LanguageVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant6(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant6() => IsLanguageVariant6
             ? LanguageVariant6!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant7 { get; init; }
@@ -241,7 +241,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant7))]
@@ -249,7 +249,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant7 => LanguageVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant7(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant7() => IsLanguageVariant7
             ? LanguageVariant7!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant8 { get; init; }
@@ -278,7 +278,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant8))]
@@ -286,7 +286,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant8 => LanguageVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant8(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant8() => IsLanguageVariant8
             ? LanguageVariant8!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant9 { get; init; }
@@ -315,7 +315,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant9))]
@@ -323,7 +323,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant9 => LanguageVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant9(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant9() => IsLanguageVariant9
             ? LanguageVariant9!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant9' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant10 { get; init; }
@@ -352,7 +352,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant10))]
@@ -360,7 +360,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant10 => LanguageVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant10(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant10() => IsLanguageVariant10
             ? LanguageVariant10!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant10' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant11 { get; init; }
@@ -389,7 +389,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant11))]
@@ -397,7 +397,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant11 => LanguageVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant11(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant11() => IsLanguageVariant11
             ? LanguageVariant11!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant11' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant12 { get; init; }
@@ -426,7 +426,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant12))]
@@ -434,7 +434,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant12 => LanguageVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant12(
 #if NET6_0_OR_GREATER
@@ -447,14 +447,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant12() => IsLanguageVariant12
             ? LanguageVariant12!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant12' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant13 { get; init; }
@@ -463,7 +463,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant13))]
@@ -471,7 +471,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant13 => LanguageVariant13 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant13(
 #if NET6_0_OR_GREATER
@@ -484,14 +484,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant13() => IsLanguageVariant13
             ? LanguageVariant13!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant13' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant14 { get; init; }
@@ -500,7 +500,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant14))]
@@ -508,7 +508,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant14 => LanguageVariant14 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant14(
 #if NET6_0_OR_GREATER
@@ -521,14 +521,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant14() => IsLanguageVariant14
             ? LanguageVariant14!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant14' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant15 { get; init; }
@@ -537,7 +537,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant15))]
@@ -545,7 +545,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant15 => LanguageVariant15 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant15(
 #if NET6_0_OR_GREATER
@@ -558,14 +558,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant15() => IsLanguageVariant15
             ? LanguageVariant15!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant15' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant16 { get; init; }
@@ -574,7 +574,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant16))]
@@ -582,7 +582,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant16 => LanguageVariant16 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant16(
 #if NET6_0_OR_GREATER
@@ -595,14 +595,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant16() => IsLanguageVariant16
             ? LanguageVariant16!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant16' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant17 { get; init; }
@@ -611,7 +611,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant17))]
@@ -619,7 +619,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant17 => LanguageVariant17 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant17(
 #if NET6_0_OR_GREATER
@@ -632,14 +632,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant17() => IsLanguageVariant17
             ? LanguageVariant17!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant17' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? LanguageVariant18 { get; init; }
@@ -648,7 +648,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LanguageVariant18))]
@@ -656,7 +656,7 @@ namespace Turbopuffer
         public bool IsLanguageVariant18 => LanguageVariant18 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLanguageVariant18(
 #if NET6_0_OR_GREATER
@@ -669,23 +669,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickLanguageVariant18() => IsLanguageVariant18
             ? LanguageVariant18!
             : throw new global::System.InvalidOperationException($"Expected union variant 'LanguageVariant18' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Language(string value) => new Language((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(Language @this) => @this.LanguageVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Language(string? value)
         {
@@ -693,12 +693,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Language FromLanguageVariant1(string? value) => new Language(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Language(
             string? languageVariant1,
@@ -742,7 +742,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             LanguageVariant18 as object ??
@@ -762,11 +762,11 @@ namespace Turbopuffer
             LanguageVariant4 as object ??
             LanguageVariant3 as object ??
             LanguageVariant2 as object ??
-            LanguageVariant1 as object 
+            LanguageVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             LanguageVariant1?.ToString() ??
@@ -786,11 +786,11 @@ namespace Turbopuffer
             LanguageVariant15?.ToString() ??
             LanguageVariant16?.ToString() ??
             LanguageVariant17?.ToString() ??
-            LanguageVariant18?.ToString() 
+            LanguageVariant18?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -798,7 +798,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? languageVariant1 = null,
@@ -903,7 +903,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? languageVariant1 = null,
@@ -1023,7 +1023,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? languageVariant1 = null,
@@ -1126,7 +1126,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1179,7 +1179,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Language other)
         {
@@ -1201,12 +1201,12 @@ namespace Turbopuffer
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(LanguageVariant15, other.LanguageVariant15) &&
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(LanguageVariant16, other.LanguageVariant16) &&
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(LanguageVariant17, other.LanguageVariant17) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(LanguageVariant18, other.LanguageVariant18) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(LanguageVariant18, other.LanguageVariant18)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Language obj1, Language obj2)
         {
@@ -1214,7 +1214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Language obj1, Language obj2)
         {
@@ -1222,7 +1222,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

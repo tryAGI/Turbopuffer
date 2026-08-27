@@ -16,7 +16,7 @@ namespace Turbopuffer
         public required global::System.Collections.Generic.IList<global::Turbopuffer.Id> Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vector")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>))]

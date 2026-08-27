@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AggregateByVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsAggregateByVariant1 => AggregateByVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAggregateByVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickAggregateByVariant1() => IsAggregateByVariant1
             ? AggregateByVariant1!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AggregateByVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsAggregateByVariant2 => AggregateByVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAggregateByVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickAggregateByVariant2() => IsAggregateByVariant2
             ? AggregateByVariant2!
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AggregateByVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsAggregateByVariant3 => AggregateByVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAggregateByVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickAggregateByVariant3() => IsAggregateByVariant3
             ? AggregateByVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AggregateByVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AggregateBy(byte[] value) => new AggregateBy((byte[]?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator byte[]?(AggregateBy @this) => @this.AggregateByVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AggregateBy(byte[]? value)
         {
@@ -138,12 +138,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AggregateBy FromAggregateByVariant1(byte[]? value) => new AggregateBy(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AggregateBy(
             byte[]? aggregateByVariant1,
@@ -157,25 +157,25 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AggregateByVariant3 as object ??
             AggregateByVariant2 as object ??
-            AggregateByVariant1 as object 
+            AggregateByVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AggregateByVariant1?.ToString() ??
             AggregateByVariant2?.ToString() ??
-            AggregateByVariant3?.ToString() 
+            AggregateByVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -183,7 +183,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<byte[], TResult>? aggregateByVariant1 = null,
@@ -213,7 +213,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<byte[]>? aggregateByVariant1 = null,
@@ -243,7 +243,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<byte[]>? aggregateByVariant1 = null,
@@ -271,7 +271,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -294,19 +294,19 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AggregateBy other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AggregateByVariant1, other.AggregateByVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AggregateByVariant2, other.AggregateByVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AggregateByVariant3, other.AggregateByVariant3) 
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AggregateByVariant3, other.AggregateByVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AggregateBy obj1, AggregateBy obj2)
         {
@@ -314,7 +314,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AggregateBy obj1, AggregateBy obj2)
         {
@@ -322,7 +322,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

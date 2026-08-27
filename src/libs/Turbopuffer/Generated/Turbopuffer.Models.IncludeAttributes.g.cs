@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IncludeAttributesVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsIncludeAttributesVariant1 => IncludeAttributesVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIncludeAttributesVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickIncludeAttributesVariant1() => IsIncludeAttributesVariant1
             ? IncludeAttributesVariant1!.Value
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IncludeAttributesVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsIncludeAttributesVariant2 => IncludeAttributesVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIncludeAttributesVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickIncludeAttributesVariant2() => IsIncludeAttributesVariant2
             ? IncludeAttributesVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'IncludeAttributesVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludeAttributes(bool value) => new IncludeAttributes((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(IncludeAttributes @this) => @this.IncludeAttributesVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludeAttributes(bool? value)
         {
@@ -101,12 +101,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludeAttributes FromIncludeAttributesVariant1(bool? value) => new IncludeAttributes(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludeAttributes(
             bool? includeAttributesVariant1,
@@ -118,23 +118,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             IncludeAttributesVariant2 as object ??
-            IncludeAttributesVariant1 as object 
+            IncludeAttributesVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             IncludeAttributesVariant1?.ToString().ToLowerInvariant() ??
-            IncludeAttributesVariant2?.ToString() 
+            IncludeAttributesVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? includeAttributesVariant1 = null,
@@ -167,7 +167,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<bool?>? includeAttributesVariant1 = null,
@@ -191,7 +191,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<bool?>? includeAttributesVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludeAttributes other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(IncludeAttributesVariant1, other.IncludeAttributesVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(IncludeAttributesVariant2, other.IncludeAttributesVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(IncludeAttributesVariant2, other.IncludeAttributesVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludeAttributes obj1, IncludeAttributes obj2)
         {
@@ -254,7 +254,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludeAttributes obj1, IncludeAttributes obj2)
         {
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

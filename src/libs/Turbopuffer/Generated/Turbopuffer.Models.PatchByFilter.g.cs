@@ -9,7 +9,7 @@ namespace Turbopuffer
     public sealed partial class PatchByFilter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("patch")]
         [global::System.Text.Json.Serialization.JsonRequired]

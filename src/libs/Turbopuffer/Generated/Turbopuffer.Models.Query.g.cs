@@ -59,7 +59,7 @@ namespace Turbopuffer
         public global::Turbopuffer.DistanceMetric? DistanceMetric { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("limit")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit2>))]

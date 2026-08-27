@@ -5,7 +5,7 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct RankByAttributeOrder : global::System.IEquatable<RankByAttributeOrder>
     {
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByAttributeOrderVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsRankByAttributeOrderVariant1 => RankByAttributeOrderVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByAttributeOrderVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickRankByAttributeOrderVariant1() => IsRankByAttributeOrderVariant1
             ? RankByAttributeOrderVariant1!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByAttributeOrderVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsRankByAttributeOrderVariant2 => RankByAttributeOrderVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByAttributeOrderVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickRankByAttributeOrderVariant2() => IsRankByAttributeOrderVariant2
             ? RankByAttributeOrderVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByAttributeOrderVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RankByAttributeOrder(string value) => new RankByAttributeOrder((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(RankByAttributeOrder @this) => @this.RankByAttributeOrderVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RankByAttributeOrder(string? value)
         {
@@ -101,12 +101,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RankByAttributeOrder FromRankByAttributeOrderVariant1(string? value) => new RankByAttributeOrder(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RankByAttributeOrder(
             string? rankByAttributeOrderVariant1,
@@ -118,23 +118,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RankByAttributeOrderVariant2 as object ??
-            RankByAttributeOrderVariant1 as object 
+            RankByAttributeOrderVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             RankByAttributeOrderVariant1?.ToString() ??
-            RankByAttributeOrderVariant2?.ToString() 
+            RankByAttributeOrderVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? rankByAttributeOrderVariant1 = null,
@@ -167,7 +167,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? rankByAttributeOrderVariant1 = null,
@@ -191,7 +191,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? rankByAttributeOrderVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(RankByAttributeOrder other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(RankByAttributeOrderVariant1, other.RankByAttributeOrderVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(RankByAttributeOrderVariant2, other.RankByAttributeOrderVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(RankByAttributeOrderVariant2, other.RankByAttributeOrderVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(RankByAttributeOrder obj1, RankByAttributeOrder obj2)
         {
@@ -254,7 +254,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(RankByAttributeOrder obj1, RankByAttributeOrder obj2)
         {
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

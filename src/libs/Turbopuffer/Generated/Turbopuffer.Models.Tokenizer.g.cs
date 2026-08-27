@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct Tokenizer : global::System.IEquatable<Tokenizer>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenizerVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsTokenizerVariant1 => TokenizerVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenizerVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickTokenizerVariant1() => IsTokenizerVariant1
             ? TokenizerVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenizerVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsTokenizerVariant2 => TokenizerVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenizerVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickTokenizerVariant2() => IsTokenizerVariant2
             ? TokenizerVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenizerVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsTokenizerVariant3 => TokenizerVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenizerVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickTokenizerVariant3() => IsTokenizerVariant3
             ? TokenizerVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenizerVariant4))]
@@ -138,7 +138,7 @@ namespace Turbopuffer
         public bool IsTokenizerVariant4 => TokenizerVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenizerVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickTokenizerVariant4() => IsTokenizerVariant4
             ? TokenizerVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? TokenizerVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenizerVariant5))]
@@ -175,7 +175,7 @@ namespace Turbopuffer
         public bool IsTokenizerVariant5 => TokenizerVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenizerVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickTokenizerVariant5() => IsTokenizerVariant5
             ? TokenizerVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenizerVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Tokenizer(string value) => new Tokenizer((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(Tokenizer @this) => @this.TokenizerVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Tokenizer(string? value)
         {
@@ -212,12 +212,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Tokenizer FromTokenizerVariant1(string? value) => new Tokenizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Tokenizer(
             string? tokenizerVariant1,
@@ -235,29 +235,29 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TokenizerVariant5 as object ??
             TokenizerVariant4 as object ??
             TokenizerVariant3 as object ??
             TokenizerVariant2 as object ??
-            TokenizerVariant1 as object 
+            TokenizerVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TokenizerVariant1?.ToString() ??
             TokenizerVariant2?.ToString() ??
             TokenizerVariant3?.ToString() ??
             TokenizerVariant4?.ToString() ??
-            TokenizerVariant5?.ToString() 
+            TokenizerVariant5?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -265,7 +265,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? tokenizerVariant1 = null,
@@ -305,7 +305,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? tokenizerVariant1 = null,
@@ -347,7 +347,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? tokenizerVariant1 = null,
@@ -385,7 +385,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -412,7 +412,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Tokenizer other)
         {
@@ -421,12 +421,12 @@ namespace Turbopuffer
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(TokenizerVariant2, other.TokenizerVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(TokenizerVariant3, other.TokenizerVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(TokenizerVariant4, other.TokenizerVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(TokenizerVariant5, other.TokenizerVariant5) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(TokenizerVariant5, other.TokenizerVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Tokenizer obj1, Tokenizer obj2)
         {
@@ -434,7 +434,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Tokenizer obj1, Tokenizer obj2)
         {
@@ -442,7 +442,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

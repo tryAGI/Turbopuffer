@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DistanceMetricVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsDistanceMetricVariant1 => DistanceMetricVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDistanceMetricVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickDistanceMetricVariant1() => IsDistanceMetricVariant1
             ? DistanceMetricVariant1!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DistanceMetricVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsDistanceMetricVariant2 => DistanceMetricVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDistanceMetricVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickDistanceMetricVariant2() => IsDistanceMetricVariant2
             ? DistanceMetricVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DistanceMetricVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DistanceMetric(string value) => new DistanceMetric((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(DistanceMetric @this) => @this.DistanceMetricVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DistanceMetric(string? value)
         {
@@ -101,12 +101,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DistanceMetric FromDistanceMetricVariant1(string? value) => new DistanceMetric(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DistanceMetric(
             string? distanceMetricVariant1,
@@ -118,23 +118,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DistanceMetricVariant2 as object ??
-            DistanceMetricVariant1 as object 
+            DistanceMetricVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DistanceMetricVariant1?.ToString() ??
-            DistanceMetricVariant2?.ToString() 
+            DistanceMetricVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? distanceMetricVariant1 = null,
@@ -167,7 +167,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? distanceMetricVariant1 = null,
@@ -191,7 +191,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? distanceMetricVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DistanceMetric other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DistanceMetricVariant1, other.DistanceMetricVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DistanceMetricVariant2, other.DistanceMetricVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DistanceMetricVariant2, other.DistanceMetricVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DistanceMetric obj1, DistanceMetric obj2)
         {
@@ -254,7 +254,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DistanceMetric obj1, DistanceMetric obj2)
         {
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {
