@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct VectorEncoding : global::System.IEquatable<VectorEncoding>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? VectorEncodingVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorEncodingVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsVectorEncodingVariant1 => VectorEncodingVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVectorEncodingVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickVectorEncodingVariant1() => IsVectorEncodingVariant1
             ? VectorEncodingVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorEncodingVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? VectorEncodingVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorEncodingVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsVectorEncodingVariant2 => VectorEncodingVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVectorEncodingVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickVectorEncodingVariant2() => IsVectorEncodingVariant2
             ? VectorEncodingVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorEncodingVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VectorEncoding(string value) => new VectorEncoding((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(VectorEncoding @this) => @this.VectorEncodingVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VectorEncoding(string? value)
         {
@@ -101,12 +101,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VectorEncoding FromVectorEncodingVariant1(string? value) => new VectorEncoding(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VectorEncoding(
             string? vectorEncodingVariant1,
@@ -118,23 +118,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VectorEncodingVariant2 as object ??
-            VectorEncodingVariant1 as object 
+            VectorEncodingVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             VectorEncodingVariant1?.ToString() ??
-            VectorEncodingVariant2?.ToString() 
+            VectorEncodingVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? vectorEncodingVariant1 = null,
@@ -167,7 +167,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? vectorEncodingVariant1 = null,
@@ -191,7 +191,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? vectorEncodingVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VectorEncoding other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorEncodingVariant1, other.VectorEncodingVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorEncodingVariant2, other.VectorEncodingVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorEncodingVariant2, other.VectorEncodingVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VectorEncoding obj1, VectorEncoding obj2)
         {
@@ -254,7 +254,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VectorEncoding obj1, VectorEncoding obj2)
         {
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RefNew))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsRefNew => RefNew != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRefNew(
 #if NET6_0_OR_GREATER
@@ -40,23 +40,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.ExprRefNew PickRefNew() => IsRefNew
             ? RefNew!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RefNew' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Expr(global::Turbopuffer.ExprRefNew value) => new Expr((global::Turbopuffer.ExprRefNew?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.ExprRefNew?(Expr @this) => @this.RefNew;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Expr(global::Turbopuffer.ExprRefNew? value)
         {
@@ -64,26 +64,26 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Expr FromRefNew(global::Turbopuffer.ExprRefNew? value) => new Expr(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
-            RefNew as object 
+            RefNew as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
-            RefNew?.ToString() 
+            RefNew?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -91,7 +91,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Turbopuffer.ExprRefNew, TResult>? refNew = null,
@@ -111,7 +111,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Turbopuffer.ExprRefNew>? refNew = null,
@@ -129,7 +129,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Turbopuffer.ExprRefNew>? refNew = null,
@@ -147,7 +147,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -166,17 +166,17 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Expr other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.ExprRefNew?>.Default.Equals(RefNew, other.RefNew) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.ExprRefNew?>.Default.Equals(RefNew, other.RefNew)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Expr obj1, Expr obj2)
         {
@@ -184,7 +184,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Expr obj1, Expr obj2)
         {
@@ -192,7 +192,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

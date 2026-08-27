@@ -15,7 +15,7 @@ namespace Turbopuffer
         public global::Turbopuffer.Columns? UpsertColumns { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("upsert_rows")]
         public global::System.Collections.Generic.IList<global::Turbopuffer.Row>? UpsertRows { get; set; }
@@ -27,13 +27,13 @@ namespace Turbopuffer
         public global::Turbopuffer.Columns? PatchColumns { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("patch_rows")]
         public global::System.Collections.Generic.IList<global::Turbopuffer.Row>? PatchRows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deletes")]
         public global::System.Collections.Generic.IList<global::Turbopuffer.Id>? Deletes { get; set; }
@@ -70,7 +70,7 @@ namespace Turbopuffer
         public object? Schema { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("copy_from_namespace")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<string, global::Turbopuffer.WriteCopyFromNamespace>))]

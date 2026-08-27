@@ -4,24 +4,24 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SingleQueryResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aggregations")]
         public object? Aggregations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aggregation_groups")]
         public global::System.Collections.Generic.IList<global::Turbopuffer.AggregationGroup>? AggregationGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rows")]
         public global::System.Collections.Generic.IList<global::Turbopuffer.Row>? Rows { get; set; }

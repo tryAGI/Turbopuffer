@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct FullTextSearch : global::System.IEquatable<FullTextSearch>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? FullTextSearchVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FullTextSearchVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsFullTextSearchVariant1 => FullTextSearchVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFullTextSearchVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickFullTextSearchVariant1() => IsFullTextSearchVariant1
             ? FullTextSearchVariant1!.Value
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsConfig => Config != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConfig(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.FullTextSearchConfig PickConfig() => IsConfig
             ? Config!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FullTextSearch(bool value) => new FullTextSearch((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(FullTextSearch @this) => @this.FullTextSearchVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FullTextSearch(bool? value)
         {
@@ -101,22 +101,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FullTextSearch FromFullTextSearchVariant1(bool? value) => new FullTextSearch(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FullTextSearch(global::Turbopuffer.FullTextSearchConfig value) => new FullTextSearch((global::Turbopuffer.FullTextSearchConfig?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.FullTextSearchConfig?(FullTextSearch @this) => @this.Config;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FullTextSearch(global::Turbopuffer.FullTextSearchConfig? value)
         {
@@ -124,12 +124,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FullTextSearch FromConfig(global::Turbopuffer.FullTextSearchConfig? value) => new FullTextSearch(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FullTextSearch(
             bool? fullTextSearchVariant1,
@@ -141,23 +141,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Config as object ??
-            FullTextSearchVariant1 as object 
+            FullTextSearchVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FullTextSearchVariant1?.ToString().ToLowerInvariant() ??
-            Config?.ToString() 
+            Config?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<bool?, TResult>? fullTextSearchVariant1 = null,
@@ -190,7 +190,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<bool?>? fullTextSearchVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<bool?>? fullTextSearchVariant1 = null,
@@ -237,7 +237,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FullTextSearch other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(FullTextSearchVariant1, other.FullTextSearchVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.FullTextSearchConfig?>.Default.Equals(Config, other.Config) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.FullTextSearchConfig?>.Default.Equals(Config, other.Config)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FullTextSearch obj1, FullTextSearch obj2)
         {
@@ -277,7 +277,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FullTextSearch obj1, FullTextSearch obj2)
         {
@@ -285,7 +285,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

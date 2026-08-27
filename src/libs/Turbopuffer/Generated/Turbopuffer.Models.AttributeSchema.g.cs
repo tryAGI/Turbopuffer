@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AttributeTypeName))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsAttributeTypeName => AttributeTypeName != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAttributeTypeName(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickAttributeTypeName() => IsAttributeTypeName
             ? AttributeTypeName!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Config))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsConfig => Config != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConfig(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.AttributeSchemaConfig PickConfig() => IsConfig
             ? Config!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AttributeSchema(string value) => new AttributeSchema((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(AttributeSchema @this) => @this.AttributeTypeName;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AttributeSchema(string? value)
         {
@@ -101,22 +101,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AttributeSchema FromAttributeTypeName(string? value) => new AttributeSchema(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AttributeSchema(global::Turbopuffer.AttributeSchemaConfig value) => new AttributeSchema((global::Turbopuffer.AttributeSchemaConfig?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.AttributeSchemaConfig?(AttributeSchema @this) => @this.Config;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AttributeSchema(global::Turbopuffer.AttributeSchemaConfig? value)
         {
@@ -124,12 +124,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AttributeSchema FromConfig(global::Turbopuffer.AttributeSchemaConfig? value) => new AttributeSchema(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AttributeSchema(
             string? attributeTypeName,
@@ -141,23 +141,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Config as object ??
-            AttributeTypeName as object 
+            AttributeTypeName as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AttributeTypeName?.ToString() ??
-            Config?.ToString() 
+            Config?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? attributeTypeName = null,
@@ -190,7 +190,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? attributeTypeName = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? attributeTypeName = null,
@@ -237,7 +237,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AttributeSchema other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(AttributeTypeName, other.AttributeTypeName) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Config, other.Config) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Config, other.Config)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AttributeSchema obj1, AttributeSchema obj2)
         {
@@ -277,7 +277,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AttributeSchema obj1, AttributeSchema obj2)
         {
@@ -285,7 +285,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

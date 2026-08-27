@@ -16,7 +16,7 @@ namespace Turbopuffer
         public string Status { get; set; } = "ACCEPTED";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         public string? Message { get; set; }

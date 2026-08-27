@@ -132,7 +132,7 @@ namespace Turbopuffer
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Turbopuffer.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

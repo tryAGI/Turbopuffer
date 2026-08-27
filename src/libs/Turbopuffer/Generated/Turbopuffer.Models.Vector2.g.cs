@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsVectorVariant1 => VectorVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVectorVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<double> PickVectorVariant1() => IsVectorVariant1
             ? VectorVariant1!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VectorVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsVectorVariant2 => VectorVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVectorVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickVectorVariant2() => IsVectorVariant2
             ? VectorVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Vector2(string value) => new Vector2((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(Vector2 @this) => @this.VectorVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Vector2(string? value)
         {
@@ -101,12 +101,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Vector2 FromVectorVariant2(string? value) => new Vector2(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Vector2(
             global::System.Collections.Generic.IList<double>? vectorVariant1,
@@ -118,23 +118,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VectorVariant2 as object ??
-            VectorVariant1 as object 
+            VectorVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             VectorVariant1?.ToString() ??
-            VectorVariant2?.ToString() 
+            VectorVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Collections.Generic.IList<double>, TResult>? vectorVariant1 = null,
@@ -167,7 +167,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::System.Collections.Generic.IList<double>>? vectorVariant1 = null,
@@ -191,7 +191,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::System.Collections.Generic.IList<double>>? vectorVariant1 = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Vector2 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<double>?>.Default.Equals(VectorVariant1, other.VectorVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorVariant2, other.VectorVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VectorVariant2, other.VectorVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Vector2 obj1, Vector2 obj2)
         {
@@ -254,7 +254,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Vector2 obj1, Vector2 obj2)
         {
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

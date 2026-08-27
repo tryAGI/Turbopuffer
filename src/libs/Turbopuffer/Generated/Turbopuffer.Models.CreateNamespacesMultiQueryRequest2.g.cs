@@ -4,12 +4,12 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateNamespacesMultiQueryRequest2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("queries")]
         [global::System.Text.Json.Serialization.JsonRequired]

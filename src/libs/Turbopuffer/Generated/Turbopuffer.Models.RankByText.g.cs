@@ -5,12 +5,12 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct RankByText : global::System.IEquatable<RankByText>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant1 => RankByTextVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant1() => IsRankByTextVariant1
             ? RankByTextVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant2 => RankByTextVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant2() => IsRankByTextVariant2
             ? RankByTextVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant3 => RankByTextVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant3() => IsRankByTextVariant3
             ? RankByTextVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant4))]
@@ -138,7 +138,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant4 => RankByTextVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant4() => IsRankByTextVariant4
             ? RankByTextVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant5))]
@@ -175,7 +175,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant5 => RankByTextVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant5(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant5() => IsRankByTextVariant5
             ? RankByTextVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant6 { get; init; }
@@ -204,7 +204,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant6))]
@@ -212,7 +212,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant6 => RankByTextVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant6(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant6() => IsRankByTextVariant6
             ? RankByTextVariant6!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant7 { get; init; }
@@ -241,7 +241,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant7))]
@@ -249,7 +249,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant7 => RankByTextVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant7(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant7() => IsRankByTextVariant7
             ? RankByTextVariant7!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant8 { get; init; }
@@ -278,7 +278,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant8))]
@@ -286,7 +286,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant8 => RankByTextVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant8(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant8() => IsRankByTextVariant8
             ? RankByTextVariant8!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Turbopuffer.Filter? Filter { get; init; }
@@ -315,7 +315,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Filter))]
@@ -323,7 +323,7 @@ namespace Turbopuffer
         public bool IsFilter => Filter != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilter(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.Filter PickFilter() => IsFilter
             ? Filter!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Filter' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant10 { get; init; }
@@ -352,7 +352,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant10))]
@@ -360,7 +360,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant10 => RankByTextVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant10(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant10() => IsRankByTextVariant10
             ? RankByTextVariant10!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant10' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant11 { get; init; }
@@ -389,7 +389,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant11))]
@@ -397,7 +397,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant11 => RankByTextVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant11(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant11() => IsRankByTextVariant11
             ? RankByTextVariant11!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant11' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant12 { get; init; }
@@ -426,7 +426,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant12))]
@@ -434,7 +434,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant12 => RankByTextVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant12(
 #if NET6_0_OR_GREATER
@@ -447,14 +447,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant12() => IsRankByTextVariant12
             ? RankByTextVariant12!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant12' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? RankByTextVariant13 { get; init; }
@@ -463,7 +463,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RankByTextVariant13))]
@@ -471,7 +471,7 @@ namespace Turbopuffer
         public bool IsRankByTextVariant13 => RankByTextVariant13 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRankByTextVariant13(
 #if NET6_0_OR_GREATER
@@ -484,23 +484,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickRankByTextVariant13() => IsRankByTextVariant13
             ? RankByTextVariant13!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RankByTextVariant13' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RankByText(byte[] value) => new RankByText((byte[]?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator byte[]?(RankByText @this) => @this.RankByTextVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RankByText(byte[]? value)
         {
@@ -508,22 +508,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RankByText FromRankByTextVariant1(byte[]? value) => new RankByText(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RankByText(global::Turbopuffer.Filter value) => new RankByText((global::Turbopuffer.Filter?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.Filter?(RankByText @this) => @this.Filter;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RankByText(global::Turbopuffer.Filter? value)
         {
@@ -531,12 +531,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RankByText FromFilter(global::Turbopuffer.Filter? value) => new RankByText(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RankByText(
             byte[]? rankByTextVariant1,
@@ -570,7 +570,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RankByTextVariant13 as object ??
@@ -585,11 +585,11 @@ namespace Turbopuffer
             RankByTextVariant4 as object ??
             RankByTextVariant3 as object ??
             RankByTextVariant2 as object ??
-            RankByTextVariant1 as object 
+            RankByTextVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             RankByTextVariant1?.ToString() ??
@@ -604,11 +604,11 @@ namespace Turbopuffer
             RankByTextVariant10?.ToString() ??
             RankByTextVariant11?.ToString() ??
             RankByTextVariant12?.ToString() ??
-            RankByTextVariant13?.ToString() 
+            RankByTextVariant13?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -616,7 +616,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<byte[], TResult>? rankByTextVariant1 = null,
@@ -696,7 +696,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<byte[]>? rankByTextVariant1 = null,
@@ -786,7 +786,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<byte[]>? rankByTextVariant1 = null,
@@ -864,7 +864,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -907,7 +907,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(RankByText other)
         {
@@ -924,12 +924,12 @@ namespace Turbopuffer
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(RankByTextVariant10, other.RankByTextVariant10) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(RankByTextVariant11, other.RankByTextVariant11) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(RankByTextVariant12, other.RankByTextVariant12) &&
-                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(RankByTextVariant13, other.RankByTextVariant13) 
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(RankByTextVariant13, other.RankByTextVariant13)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(RankByText obj1, RankByText obj2)
         {
@@ -937,7 +937,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(RankByText obj1, RankByText obj2)
         {
@@ -945,7 +945,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

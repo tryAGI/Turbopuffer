@@ -4,12 +4,12 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NamespaceMetadataIndexIndexUpdating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"updating"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]

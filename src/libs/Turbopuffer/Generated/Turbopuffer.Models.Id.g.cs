@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Guid))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsGuid => Guid != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGuid(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Guid PickGuid() => IsGuid
             ? Guid!.Value
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IdVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsIdVariant2 => IdVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIdVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickIdVariant2() => IsIdVariant2
             ? IdVariant2!
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IdVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsIdVariant3 => IdVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIdVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public int PickIdVariant3() => IsIdVariant3
             ? IdVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IdVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Id(global::System.Guid value) => new Id((global::System.Guid?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Guid?(Id @this) => @this.Guid;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Id(global::System.Guid? value)
         {
@@ -138,22 +138,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Id FromGuid(global::System.Guid? value) => new Id(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Id(string value) => new Id((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(Id @this) => @this.IdVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Id(string? value)
         {
@@ -161,22 +161,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Id FromIdVariant2(string? value) => new Id(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Id(int value) => new Id((int?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator int?(Id @this) => @this.IdVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Id(int? value)
         {
@@ -184,12 +184,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Id FromIdVariant3(int? value) => new Id(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Id(
             global::System.Guid? guid,
@@ -203,25 +203,25 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             IdVariant3 as object ??
             IdVariant2 as object ??
-            Guid as object 
+            Guid as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Guid?.ToString() ??
             IdVariant2?.ToString() ??
-            IdVariant3?.ToString() 
+            IdVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Guid?, TResult>? guid = null,
@@ -259,7 +259,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::System.Guid?>? guid = null,
@@ -289,7 +289,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::System.Guid?>? guid = null,
@@ -317,7 +317,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Id other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::System.Guid?>.Default.Equals(Guid, other.Guid) &&
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(IdVariant2, other.IdVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<int?>.Default.Equals(IdVariant3, other.IdVariant3) 
+                global::System.Collections.Generic.EqualityComparer<int?>.Default.Equals(IdVariant3, other.IdVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Id obj1, Id obj2)
         {
@@ -360,7 +360,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Id obj1, Id obj2)
         {
@@ -368,7 +368,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

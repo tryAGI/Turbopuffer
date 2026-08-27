@@ -10,7 +10,7 @@ namespace Turbopuffer
     public readonly partial struct QueryResult : global::System.IEquatable<QueryResult>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Turbopuffer.SingleQueryResult? Single { get; init; }
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Single))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsSingle => Single != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSingle(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.SingleQueryResult PickSingle() => IsSingle
             ? Single!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Single' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Turbopuffer.QueryResultVariant2? QueryResultVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(QueryResultVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsQueryResultVariant2 => QueryResultVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickQueryResultVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Turbopuffer.QueryResultVariant2 PickQueryResultVariant2() => IsQueryResultVariant2
             ? QueryResultVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'QueryResultVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator QueryResult(global::Turbopuffer.SingleQueryResult value) => new QueryResult((global::Turbopuffer.SingleQueryResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.SingleQueryResult?(QueryResult @this) => @this.Single;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public QueryResult(global::Turbopuffer.SingleQueryResult? value)
         {
@@ -101,22 +101,22 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static QueryResult FromSingle(global::Turbopuffer.SingleQueryResult? value) => new QueryResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator QueryResult(global::Turbopuffer.QueryResultVariant2 value) => new QueryResult((global::Turbopuffer.QueryResultVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Turbopuffer.QueryResultVariant2?(QueryResult @this) => @this.QueryResultVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public QueryResult(global::Turbopuffer.QueryResultVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static QueryResult FromQueryResultVariant2(global::Turbopuffer.QueryResultVariant2? value) => new QueryResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public QueryResult(
             global::Turbopuffer.SingleQueryResult? single,
@@ -141,23 +141,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             QueryResultVariant2 as object ??
-            Single as object 
+            Single as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Single?.ToString() ??
-            QueryResultVariant2?.ToString() 
+            QueryResultVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Turbopuffer.SingleQueryResult, TResult>? single = null,
@@ -190,7 +190,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Turbopuffer.SingleQueryResult>? single = null,
@@ -214,7 +214,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Turbopuffer.SingleQueryResult>? single = null,
@@ -237,7 +237,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(QueryResult other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.SingleQueryResult?>.Default.Equals(Single, other.Single) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.QueryResultVariant2?>.Default.Equals(QueryResultVariant2, other.QueryResultVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.QueryResultVariant2?>.Default.Equals(QueryResultVariant2, other.QueryResultVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(QueryResult obj1, QueryResult obj2)
         {
@@ -277,7 +277,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(QueryResult obj1, QueryResult obj2)
         {
@@ -285,7 +285,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -9,7 +9,7 @@ namespace Turbopuffer
     public sealed partial class Encryption2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmek")]
         public global::Turbopuffer.EncryptionCmek? Cmek { get; set; }

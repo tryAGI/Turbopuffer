@@ -4,7 +4,7 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LanguageVariant5
     {

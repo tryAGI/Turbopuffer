@@ -5,7 +5,7 @@
 namespace Turbopuffer
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct Filter : global::System.IEquatable<Filter>
     {
@@ -19,7 +19,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant1))]
@@ -27,7 +27,7 @@ namespace Turbopuffer
         public bool IsFilterVariant1 => FilterVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant1() => IsFilterVariant1
             ? FilterVariant1!
@@ -56,7 +56,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant2))]
@@ -64,7 +64,7 @@ namespace Turbopuffer
         public bool IsFilterVariant2 => FilterVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant2() => IsFilterVariant2
             ? FilterVariant2!
@@ -93,7 +93,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant3))]
@@ -101,7 +101,7 @@ namespace Turbopuffer
         public bool IsFilterVariant3 => FilterVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant3() => IsFilterVariant3
             ? FilterVariant3!
@@ -130,7 +130,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant4))]
@@ -138,7 +138,7 @@ namespace Turbopuffer
         public bool IsFilterVariant4 => FilterVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant4() => IsFilterVariant4
             ? FilterVariant4!
@@ -167,7 +167,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant5))]
@@ -175,7 +175,7 @@ namespace Turbopuffer
         public bool IsFilterVariant5 => FilterVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant5(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant5() => IsFilterVariant5
             ? FilterVariant5!
@@ -204,7 +204,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant6))]
@@ -212,7 +212,7 @@ namespace Turbopuffer
         public bool IsFilterVariant6 => FilterVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant6(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant6() => IsFilterVariant6
             ? FilterVariant6!
@@ -241,7 +241,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant7))]
@@ -249,7 +249,7 @@ namespace Turbopuffer
         public bool IsFilterVariant7 => FilterVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant7(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant7() => IsFilterVariant7
             ? FilterVariant7!
@@ -278,7 +278,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant8))]
@@ -286,7 +286,7 @@ namespace Turbopuffer
         public bool IsFilterVariant8 => FilterVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant8(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant8() => IsFilterVariant8
             ? FilterVariant8!
@@ -315,7 +315,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant9))]
@@ -323,7 +323,7 @@ namespace Turbopuffer
         public bool IsFilterVariant9 => FilterVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant9(
 #if NET6_0_OR_GREATER
@@ -336,7 +336,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant9() => IsFilterVariant9
             ? FilterVariant9!
@@ -352,7 +352,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant10))]
@@ -360,7 +360,7 @@ namespace Turbopuffer
         public bool IsFilterVariant10 => FilterVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant10(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant10() => IsFilterVariant10
             ? FilterVariant10!
@@ -389,7 +389,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant11))]
@@ -397,7 +397,7 @@ namespace Turbopuffer
         public bool IsFilterVariant11 => FilterVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant11(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant11() => IsFilterVariant11
             ? FilterVariant11!
@@ -426,7 +426,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant12))]
@@ -434,7 +434,7 @@ namespace Turbopuffer
         public bool IsFilterVariant12 => FilterVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant12(
 #if NET6_0_OR_GREATER
@@ -447,7 +447,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant12() => IsFilterVariant12
             ? FilterVariant12!
@@ -463,7 +463,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant13))]
@@ -471,7 +471,7 @@ namespace Turbopuffer
         public bool IsFilterVariant13 => FilterVariant13 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant13(
 #if NET6_0_OR_GREATER
@@ -484,7 +484,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant13() => IsFilterVariant13
             ? FilterVariant13!
@@ -500,7 +500,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant14))]
@@ -508,7 +508,7 @@ namespace Turbopuffer
         public bool IsFilterVariant14 => FilterVariant14 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant14(
 #if NET6_0_OR_GREATER
@@ -521,7 +521,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant14() => IsFilterVariant14
             ? FilterVariant14!
@@ -537,7 +537,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant15))]
@@ -545,7 +545,7 @@ namespace Turbopuffer
         public bool IsFilterVariant15 => FilterVariant15 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant15(
 #if NET6_0_OR_GREATER
@@ -558,7 +558,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant15() => IsFilterVariant15
             ? FilterVariant15!
@@ -574,7 +574,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant16))]
@@ -582,7 +582,7 @@ namespace Turbopuffer
         public bool IsFilterVariant16 => FilterVariant16 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant16(
 #if NET6_0_OR_GREATER
@@ -595,7 +595,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant16() => IsFilterVariant16
             ? FilterVariant16!
@@ -611,7 +611,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant17))]
@@ -619,7 +619,7 @@ namespace Turbopuffer
         public bool IsFilterVariant17 => FilterVariant17 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant17(
 #if NET6_0_OR_GREATER
@@ -632,7 +632,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant17() => IsFilterVariant17
             ? FilterVariant17!
@@ -648,7 +648,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant18))]
@@ -656,7 +656,7 @@ namespace Turbopuffer
         public bool IsFilterVariant18 => FilterVariant18 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant18(
 #if NET6_0_OR_GREATER
@@ -669,7 +669,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant18() => IsFilterVariant18
             ? FilterVariant18!
@@ -685,7 +685,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant19))]
@@ -693,7 +693,7 @@ namespace Turbopuffer
         public bool IsFilterVariant19 => FilterVariant19 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant19(
 #if NET6_0_OR_GREATER
@@ -706,7 +706,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant19() => IsFilterVariant19
             ? FilterVariant19!
@@ -722,7 +722,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant20))]
@@ -730,7 +730,7 @@ namespace Turbopuffer
         public bool IsFilterVariant20 => FilterVariant20 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant20(
 #if NET6_0_OR_GREATER
@@ -743,7 +743,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant20() => IsFilterVariant20
             ? FilterVariant20!
@@ -759,7 +759,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant21))]
@@ -767,7 +767,7 @@ namespace Turbopuffer
         public bool IsFilterVariant21 => FilterVariant21 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant21(
 #if NET6_0_OR_GREATER
@@ -780,7 +780,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant21() => IsFilterVariant21
             ? FilterVariant21!
@@ -796,7 +796,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant22))]
@@ -804,7 +804,7 @@ namespace Turbopuffer
         public bool IsFilterVariant22 => FilterVariant22 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant22(
 #if NET6_0_OR_GREATER
@@ -817,7 +817,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant22() => IsFilterVariant22
             ? FilterVariant22!
@@ -833,7 +833,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant23))]
@@ -841,7 +841,7 @@ namespace Turbopuffer
         public bool IsFilterVariant23 => FilterVariant23 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant23(
 #if NET6_0_OR_GREATER
@@ -854,7 +854,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant23() => IsFilterVariant23
             ? FilterVariant23!
@@ -870,7 +870,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant24))]
@@ -878,7 +878,7 @@ namespace Turbopuffer
         public bool IsFilterVariant24 => FilterVariant24 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant24(
 #if NET6_0_OR_GREATER
@@ -891,7 +891,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant24() => IsFilterVariant24
             ? FilterVariant24!
@@ -907,7 +907,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant25))]
@@ -915,7 +915,7 @@ namespace Turbopuffer
         public bool IsFilterVariant25 => FilterVariant25 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant25(
 #if NET6_0_OR_GREATER
@@ -928,7 +928,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant25() => IsFilterVariant25
             ? FilterVariant25!
@@ -944,7 +944,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant26))]
@@ -952,7 +952,7 @@ namespace Turbopuffer
         public bool IsFilterVariant26 => FilterVariant26 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant26(
 #if NET6_0_OR_GREATER
@@ -965,7 +965,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant26() => IsFilterVariant26
             ? FilterVariant26!
@@ -981,7 +981,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant27))]
@@ -989,7 +989,7 @@ namespace Turbopuffer
         public bool IsFilterVariant27 => FilterVariant27 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant27(
 #if NET6_0_OR_GREATER
@@ -1002,7 +1002,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant27() => IsFilterVariant27
             ? FilterVariant27!
@@ -1018,7 +1018,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant28))]
@@ -1026,7 +1026,7 @@ namespace Turbopuffer
         public bool IsFilterVariant28 => FilterVariant28 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant28(
 #if NET6_0_OR_GREATER
@@ -1039,7 +1039,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant28() => IsFilterVariant28
             ? FilterVariant28!
@@ -1055,7 +1055,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant29))]
@@ -1063,7 +1063,7 @@ namespace Turbopuffer
         public bool IsFilterVariant29 => FilterVariant29 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant29(
 #if NET6_0_OR_GREATER
@@ -1076,7 +1076,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant29() => IsFilterVariant29
             ? FilterVariant29!
@@ -1092,7 +1092,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant30))]
@@ -1100,7 +1100,7 @@ namespace Turbopuffer
         public bool IsFilterVariant30 => FilterVariant30 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant30(
 #if NET6_0_OR_GREATER
@@ -1113,7 +1113,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant30() => IsFilterVariant30
             ? FilterVariant30!
@@ -1129,7 +1129,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant31))]
@@ -1137,7 +1137,7 @@ namespace Turbopuffer
         public bool IsFilterVariant31 => FilterVariant31 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant31(
 #if NET6_0_OR_GREATER
@@ -1150,14 +1150,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant31() => IsFilterVariant31
             ? FilterVariant31!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant31' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant32 { get; init; }
@@ -1166,7 +1166,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant32))]
@@ -1174,7 +1174,7 @@ namespace Turbopuffer
         public bool IsFilterVariant32 => FilterVariant32 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant32(
 #if NET6_0_OR_GREATER
@@ -1187,14 +1187,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant32() => IsFilterVariant32
             ? FilterVariant32!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant32' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant33 { get; init; }
@@ -1203,7 +1203,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant33))]
@@ -1211,7 +1211,7 @@ namespace Turbopuffer
         public bool IsFilterVariant33 => FilterVariant33 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant33(
 #if NET6_0_OR_GREATER
@@ -1224,14 +1224,14 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant33() => IsFilterVariant33
             ? FilterVariant33!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant33' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant34 { get; init; }
@@ -1240,7 +1240,7 @@ namespace Turbopuffer
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant34))]
@@ -1248,7 +1248,7 @@ namespace Turbopuffer
         public bool IsFilterVariant34 => FilterVariant34 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFilterVariant34(
 #if NET6_0_OR_GREATER
@@ -1261,23 +1261,23 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public byte[] PickFilterVariant34() => IsFilterVariant34
             ? FilterVariant34!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant34' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Filter(byte[] value) => new Filter((byte[]?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator byte[]?(Filter @this) => @this.FilterVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Filter(byte[]? value)
         {
@@ -1285,12 +1285,12 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Filter FromFilterVariant1(byte[]? value) => new Filter(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Filter(
             byte[]? filterVariant1,
@@ -1366,7 +1366,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FilterVariant34 as object ??
@@ -1402,11 +1402,11 @@ namespace Turbopuffer
             FilterVariant4 as object ??
             FilterVariant3 as object ??
             FilterVariant2 as object ??
-            FilterVariant1 as object 
+            FilterVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FilterVariant1?.ToString() ??
@@ -1442,11 +1442,11 @@ namespace Turbopuffer
             FilterVariant31?.ToString() ??
             FilterVariant32?.ToString() ??
             FilterVariant33?.ToString() ??
-            FilterVariant34?.ToString() 
+            FilterVariant34?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -1454,7 +1454,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<byte[], TResult>? filterVariant1 = null,
@@ -1639,7 +1639,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<byte[]>? filterVariant1 = null,
@@ -1855,7 +1855,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<byte[]>? filterVariant1 = null,
@@ -2038,7 +2038,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -2123,7 +2123,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Filter other)
         {
@@ -2161,12 +2161,12 @@ namespace Turbopuffer
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant31, other.FilterVariant31) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant32, other.FilterVariant32) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant33, other.FilterVariant33) &&
-                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant34, other.FilterVariant34) 
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant34, other.FilterVariant34)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Filter obj1, Filter obj2)
         {
@@ -2174,7 +2174,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Filter obj1, Filter obj2)
         {
@@ -2182,7 +2182,7 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

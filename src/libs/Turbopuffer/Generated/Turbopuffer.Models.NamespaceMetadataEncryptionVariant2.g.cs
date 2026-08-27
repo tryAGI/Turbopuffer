@@ -9,7 +9,7 @@ namespace Turbopuffer
     public sealed partial class NamespaceMetadataEncryptionVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmek")]
         [global::System.Text.Json.Serialization.JsonRequired]
