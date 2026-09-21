@@ -67,7 +67,7 @@ namespace Turbopuffer
         /// The schema of the attributes attached to the documents.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
-        public object? Schema { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>? Schema { get; set; }
 
         /// <summary>
         ///
@@ -188,7 +188,7 @@ namespace Turbopuffer
             object? patchCondition,
             object? deleteCondition,
             global::Turbopuffer.DistanceMetric? distanceMetric,
-            object? schema,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>? schema,
             global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>? copyFromNamespace,
             object? deleteByFilter,
             bool? deleteByFilterAllowPartial,

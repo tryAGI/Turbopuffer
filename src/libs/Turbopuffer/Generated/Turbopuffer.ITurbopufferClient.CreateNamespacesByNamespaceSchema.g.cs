@@ -15,7 +15,7 @@ namespace Turbopuffer
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchemaConfig>> CreateNamespacesByNamespaceSchemaAsync(
             string @namespace,
 
-            object request,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -29,7 +29,7 @@ namespace Turbopuffer
         global::System.Threading.Tasks.Task<global::Turbopuffer.AutoSDKHttpResponse<global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchemaConfig>>> CreateNamespacesByNamespaceSchemaAsResponseAsync(
             string @namespace,
 
-            object request,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
