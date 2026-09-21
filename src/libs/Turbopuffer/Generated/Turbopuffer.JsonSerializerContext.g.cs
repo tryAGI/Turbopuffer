@@ -90,6 +90,7 @@ namespace Turbopuffer
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Id), TypeInfoPropertyName = "Id2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.DistanceMetric), TypeInfoPropertyName = "DistanceMetric2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.AttributeSchema), TypeInfoPropertyName = "AttributeSchema2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>), TypeInfoPropertyName = "OneOfStringWriteCopyFromNamespace2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.WriteCopyFromNamespace))]

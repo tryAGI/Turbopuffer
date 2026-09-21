@@ -28,12 +28,12 @@ namespace Turbopuffer
         partial void PrepareCreateNamespacesByNamespaceSchemaArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @namespace,
-            object request);
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request);
         partial void PrepareCreateNamespacesByNamespaceSchemaRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @namespace,
-            object request);
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request);
         partial void ProcessCreateNamespacesByNamespaceSchemaResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -54,7 +54,7 @@ namespace Turbopuffer
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchemaConfig>> CreateNamespacesByNamespaceSchemaAsync(
             string @namespace,
 
-            object request,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,7 +79,7 @@ namespace Turbopuffer
         public async global::System.Threading.Tasks.Task<global::Turbopuffer.AutoSDKHttpResponse<global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchemaConfig>>> CreateNamespacesByNamespaceSchemaAsResponseAsync(
             string @namespace,
 
-            object request,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -489,7 +489,7 @@ namespace Turbopuffer
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new object
+            var __request = new global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>
             {
             };
 

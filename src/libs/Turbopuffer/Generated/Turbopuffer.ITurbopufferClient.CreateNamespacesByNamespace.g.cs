@@ -97,7 +97,7 @@ namespace Turbopuffer
             object? patchCondition = default,
             object? deleteCondition = default,
             global::Turbopuffer.DistanceMetric? distanceMetric = default,
-            object? schema = default,
+            global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>? schema = default,
             global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>? copyFromNamespace = default,
             object? deleteByFilter = default,
             bool? deleteByFilterAllowPartial = default,
