@@ -145,7 +145,7 @@ namespace Turbopuffer
                 PrepareGetNamespacesByNamespaceMetadataRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    @namespace: @namespace!);
+                    @namespace: @namespace);
 
                 return __httpRequest;
             }
@@ -167,7 +167,7 @@ namespace Turbopuffer
                                 pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -201,7 +201,7 @@ namespace Turbopuffer
                                 pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -242,7 +242,7 @@ namespace Turbopuffer
                                 pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -290,7 +290,7 @@ namespace Turbopuffer
                                 pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -312,7 +312,7 @@ namespace Turbopuffer
                                 pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

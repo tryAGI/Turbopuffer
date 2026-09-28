@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.SingleQueryResult PickSingle() => IsSingle
-            ? Single!
+        public global::Turbopuffer.SingleQueryResult PickSingle() => Single is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Single' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.QueryResultVariant2 PickQueryResultVariant2() => IsQueryResultVariant2
-            ? QueryResultVariant2!
+        public global::Turbopuffer.QueryResultVariant2 PickQueryResultVariant2() => QueryResultVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'QueryResultVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsSingle && single != null)
+            if (Single is { } __value0 && single != null)
             {
-                return single(Single!);
+                return single(__value0);
             }
-            else if (IsQueryResultVariant2 && queryResultVariant2 != null)
+            else if (QueryResultVariant2 is { } __value1 && queryResultVariant2 != null)
             {
-                return queryResultVariant2(QueryResultVariant2!);
+                return queryResultVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsSingle)
+            if (Single is { } __value0)
             {
-                single?.Invoke(Single!);
+                single?.Invoke(__value0);
             }
-            else if (IsQueryResultVariant2)
+            else if (QueryResultVariant2 is { } __value1)
             {
-                queryResultVariant2?.Invoke(QueryResultVariant2!);
+                queryResultVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsSingle)
+            if (Single is { } __value0)
             {
-                single?.Invoke(Single!);
+                single?.Invoke(__value0);
             }
-            else if (IsQueryResultVariant2)
+            else if (QueryResultVariant2 is { } __value1)
             {
-                queryResultVariant2?.Invoke(QueryResultVariant2!);
+                queryResultVariant2?.Invoke(__value1);
             }
         }
 

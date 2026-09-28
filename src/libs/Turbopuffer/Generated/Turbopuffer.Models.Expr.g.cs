@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.ExprRefNew PickRefNew() => IsRefNew
-            ? RefNew!
+        public global::Turbopuffer.ExprRefNew PickRefNew() => RefNew is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RefNew' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -102,9 +102,9 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsRefNew && refNew != null)
+            if (RefNew is { } __value0 && refNew != null)
             {
-                return refNew(RefNew!);
+                return refNew(__value0);
             }
 
             return default(TResult);
@@ -122,9 +122,9 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsRefNew)
+            if (RefNew is { } __value0)
             {
-                refNew?.Invoke(RefNew!);
+                refNew?.Invoke(__value0);
             }
         }
 
@@ -140,9 +140,9 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsRefNew)
+            if (RefNew is { } __value0)
             {
-                refNew?.Invoke(RefNew!);
+                refNew?.Invoke(__value0);
             }
         }
 

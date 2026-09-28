@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::System.Guid PickGuid() => IsGuid
-            ? Guid!.Value
+        public global::System.Guid PickGuid() => Guid is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickIdVariant2() => IsIdVariant2
-            ? IdVariant2!
+        public string PickIdVariant2() => IdVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IdVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public int PickIdVariant3() => IsIdVariant3
-            ? IdVariant3!.Value
+        public int PickIdVariant3() => IdVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IdVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsGuid && guid != null)
+            if (Guid is { } __value0 && guid != null)
             {
-                return guid(Guid!);
+                return guid(__value0);
             }
-            else if (IsIdVariant2 && idVariant2 != null)
+            else if (IdVariant2 is { } __value1 && idVariant2 != null)
             {
-                return idVariant2(IdVariant2!);
+                return idVariant2(__value1);
             }
-            else if (IsIdVariant3 && idVariant3 != null)
+            else if (IdVariant3 is { } __value2 && idVariant3 != null)
             {
-                return idVariant3(IdVariant3!);
+                return idVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsGuid)
+            if (Guid is { } __value0)
             {
-                guid?.Invoke(Guid!);
+                guid?.Invoke(__value0);
             }
-            else if (IsIdVariant2)
+            else if (IdVariant2 is { } __value1)
             {
-                idVariant2?.Invoke(IdVariant2!);
+                idVariant2?.Invoke(__value1);
             }
-            else if (IsIdVariant3)
+            else if (IdVariant3 is { } __value2)
             {
-                idVariant3?.Invoke(IdVariant3!);
+                idVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsGuid)
+            if (Guid is { } __value0)
             {
-                guid?.Invoke(Guid!);
+                guid?.Invoke(__value0);
             }
-            else if (IsIdVariant2)
+            else if (IdVariant2 is { } __value1)
             {
-                idVariant2?.Invoke(IdVariant2!);
+                idVariant2?.Invoke(__value1);
             }
-            else if (IsIdVariant3)
+            else if (IdVariant3 is { } __value2)
             {
-                idVariant3?.Invoke(IdVariant3!);
+                idVariant3?.Invoke(__value2);
             }
         }
 

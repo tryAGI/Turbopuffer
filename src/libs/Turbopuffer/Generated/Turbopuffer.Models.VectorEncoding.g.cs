@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickVectorEncodingVariant1() => IsVectorEncodingVariant1
-            ? VectorEncodingVariant1!
+        public string PickVectorEncodingVariant1() => VectorEncodingVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorEncodingVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickVectorEncodingVariant2() => IsVectorEncodingVariant2
-            ? VectorEncodingVariant2!
+        public string PickVectorEncodingVariant2() => VectorEncodingVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorEncodingVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorEncodingVariant1 && vectorEncodingVariant1 != null)
+            if (VectorEncodingVariant1 is { } __value0 && vectorEncodingVariant1 != null)
             {
-                return vectorEncodingVariant1(VectorEncodingVariant1!);
+                return vectorEncodingVariant1(__value0);
             }
-            else if (IsVectorEncodingVariant2 && vectorEncodingVariant2 != null)
+            else if (VectorEncodingVariant2 is { } __value1 && vectorEncodingVariant2 != null)
             {
-                return vectorEncodingVariant2(VectorEncodingVariant2!);
+                return vectorEncodingVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorEncodingVariant1)
+            if (VectorEncodingVariant1 is { } __value0)
             {
-                vectorEncodingVariant1?.Invoke(VectorEncodingVariant1!);
+                vectorEncodingVariant1?.Invoke(__value0);
             }
-            else if (IsVectorEncodingVariant2)
+            else if (VectorEncodingVariant2 is { } __value1)
             {
-                vectorEncodingVariant2?.Invoke(VectorEncodingVariant2!);
+                vectorEncodingVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorEncodingVariant1)
+            if (VectorEncodingVariant1 is { } __value0)
             {
-                vectorEncodingVariant1?.Invoke(VectorEncodingVariant1!);
+                vectorEncodingVariant1?.Invoke(__value0);
             }
-            else if (IsVectorEncodingVariant2)
+            else if (VectorEncodingVariant2 is { } __value1)
             {
-                vectorEncodingVariant2?.Invoke(VectorEncodingVariant2!);
+                vectorEncodingVariant2?.Invoke(__value1);
             }
         }
 

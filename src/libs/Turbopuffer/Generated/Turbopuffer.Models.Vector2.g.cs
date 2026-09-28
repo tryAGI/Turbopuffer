@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<double> PickVectorVariant1() => IsVectorVariant1
-            ? VectorVariant1!
+        public global::System.Collections.Generic.IList<double> PickVectorVariant1() => VectorVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickVectorVariant2() => IsVectorVariant2
-            ? VectorVariant2!
+        public string PickVectorVariant2() => VectorVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VectorVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorVariant1 && vectorVariant1 != null)
+            if (VectorVariant1 is { } __value0 && vectorVariant1 != null)
             {
-                return vectorVariant1(VectorVariant1!);
+                return vectorVariant1(__value0);
             }
-            else if (IsVectorVariant2 && vectorVariant2 != null)
+            else if (VectorVariant2 is { } __value1 && vectorVariant2 != null)
             {
-                return vectorVariant2(VectorVariant2!);
+                return vectorVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorVariant1)
+            if (VectorVariant1 is { } __value0)
             {
-                vectorVariant1?.Invoke(VectorVariant1!);
+                vectorVariant1?.Invoke(__value0);
             }
-            else if (IsVectorVariant2)
+            else if (VectorVariant2 is { } __value1)
             {
-                vectorVariant2?.Invoke(VectorVariant2!);
+                vectorVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsVectorVariant1)
+            if (VectorVariant1 is { } __value0)
             {
-                vectorVariant1?.Invoke(VectorVariant1!);
+                vectorVariant1?.Invoke(__value0);
             }
-            else if (IsVectorVariant2)
+            else if (VectorVariant2 is { } __value1)
             {
-                vectorVariant2?.Invoke(VectorVariant2!);
+                vectorVariant2?.Invoke(__value1);
             }
         }
 
