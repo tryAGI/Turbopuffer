@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public bool PickIncludeAttributesVariant1() => IsIncludeAttributesVariant1
-            ? IncludeAttributesVariant1!.Value
+        public bool PickIncludeAttributesVariant1() => IncludeAttributesVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IncludeAttributesVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickIncludeAttributesVariant2() => IsIncludeAttributesVariant2
-            ? IncludeAttributesVariant2!
+        public global::System.Collections.Generic.IList<string> PickIncludeAttributesVariant2() => IncludeAttributesVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IncludeAttributesVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsIncludeAttributesVariant1 && includeAttributesVariant1 != null)
+            if (IncludeAttributesVariant1 is { } __value0 && includeAttributesVariant1 != null)
             {
-                return includeAttributesVariant1(IncludeAttributesVariant1!);
+                return includeAttributesVariant1(__value0);
             }
-            else if (IsIncludeAttributesVariant2 && includeAttributesVariant2 != null)
+            else if (IncludeAttributesVariant2 is { } __value1 && includeAttributesVariant2 != null)
             {
-                return includeAttributesVariant2(IncludeAttributesVariant2!);
+                return includeAttributesVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsIncludeAttributesVariant1)
+            if (IncludeAttributesVariant1 is { } __value0)
             {
-                includeAttributesVariant1?.Invoke(IncludeAttributesVariant1!);
+                includeAttributesVariant1?.Invoke(__value0);
             }
-            else if (IsIncludeAttributesVariant2)
+            else if (IncludeAttributesVariant2 is { } __value1)
             {
-                includeAttributesVariant2?.Invoke(IncludeAttributesVariant2!);
+                includeAttributesVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsIncludeAttributesVariant1)
+            if (IncludeAttributesVariant1 is { } __value0)
             {
-                includeAttributesVariant1?.Invoke(IncludeAttributesVariant1!);
+                includeAttributesVariant1?.Invoke(__value0);
             }
-            else if (IsIncludeAttributesVariant2)
+            else if (IncludeAttributesVariant2 is { } __value1)
             {
-                includeAttributesVariant2?.Invoke(IncludeAttributesVariant2!);
+                includeAttributesVariant2?.Invoke(__value1);
             }
         }
 

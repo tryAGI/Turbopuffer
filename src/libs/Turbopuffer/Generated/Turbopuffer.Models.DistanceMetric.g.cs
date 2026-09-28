@@ -42,8 +42,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickDistanceMetricVariant1() => IsDistanceMetricVariant1
-            ? DistanceMetricVariant1!
+        public string PickDistanceMetricVariant1() => DistanceMetricVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DistanceMetricVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public string PickDistanceMetricVariant2() => IsDistanceMetricVariant2
-            ? DistanceMetricVariant2!
+        public string PickDistanceMetricVariant2() => DistanceMetricVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DistanceMetricVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsDistanceMetricVariant1 && distanceMetricVariant1 != null)
+            if (DistanceMetricVariant1 is { } __value0 && distanceMetricVariant1 != null)
             {
-                return distanceMetricVariant1(DistanceMetricVariant1!);
+                return distanceMetricVariant1(__value0);
             }
-            else if (IsDistanceMetricVariant2 && distanceMetricVariant2 != null)
+            else if (DistanceMetricVariant2 is { } __value1 && distanceMetricVariant2 != null)
             {
-                return distanceMetricVariant2(DistanceMetricVariant2!);
+                return distanceMetricVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsDistanceMetricVariant1)
+            if (DistanceMetricVariant1 is { } __value0)
             {
-                distanceMetricVariant1?.Invoke(DistanceMetricVariant1!);
+                distanceMetricVariant1?.Invoke(__value0);
             }
-            else if (IsDistanceMetricVariant2)
+            else if (DistanceMetricVariant2 is { } __value1)
             {
-                distanceMetricVariant2?.Invoke(DistanceMetricVariant2!);
+                distanceMetricVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (IsDistanceMetricVariant1)
+            if (DistanceMetricVariant1 is { } __value0)
             {
-                distanceMetricVariant1?.Invoke(DistanceMetricVariant1!);
+                distanceMetricVariant1?.Invoke(__value0);
             }
-            else if (IsDistanceMetricVariant2)
+            else if (DistanceMetricVariant2 is { } __value1)
             {
-                distanceMetricVariant2?.Invoke(DistanceMetricVariant2!);
+                distanceMetricVariant2?.Invoke(__value1);
             }
         }
 
