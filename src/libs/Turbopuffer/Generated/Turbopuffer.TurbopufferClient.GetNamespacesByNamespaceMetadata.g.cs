@@ -103,7 +103,7 @@ namespace Turbopuffer
             {
 
                             var __pathBuilder = new global::Turbopuffer.PathBuilder(
-                                path: $"/v1/namespaces/{@namespace}/metadata",
+                                path: $"/v2/namespaces/{@namespace}/metadata",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Turbopuffer.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -164,7 +164,7 @@ namespace Turbopuffer
                             context: global::Turbopuffer.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "getNamespacesByNamespaceMetadata",
                                 methodName: "GetNamespacesByNamespaceMetadataAsync",
-                                pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
+                                pathTemplate: "$\"/v2/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -198,7 +198,7 @@ namespace Turbopuffer
                             context: global::Turbopuffer.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "getNamespacesByNamespaceMetadata",
                                 methodName: "GetNamespacesByNamespaceMetadataAsync",
-                                pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
+                                pathTemplate: "$\"/v2/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -239,7 +239,7 @@ namespace Turbopuffer
                             context: global::Turbopuffer.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "getNamespacesByNamespaceMetadata",
                                 methodName: "GetNamespacesByNamespaceMetadataAsync",
-                                pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
+                                pathTemplate: "$\"/v2/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -287,7 +287,7 @@ namespace Turbopuffer
                             context: global::Turbopuffer.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "getNamespacesByNamespaceMetadata",
                                 methodName: "GetNamespacesByNamespaceMetadataAsync",
-                                pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
+                                pathTemplate: "$\"/v2/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -309,7 +309,7 @@ namespace Turbopuffer
                             context: global::Turbopuffer.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "getNamespacesByNamespaceMetadata",
                                 methodName: "GetNamespacesByNamespaceMetadataAsync",
-                                pathTemplate: "$\"/v1/namespaces/{@namespace}/metadata\"",
+                                pathTemplate: "$\"/v2/namespaces/{@namespace}/metadata\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),

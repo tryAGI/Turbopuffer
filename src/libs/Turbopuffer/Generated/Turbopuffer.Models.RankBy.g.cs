@@ -13,38 +13,112 @@ namespace Turbopuffer
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public byte[]? Vector { get; init; }
+        public byte[]? Ann { get; init; }
 #else
-        public byte[]? Vector { get; }
+        public byte[]? Ann { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Vector))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Ann))]
 #endif
-        public bool IsVector => Vector != null;
+        public bool IsAnn => Ann != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickVector(
+        public bool TryPickAnn(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out byte[]? value)
         {
-            value = Vector;
-            return IsVector;
+            value = Ann;
+            return IsAnn;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public byte[] PickVector() => Vector is { } value
+        public byte[] PickAnn() => Ann is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Vector' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Ann' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? AnnMulti { get; init; }
+#else
+        public byte[]? AnnMulti { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnnMulti))]
+#endif
+        public bool IsAnnMulti => AnnMulti != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAnnMulti(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = AnnMulti;
+            return IsAnnMulti;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickAnnMulti() => AnnMulti is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnnMulti' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? AnnExpr { get; init; }
+#else
+        public byte[]? AnnExpr { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnnExpr))]
+#endif
+        public bool IsAnnExpr => AnnExpr != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAnnExpr(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = AnnExpr;
+            return IsAnnExpr;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickAnnExpr() => AnnExpr is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnnExpr' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -82,6 +156,117 @@ namespace Turbopuffer
         public byte[] PickKnn() => Knn is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Knn' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? KnnMulti { get; init; }
+#else
+        public byte[]? KnnMulti { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(KnnMulti))]
+#endif
+        public bool IsKnnMulti => KnnMulti != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickKnnMulti(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = KnnMulti;
+            return IsKnnMulti;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickKnnMulti() => KnnMulti is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'KnnMulti' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? KnnExpr { get; init; }
+#else
+        public byte[]? KnnExpr { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(KnnExpr))]
+#endif
+        public bool IsKnnExpr => KnnExpr != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickKnnExpr(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = KnnExpr;
+            return IsKnnExpr;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickKnnExpr() => KnnExpr is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'KnnExpr' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? SparseKnn { get; init; }
+#else
+        public byte[]? SparseKnn { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SparseKnn))]
+#endif
+        public bool IsSparseKnn => SparseKnn != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickSparseKnn(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = SparseKnn;
+            return IsSparseKnn;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickSparseKnn() => SparseKnn is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SparseKnn' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -201,20 +386,20 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator byte[]?(RankBy @this) => @this.Vector;
+        public static implicit operator byte[]?(RankBy @this) => @this.Ann;
 
         /// <summary>
         ///
         /// </summary>
         public RankBy(byte[]? value)
         {
-            Vector = value;
+            Ann = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static RankBy FromVector(byte[]? value) => new RankBy(value);
+        public static RankBy FromAnn(byte[]? value) => new RankBy(value);
 
         /// <summary>
         ///
@@ -243,15 +428,25 @@ namespace Turbopuffer
         ///
         /// </summary>
         public RankBy(
-            byte[]? vector,
+            byte[]? ann,
+            byte[]? annMulti,
+            byte[]? annExpr,
             byte[]? knn,
+            byte[]? knnMulti,
+            byte[]? knnExpr,
+            byte[]? sparseKnn,
             global::Turbopuffer.RankByText? text,
             byte[]? attribute,
             global::System.Collections.Generic.IList<byte[]>? attributes
             )
         {
-            Vector = vector;
+            Ann = ann;
+            AnnMulti = annMulti;
+            AnnExpr = annExpr;
             Knn = knn;
+            KnnMulti = knnMulti;
+            KnnExpr = knnExpr;
+            SparseKnn = sparseKnn;
             Text = text;
             Attribute = attribute;
             Attributes = attributes;
@@ -264,16 +459,26 @@ namespace Turbopuffer
             Attributes as object ??
             Attribute as object ??
             Text as object ??
+            SparseKnn as object ??
+            KnnExpr as object ??
+            KnnMulti as object ??
             Knn as object ??
-            Vector as object
+            AnnExpr as object ??
+            AnnMulti as object ??
+            Ann as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Vector?.ToString() ??
+            Ann?.ToString() ??
+            AnnMulti?.ToString() ??
+            AnnExpr?.ToString() ??
             Knn?.ToString() ??
+            KnnMulti?.ToString() ??
+            KnnExpr?.ToString() ??
+            SparseKnn?.ToString() ??
             Text?.ToString() ??
             Attribute?.ToString() ??
             Attributes?.ToString()
@@ -284,15 +489,20 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsVector || IsKnn || IsText || IsAttribute || IsAttributes;
+            return IsAnn || IsAnnMulti || IsAnnExpr || IsKnn || IsKnnMulti || IsKnnExpr || IsSparseKnn || IsText || IsAttribute || IsAttributes;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<byte[], TResult>? vector = null,
+            global::System.Func<byte[], TResult>? ann = null,
+            global::System.Func<byte[], TResult>? annMulti = null,
+            global::System.Func<byte[], TResult>? annExpr = null,
             global::System.Func<byte[], TResult>? knn = null,
+            global::System.Func<byte[], TResult>? knnMulti = null,
+            global::System.Func<byte[], TResult>? knnExpr = null,
+            global::System.Func<byte[], TResult>? sparseKnn = null,
             global::System.Func<global::Turbopuffer.RankByText?, TResult>? text = null,
             global::System.Func<byte[], TResult>? attribute = null,
             global::System.Func<global::System.Collections.Generic.IList<byte[]>, TResult>? attributes = null,
@@ -303,25 +513,45 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (Vector is { } __value0 && vector != null)
+            if (Ann is { } __value0 && ann != null)
             {
-                return vector(__value0);
+                return ann(__value0);
             }
-            else if (Knn is { } __value1 && knn != null)
+            else if (AnnMulti is { } __value1 && annMulti != null)
             {
-                return knn(__value1);
+                return annMulti(__value1);
             }
-            else if (Text is { } __value2 && text != null)
+            else if (AnnExpr is { } __value2 && annExpr != null)
             {
-                return text(__value2);
+                return annExpr(__value2);
             }
-            else if (Attribute is { } __value3 && attribute != null)
+            else if (Knn is { } __value3 && knn != null)
             {
-                return attribute(__value3);
+                return knn(__value3);
             }
-            else if (Attributes is { } __value4 && attributes != null)
+            else if (KnnMulti is { } __value4 && knnMulti != null)
             {
-                return attributes(__value4);
+                return knnMulti(__value4);
+            }
+            else if (KnnExpr is { } __value5 && knnExpr != null)
+            {
+                return knnExpr(__value5);
+            }
+            else if (SparseKnn is { } __value6 && sparseKnn != null)
+            {
+                return sparseKnn(__value6);
+            }
+            else if (Text is { } __value7 && text != null)
+            {
+                return text(__value7);
+            }
+            else if (Attribute is { } __value8 && attribute != null)
+            {
+                return attribute(__value8);
+            }
+            else if (Attributes is { } __value9 && attributes != null)
+            {
+                return attributes(__value9);
             }
 
             return default(TResult);
@@ -331,9 +561,19 @@ namespace Turbopuffer
         ///
         /// </summary>
         public void Match(
-            global::System.Action<byte[]>? vector = null,
+            global::System.Action<byte[]>? ann = null,
+
+            global::System.Action<byte[]>? annMulti = null,
+
+            global::System.Action<byte[]>? annExpr = null,
 
             global::System.Action<byte[]>? knn = null,
+
+            global::System.Action<byte[]>? knnMulti = null,
+
+            global::System.Action<byte[]>? knnExpr = null,
+
+            global::System.Action<byte[]>? sparseKnn = null,
 
             global::System.Action<global::Turbopuffer.RankByText?>? text = null,
 
@@ -347,25 +587,45 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (Vector is { } __value0)
+            if (Ann is { } __value0)
             {
-                vector?.Invoke(__value0);
+                ann?.Invoke(__value0);
             }
-            else if (Knn is { } __value1)
+            else if (AnnMulti is { } __value1)
             {
-                knn?.Invoke(__value1);
+                annMulti?.Invoke(__value1);
             }
-            else if (Text is { } __value2)
+            else if (AnnExpr is { } __value2)
             {
-                text?.Invoke(__value2);
+                annExpr?.Invoke(__value2);
             }
-            else if (Attribute is { } __value3)
+            else if (Knn is { } __value3)
             {
-                attribute?.Invoke(__value3);
+                knn?.Invoke(__value3);
             }
-            else if (Attributes is { } __value4)
+            else if (KnnMulti is { } __value4)
             {
-                attributes?.Invoke(__value4);
+                knnMulti?.Invoke(__value4);
+            }
+            else if (KnnExpr is { } __value5)
+            {
+                knnExpr?.Invoke(__value5);
+            }
+            else if (SparseKnn is { } __value6)
+            {
+                sparseKnn?.Invoke(__value6);
+            }
+            else if (Text is { } __value7)
+            {
+                text?.Invoke(__value7);
+            }
+            else if (Attribute is { } __value8)
+            {
+                attribute?.Invoke(__value8);
+            }
+            else if (Attributes is { } __value9)
+            {
+                attributes?.Invoke(__value9);
             }
         }
 
@@ -373,8 +633,13 @@ namespace Turbopuffer
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<byte[]>? vector = null,
+            global::System.Action<byte[]>? ann = null,
+            global::System.Action<byte[]>? annMulti = null,
+            global::System.Action<byte[]>? annExpr = null,
             global::System.Action<byte[]>? knn = null,
+            global::System.Action<byte[]>? knnMulti = null,
+            global::System.Action<byte[]>? knnExpr = null,
+            global::System.Action<byte[]>? sparseKnn = null,
             global::System.Action<global::Turbopuffer.RankByText?>? text = null,
             global::System.Action<byte[]>? attribute = null,
             global::System.Action<global::System.Collections.Generic.IList<byte[]>>? attributes = null,
@@ -385,25 +650,45 @@ namespace Turbopuffer
                 Validate();
             }
 
-            if (Vector is { } __value0)
+            if (Ann is { } __value0)
             {
-                vector?.Invoke(__value0);
+                ann?.Invoke(__value0);
             }
-            else if (Knn is { } __value1)
+            else if (AnnMulti is { } __value1)
             {
-                knn?.Invoke(__value1);
+                annMulti?.Invoke(__value1);
             }
-            else if (Text is { } __value2)
+            else if (AnnExpr is { } __value2)
             {
-                text?.Invoke(__value2);
+                annExpr?.Invoke(__value2);
             }
-            else if (Attribute is { } __value3)
+            else if (Knn is { } __value3)
             {
-                attribute?.Invoke(__value3);
+                knn?.Invoke(__value3);
             }
-            else if (Attributes is { } __value4)
+            else if (KnnMulti is { } __value4)
             {
-                attributes?.Invoke(__value4);
+                knnMulti?.Invoke(__value4);
+            }
+            else if (KnnExpr is { } __value5)
+            {
+                knnExpr?.Invoke(__value5);
+            }
+            else if (SparseKnn is { } __value6)
+            {
+                sparseKnn?.Invoke(__value6);
+            }
+            else if (Text is { } __value7)
+            {
+                text?.Invoke(__value7);
+            }
+            else if (Attribute is { } __value8)
+            {
+                attribute?.Invoke(__value8);
+            }
+            else if (Attributes is { } __value9)
+            {
+                attributes?.Invoke(__value9);
             }
         }
 
@@ -414,9 +699,19 @@ namespace Turbopuffer
         {
             var fields = new object?[]
             {
-                Vector,
+                Ann,
+                typeof(byte[]),
+                AnnMulti,
+                typeof(byte[]),
+                AnnExpr,
                 typeof(byte[]),
                 Knn,
+                typeof(byte[]),
+                KnnMulti,
+                typeof(byte[]),
+                KnnExpr,
+                typeof(byte[]),
+                SparseKnn,
                 typeof(byte[]),
                 Text,
                 typeof(global::Turbopuffer.RankByText),
@@ -440,8 +735,13 @@ namespace Turbopuffer
         public bool Equals(RankBy other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(Vector, other.Vector) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(Ann, other.Ann) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AnnMulti, other.AnnMulti) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(AnnExpr, other.AnnExpr) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(Knn, other.Knn) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(KnnMulti, other.KnnMulti) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(KnnExpr, other.KnnExpr) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(SparseKnn, other.SparseKnn) &&
                 global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.RankByText?>.Default.Equals(Text, other.Text) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(Attribute, other.Attribute) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<byte[]>?>.Default.Equals(Attributes, other.Attributes)

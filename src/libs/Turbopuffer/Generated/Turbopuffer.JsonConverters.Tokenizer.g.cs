@@ -82,6 +82,17 @@ namespace Turbopuffer.JsonConverters
                     }
                 }
             }
+            var __score5 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(string), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score5++;
+                    }
+                }
+            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -89,12 +100,14 @@ namespace Turbopuffer.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
+            if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
 
             string? tokenizerVariant1 = default;
             string? tokenizerVariant2 = default;
             string? tokenizerVariant3 = default;
             string? tokenizerVariant4 = default;
             string? tokenizerVariant5 = default;
+            string? tokenizerVariant6 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -181,9 +194,26 @@ namespace Turbopuffer.JsonConverters
                     {
                     }
                 }
+
+                else if (__bestIndex == 5)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
+                        tokenizerVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
             }
 
-            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null)
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
             {
                 try
                 {
@@ -200,7 +230,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null)
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
             {
                 try
                 {
@@ -217,7 +247,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null)
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
             {
                 try
                 {
@@ -234,7 +264,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null)
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
             {
                 try
                 {
@@ -251,7 +281,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null)
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
             {
                 try
                 {
@@ -259,6 +289,23 @@ namespace Turbopuffer.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
                     tokenizerVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (tokenizerVariant1 == null && tokenizerVariant2 == null && tokenizerVariant3 == null && tokenizerVariant4 == null && tokenizerVariant5 == null && tokenizerVariant6 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
+                    tokenizerVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -277,7 +324,9 @@ namespace Turbopuffer.JsonConverters
 
                 tokenizerVariant4,
 
-                tokenizerVariant5
+                tokenizerVariant5,
+
+                tokenizerVariant6
                 );
 
             return __value;
@@ -321,6 +370,12 @@ namespace Turbopuffer.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTokenizerVariant5(), typeInfo);
+            }
+            else if (value.IsTokenizerVariant6)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTokenizerVariant6(), typeInfo);
             }
         }
     }

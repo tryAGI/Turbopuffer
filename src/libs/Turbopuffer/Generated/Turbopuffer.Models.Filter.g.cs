@@ -787,7 +787,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant21' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if all tokens in the input string are present in the attributes value. Requires that the attribute is configured for full-text search.
+        /// Fuzzy substring match against string values. Requires the fuzzy schema attribute to be enabled before use.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant22 { get; init; }
@@ -935,7 +935,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant25' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if any of the tokens in the input string are present in the attribute value. Requires that the attribute is configured for full-text search.
+        /// Matches if all tokens in the input string are present in the attributes value. Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant26 { get; init; }
@@ -972,7 +972,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant26' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if any of the tokens in the input string array are present in the attribute value. Requires that the attribute is configured for full-text search.
+        /// Matches if any of the tokens in the input string are present in the attribute value. Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant27 { get; init; }
@@ -1009,7 +1009,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant27' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if any of the tokens in the input string are present in the attribute value. Requires that the attribute is configured for full-text search.
+        /// Matches if any of the tokens in the input string array are present in the attribute value. Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant28 { get; init; }
@@ -1046,7 +1046,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant28' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if any of the tokens in the input string array are present in the attribute value. Requires that the attribute is configured for full-text search.
+        /// Matches if any of the tokens in the input string are present in the attribute value. Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant29 { get; init; }
@@ -1083,7 +1083,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant29' but the value was {ToString()}.");
 
         /// <summary>
-        /// Matches if all the tokens in the input string are present in the attribute value, in the correct order (i.e., as a phrase). Requires that the attribute is configured for full-text search.
+        /// Matches if any of the tokens in the input string array are present in the attribute value. Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant30 { get; init; }
@@ -1157,7 +1157,7 @@ namespace Turbopuffer
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant31' but the value was {ToString()}.");
 
         /// <summary>
-        ///
+        /// Matches if all the tokens in the input string are present in the attribute value, in the correct order (i.e., as a phrase). Requires that the attribute is configured for full-text search.
         /// </summary>
 #if NET6_0_OR_GREATER
         public byte[]? FilterVariant32 { get; init; }
@@ -1266,6 +1266,43 @@ namespace Turbopuffer
         public byte[] PickFilterVariant34() => FilterVariant34 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant34' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public byte[]? FilterVariant35 { get; init; }
+#else
+        public byte[]? FilterVariant35 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FilterVariant35))]
+#endif
+        public bool IsFilterVariant35 => FilterVariant35 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickFilterVariant35(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out byte[]? value)
+        {
+            value = FilterVariant35;
+            return IsFilterVariant35;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[] PickFilterVariant35() => FilterVariant35 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FilterVariant35' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -1326,7 +1363,8 @@ namespace Turbopuffer
             byte[]? filterVariant31,
             byte[]? filterVariant32,
             byte[]? filterVariant33,
-            byte[]? filterVariant34
+            byte[]? filterVariant34,
+            byte[]? filterVariant35
             )
         {
             FilterVariant1 = filterVariant1;
@@ -1363,12 +1401,14 @@ namespace Turbopuffer
             FilterVariant32 = filterVariant32;
             FilterVariant33 = filterVariant33;
             FilterVariant34 = filterVariant34;
+            FilterVariant35 = filterVariant35;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            FilterVariant35 as object ??
             FilterVariant34 as object ??
             FilterVariant33 as object ??
             FilterVariant32 as object ??
@@ -1442,7 +1482,8 @@ namespace Turbopuffer
             FilterVariant31?.ToString() ??
             FilterVariant32?.ToString() ??
             FilterVariant33?.ToString() ??
-            FilterVariant34?.ToString()
+            FilterVariant34?.ToString() ??
+            FilterVariant35?.ToString()
             ;
 
         /// <summary>
@@ -1450,7 +1491,7 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsFilterVariant1 || IsFilterVariant2 || IsFilterVariant3 || IsFilterVariant4 || IsFilterVariant5 || IsFilterVariant6 || IsFilterVariant7 || IsFilterVariant8 || IsFilterVariant9 || IsFilterVariant10 || IsFilterVariant11 || IsFilterVariant12 || IsFilterVariant13 || IsFilterVariant14 || IsFilterVariant15 || IsFilterVariant16 || IsFilterVariant17 || IsFilterVariant18 || IsFilterVariant19 || IsFilterVariant20 || IsFilterVariant21 || IsFilterVariant22 || IsFilterVariant23 || IsFilterVariant24 || IsFilterVariant25 || IsFilterVariant26 || IsFilterVariant27 || IsFilterVariant28 || IsFilterVariant29 || IsFilterVariant30 || IsFilterVariant31 || IsFilterVariant32 || IsFilterVariant33 || IsFilterVariant34;
+            return IsFilterVariant1 || IsFilterVariant2 || IsFilterVariant3 || IsFilterVariant4 || IsFilterVariant5 || IsFilterVariant6 || IsFilterVariant7 || IsFilterVariant8 || IsFilterVariant9 || IsFilterVariant10 || IsFilterVariant11 || IsFilterVariant12 || IsFilterVariant13 || IsFilterVariant14 || IsFilterVariant15 || IsFilterVariant16 || IsFilterVariant17 || IsFilterVariant18 || IsFilterVariant19 || IsFilterVariant20 || IsFilterVariant21 || IsFilterVariant22 || IsFilterVariant23 || IsFilterVariant24 || IsFilterVariant25 || IsFilterVariant26 || IsFilterVariant27 || IsFilterVariant28 || IsFilterVariant29 || IsFilterVariant30 || IsFilterVariant31 || IsFilterVariant32 || IsFilterVariant33 || IsFilterVariant34 || IsFilterVariant35;
         }
 
         /// <summary>
@@ -1491,6 +1532,7 @@ namespace Turbopuffer
             global::System.Func<byte[], TResult>? filterVariant32 = null,
             global::System.Func<byte[], TResult>? filterVariant33 = null,
             global::System.Func<byte[], TResult>? filterVariant34 = null,
+            global::System.Func<byte[], TResult>? filterVariant35 = null,
             bool validate = true)
         {
             if (validate)
@@ -1634,6 +1676,10 @@ namespace Turbopuffer
             {
                 return filterVariant34(__value33);
             }
+            else if (FilterVariant35 is { } __value34 && filterVariant35 != null)
+            {
+                return filterVariant35(__value34);
+            }
 
             return default(TResult);
         }
@@ -1709,6 +1755,8 @@ namespace Turbopuffer
             global::System.Action<byte[]>? filterVariant33 = null,
 
             global::System.Action<byte[]>? filterVariant34 = null,
+
+            global::System.Action<byte[]>? filterVariant35 = null,
             bool validate = true)
         {
             if (validate)
@@ -1851,6 +1899,10 @@ namespace Turbopuffer
             else if (FilterVariant34 is { } __value33)
             {
                 filterVariant34?.Invoke(__value33);
+            }
+            else if (FilterVariant35 is { } __value34)
+            {
+                filterVariant35?.Invoke(__value34);
             }
         }
 
@@ -1892,6 +1944,7 @@ namespace Turbopuffer
             global::System.Action<byte[]>? filterVariant32 = null,
             global::System.Action<byte[]>? filterVariant33 = null,
             global::System.Action<byte[]>? filterVariant34 = null,
+            global::System.Action<byte[]>? filterVariant35 = null,
             bool validate = true)
         {
             if (validate)
@@ -2034,6 +2087,10 @@ namespace Turbopuffer
             else if (FilterVariant34 is { } __value33)
             {
                 filterVariant34?.Invoke(__value33);
+            }
+            else if (FilterVariant35 is { } __value34)
+            {
+                filterVariant35?.Invoke(__value34);
             }
         }
 
@@ -2112,6 +2169,8 @@ namespace Turbopuffer
                 typeof(byte[]),
                 FilterVariant34,
                 typeof(byte[]),
+                FilterVariant35,
+                typeof(byte[]),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -2161,7 +2220,8 @@ namespace Turbopuffer
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant31, other.FilterVariant31) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant32, other.FilterVariant32) &&
                 global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant33, other.FilterVariant33) &&
-                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant34, other.FilterVariant34)
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant34, other.FilterVariant34) &&
+                global::System.Collections.Generic.EqualityComparer<byte[]?>.Default.Equals(FilterVariant35, other.FilterVariant35)
                 ;
         }
 

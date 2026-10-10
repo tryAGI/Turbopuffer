@@ -44,12 +44,12 @@ namespace Turbopuffer
         public required global::System.DateTime UpdatedAt { get; set; }
 
         /// <summary>
-        ///
+        /// The encryption configuration for a namespace.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("encryption")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.EncryptionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2> Encryption { get; set; }
+        public required global::Turbopuffer.Encryption Encryption { get; set; }
 
         /// <summary>
         ///
@@ -58,6 +58,26 @@ namespace Turbopuffer
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating>))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating> Index { get; set; }
+
+        /// <summary>
+        /// Configuration for namespace pinning, along with the current status of the pinned namespace.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pinning")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.PinningConfigResponseJsonConverter))]
+        public global::Turbopuffer.PinningConfigResponse? Pinning { get; set; }
+
+        /// <summary>
+        /// Configuration for namespace sharding, which partitions a namespace's documents across multiple internal shards to scale indexing and query throughput beyond a single machine.<br/>
+        /// Sharding can only be configured on a namespace's inaugural write, and cannot be added to or changed on an existing namespace.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sharding")]
+        public global::Turbopuffer.ShardingConfig? Sharding { get; set; }
+
+        /// <summary>
+        /// Whether document and schema writes are rejected. Omitted when `false`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("read_only")]
+        public bool? ReadOnly { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -83,8 +103,20 @@ namespace Turbopuffer
         /// <param name="updatedAt">
         /// The timestamp when the namespace was last modified by a write operation.
         /// </param>
-        /// <param name="encryption"></param>
+        /// <param name="encryption">
+        /// The encryption configuration for a namespace.
+        /// </param>
         /// <param name="index"></param>
+        /// <param name="pinning">
+        /// Configuration for namespace pinning, along with the current status of the pinned namespace.
+        /// </param>
+        /// <param name="sharding">
+        /// Configuration for namespace sharding, which partitions a namespace's documents across multiple internal shards to scale indexing and query throughput beyond a single machine.<br/>
+        /// Sharding can only be configured on a namespace's inaugural write, and cannot be added to or changed on an existing namespace.
+        /// </param>
+        /// <param name="readOnly">
+        /// Whether document and schema writes are rejected. Omitted when `false`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -94,8 +126,11 @@ namespace Turbopuffer
             long approxLogicalBytes,
             global::System.DateTime createdAt,
             global::System.DateTime updatedAt,
-            global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataEncryptionVariant1, global::Turbopuffer.NamespaceMetadataEncryptionVariant2> encryption,
-            global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating> index)
+            global::Turbopuffer.Encryption encryption,
+            global::Turbopuffer.OneOf<global::Turbopuffer.NamespaceMetadataIndexIndexUpToDate, global::Turbopuffer.NamespaceMetadataIndexIndexUpdating> index,
+            global::Turbopuffer.PinningConfigResponse? pinning,
+            global::Turbopuffer.ShardingConfig? sharding,
+            bool? readOnly)
         {
             this.Schema = schema ?? throw new global::System.ArgumentNullException(nameof(schema));
             this.ApproxRowCount = approxRowCount;
@@ -104,6 +139,9 @@ namespace Turbopuffer
             this.UpdatedAt = updatedAt;
             this.Encryption = encryption;
             this.Index = index;
+            this.Pinning = pinning;
+            this.Sharding = sharding;
+            this.ReadOnly = readOnly;
         }
 
         /// <summary>
