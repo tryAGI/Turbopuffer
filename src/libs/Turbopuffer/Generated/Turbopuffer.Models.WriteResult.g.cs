@@ -79,6 +79,12 @@ namespace Turbopuffer
         public required global::Turbopuffer.WriteBilling Billing { get; set; }
 
         /// <summary>
+        /// The performance information for a write request.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("performance")]
+        public global::Turbopuffer.WritePerformance? Performance { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -117,6 +123,9 @@ namespace Turbopuffer
         /// <param name="deletedIds">
         /// The IDs of documents that were deleted. Only included when `return_affected_ids` is true and at least one document was deleted.
         /// </param>
+        /// <param name="performance">
+        /// The performance information for a write request.
+        /// </param>
         /// <param name="status">
         /// The status of the request.
         /// </param>
@@ -134,6 +143,7 @@ namespace Turbopuffer
             global::System.Collections.Generic.IList<global::Turbopuffer.Id>? upsertedIds,
             global::System.Collections.Generic.IList<global::Turbopuffer.Id>? patchedIds,
             global::System.Collections.Generic.IList<global::Turbopuffer.Id>? deletedIds,
+            global::Turbopuffer.WritePerformance? performance,
             string status = "OK")
         {
             this.Status = status;
@@ -147,6 +157,7 @@ namespace Turbopuffer
             this.PatchedIds = patchedIds;
             this.DeletedIds = deletedIds;
             this.Billing = billing ?? throw new global::System.ArgumentNullException(nameof(billing));
+            this.Performance = performance;
         }
 
         /// <summary>
