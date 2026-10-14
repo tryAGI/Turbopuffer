@@ -16,6 +16,12 @@ namespace Turbopuffer
         public global::Turbopuffer.DistanceMetric? DistanceMetric { get; set; }
 
         /// <summary>
+        /// Opt in to late-interaction (MUVERA) indexing. Only valid on fixed-dim `[][N]f32` vector array attributes, and is required to enable an ANN index on such attributes. Defaults to `false`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("late_interaction")]
+        public bool? LateInteraction { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -27,13 +33,18 @@ namespace Turbopuffer
         /// <param name="distanceMetric">
         /// A function used to calculate vector similarity.
         /// </param>
+        /// <param name="lateInteraction">
+        /// Opt in to late-interaction (MUVERA) indexing. Only valid on fixed-dim `[][N]f32` vector array attributes, and is required to enable an ANN index on such attributes. Defaults to `false`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AnnConfig(
-            global::Turbopuffer.DistanceMetric? distanceMetric)
+            global::Turbopuffer.DistanceMetric? distanceMetric,
+            bool? lateInteraction)
         {
             this.DistanceMetric = distanceMetric;
+            this.LateInteraction = lateInteraction;
         }
 
         /// <summary>

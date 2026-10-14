@@ -401,6 +401,17 @@ namespace Turbopuffer.JsonConverters
                     }
                 }
             }
+            var __score34 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(byte[]), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score34++;
+                    }
+                }
+            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -437,6 +448,7 @@ namespace Turbopuffer.JsonConverters
             if (__score31 > __bestScore) { __bestScore = __score31; __bestIndex = 31; }
             if (__score32 > __bestScore) { __bestScore = __score32; __bestIndex = 32; }
             if (__score33 > __bestScore) { __bestScore = __score33; __bestIndex = 33; }
+            if (__score34 > __bestScore) { __bestScore = __score34; __bestIndex = 34; }
 
             byte[]? filterVariant1 = default;
             byte[]? filterVariant2 = default;
@@ -472,6 +484,7 @@ namespace Turbopuffer.JsonConverters
             byte[]? filterVariant32 = default;
             byte[]? filterVariant33 = default;
             byte[]? filterVariant34 = default;
+            byte[]? filterVariant35 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -1051,9 +1064,26 @@ namespace Turbopuffer.JsonConverters
                     {
                     }
                 }
+
+                else if (__bestIndex == 34)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
+                        filterVariant35 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1070,7 +1100,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1087,7 +1117,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1104,7 +1134,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1121,7 +1151,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1138,7 +1168,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1155,7 +1185,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1172,7 +1202,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1189,7 +1219,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1206,7 +1236,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1223,7 +1253,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1240,7 +1270,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1257,7 +1287,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1274,7 +1304,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1291,7 +1321,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1308,7 +1338,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1325,7 +1355,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1342,7 +1372,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1359,7 +1389,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1376,7 +1406,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1393,7 +1423,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1410,7 +1440,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1427,7 +1457,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1444,7 +1474,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1461,7 +1491,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1478,7 +1508,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1495,7 +1525,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1512,7 +1542,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1529,7 +1559,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1546,7 +1576,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1563,7 +1593,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1580,7 +1610,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1597,7 +1627,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1614,7 +1644,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
             {
                 try
                 {
@@ -1622,6 +1652,23 @@ namespace Turbopuffer.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
                     filterVariant34 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null && filterVariant35 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
+                    filterVariant35 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -1698,7 +1745,9 @@ namespace Turbopuffer.JsonConverters
 
                 filterVariant33,
 
-                filterVariant34
+                filterVariant34,
+
+                filterVariant35
                 );
 
             return __value;
@@ -1916,6 +1965,12 @@ namespace Turbopuffer.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFilterVariant34(), typeInfo);
+            }
+            else if (value.IsFilterVariant35)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(byte[]), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<byte[]?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(byte[]).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFilterVariant35(), typeInfo);
             }
         }
     }

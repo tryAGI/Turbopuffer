@@ -21,6 +21,12 @@ namespace Turbopuffer
         public int? TopK { get; set; }
 
         /// <summary>
+        /// Number of documents to skip before returning results. Supported only in v2 queries with an explicit `rank_by` and `top_k` or `limit`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("offset")]
+        public int? Offset { get; set; }
+
+        /// <summary>
         /// Exact filters for attributes to refine search results for. Think of it as a SQL WHERE clause.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filters")]
@@ -49,7 +55,13 @@ namespace Turbopuffer
         /// Groups documents by the specified attributes (the "group key") before computing aggregates. Aggregates are computed separately for each group.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("group_by")]
-        public global::System.Collections.Generic.IList<string>? GroupBy { get; set; }
+        public global::System.Collections.Generic.IList<object>? GroupBy { get; set; }
+
+        /// <summary>
+        /// Computes additional values on documents returned by a query. Each key is the name of the computed attribute; each value is an expression describing how to compute it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("compute_attributes")]
+        public object? ComputeAttributes { get; set; }
 
         /// <summary>
         /// A function used to calculate vector similarity.
@@ -80,6 +92,9 @@ namespace Turbopuffer
         /// <param name="topK">
         /// The number of results to return.
         /// </param>
+        /// <param name="offset">
+        /// Number of documents to skip before returning results. Supported only in v2 queries with an explicit `rank_by` and `top_k` or `limit`.
+        /// </param>
         /// <param name="filters">
         /// Exact filters for attributes to refine search results for. Think of it as a SQL WHERE clause.
         /// </param>
@@ -95,6 +110,9 @@ namespace Turbopuffer
         /// <param name="groupBy">
         /// Groups documents by the specified attributes (the "group key") before computing aggregates. Aggregates are computed separately for each group.
         /// </param>
+        /// <param name="computeAttributes">
+        /// Computes additional values on documents returned by a query. Each key is the name of the computed attribute; each value is an expression describing how to compute it.
+        /// </param>
         /// <param name="distanceMetric">
         /// A function used to calculate vector similarity.
         /// </param>
@@ -105,21 +123,25 @@ namespace Turbopuffer
         public Query(
             object? rankBy,
             int? topK,
+            int? offset,
             object? filters,
             global::Turbopuffer.IncludeAttributes? includeAttributes,
             global::System.Collections.Generic.IList<string>? excludeAttributes,
             object? aggregateBy,
-            global::System.Collections.Generic.IList<string>? groupBy,
+            global::System.Collections.Generic.IList<object>? groupBy,
+            object? computeAttributes,
             global::Turbopuffer.DistanceMetric? distanceMetric,
             global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit2>? limit)
         {
             this.RankBy = rankBy;
             this.TopK = topK;
+            this.Offset = offset;
             this.Filters = filters;
             this.IncludeAttributes = includeAttributes;
             this.ExcludeAttributes = excludeAttributes;
             this.AggregateBy = aggregateBy;
             this.GroupBy = groupBy;
+            this.ComputeAttributes = computeAttributes;
             this.DistanceMetric = distanceMetric;
             this.Limit = limit;
         }

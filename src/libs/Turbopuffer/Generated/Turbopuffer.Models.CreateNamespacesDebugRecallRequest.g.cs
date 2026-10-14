@@ -34,6 +34,12 @@ namespace Turbopuffer
         public bool? IncludeGroundTruth { get; set; }
 
         /// <summary>
+        /// The ranking function to evaluate recall for. If provided, `num` must be either null or 1.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rank_by")]
+        public object? RankBy { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -55,6 +61,9 @@ namespace Turbopuffer
         /// Include ground truth data (query vectors and true nearest neighbors) in the response.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="rankBy">
+        /// The ranking function to evaluate recall for. If provided, `num` must be either null or 1.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,12 +71,14 @@ namespace Turbopuffer
             int? num,
             int? topK,
             object? filters,
-            bool? includeGroundTruth)
+            bool? includeGroundTruth,
+            object? rankBy)
         {
             this.Num = num;
             this.TopK = topK;
             this.Filters = filters;
             this.IncludeGroundTruth = includeGroundTruth;
+            this.RankBy = rankBy;
         }
 
         /// <summary>

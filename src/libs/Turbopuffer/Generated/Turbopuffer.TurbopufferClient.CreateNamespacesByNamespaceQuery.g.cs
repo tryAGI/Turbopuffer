@@ -28,12 +28,12 @@ namespace Turbopuffer
         partial void PrepareCreateNamespacesByNamespaceQueryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string @namespace,
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request);
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request);
         partial void PrepareCreateNamespacesByNamespaceQueryRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string @namespace,
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request);
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request);
         partial void ProcessCreateNamespacesByNamespaceQueryResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -54,7 +54,7 @@ namespace Turbopuffer
         public async global::System.Threading.Tasks.Task<global::Turbopuffer.QueryResult> CreateNamespacesByNamespaceQueryAsync(
             string @namespace,
 
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request,
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -79,7 +79,7 @@ namespace Turbopuffer
         public async global::System.Threading.Tasks.Task<global::Turbopuffer.AutoSDKHttpResponse<global::Turbopuffer.QueryResult>> CreateNamespacesByNamespaceQueryAsResponseAsync(
             string @namespace,
 
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request,
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -487,7 +487,7 @@ namespace Turbopuffer
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>
+            var __request = new global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2>
             {
             };
 

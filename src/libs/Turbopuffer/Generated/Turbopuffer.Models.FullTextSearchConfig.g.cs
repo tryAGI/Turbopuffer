@@ -58,7 +58,7 @@ namespace Turbopuffer
         public long? MaxTokenLength { get; set; }
 
         /// <summary>
-        /// The tokenizer to use for full-text search on an attribute. Defaults to `word_v3`.
+        /// The tokenizer to use for full-text search on an attribute. Defaults to `word_v4`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenizer")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.TokenizerJsonConverter))]
@@ -98,7 +98,7 @@ namespace Turbopuffer
         /// Maximum length of a token in bytes. Tokens larger than this value during tokenization will be filtered out. Has to be between `1` and `254` (inclusive). Defaults to `39`.
         /// </param>
         /// <param name="tokenizer">
-        /// The tokenizer to use for full-text search on an attribute. Defaults to `word_v3`.
+        /// The tokenizer to use for full-text search on an attribute. Defaults to `word_v4`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

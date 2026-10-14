@@ -72,9 +72,16 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("branch_from_namespace")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.BranchFromNamespaceParamsJsonConverter))]
+        public global::Turbopuffer.BranchFromNamespaceParams? BranchFromNamespace { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("copy_from_namespace")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<string, global::Turbopuffer.WriteCopyFromNamespace>))]
-        public global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>? CopyFromNamespace { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.CopyFromNamespaceParamsJsonConverter))]
+        public global::Turbopuffer.CopyFromNamespaceParams? CopyFromNamespace { get; set; }
 
         /// <summary>
         /// The filter specifying which documents to delete.
@@ -111,13 +118,27 @@ namespace Turbopuffer
         /// The encryption configuration for a namespace.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("encryption")]
-        public global::Turbopuffer.Encryption2? Encryption { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.EncryptionJsonConverter))]
+        public global::Turbopuffer.Encryption? Encryption { get; set; }
+
+        /// <summary>
+        /// Configuration for namespace sharding, which partitions a namespace's documents across multiple internal shards to scale indexing and query throughput beyond a single machine.<br/>
+        /// Sharding can only be configured on a namespace's inaugural write, and cannot be added to or changed on an existing namespace.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sharding")]
+        public global::Turbopuffer.ShardingConfig? Sharding { get; set; }
 
         /// <summary>
         /// Disables write throttling (HTTP 429 responses) during high-volume ingestion.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disable_backpressure")]
         public bool? DisableBackpressure { get; set; }
+
+        /// <summary>
+        /// If `true`, ensures the namespace is created, even if the request writes no documents. Creating an empty namespace requires the `id` type to be declared in `schema`. If `false`, a namespace is never created, and a 404 is returned if it does not exist. If omitted, a namespace is created by the first request that writes documents.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("create_namespace")]
+        public bool? CreateNamespace { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -152,6 +173,7 @@ namespace Turbopuffer
         /// <param name="schema">
         /// The schema of the attributes attached to the documents.
         /// </param>
+        /// <param name="branchFromNamespace"></param>
         /// <param name="copyFromNamespace"></param>
         /// <param name="deleteByFilter">
         /// The filter specifying which documents to delete.
@@ -172,8 +194,15 @@ namespace Turbopuffer
         /// <param name="encryption">
         /// The encryption configuration for a namespace.
         /// </param>
+        /// <param name="sharding">
+        /// Configuration for namespace sharding, which partitions a namespace's documents across multiple internal shards to scale indexing and query throughput beyond a single machine.<br/>
+        /// Sharding can only be configured on a namespace's inaugural write, and cannot be added to or changed on an existing namespace.
+        /// </param>
         /// <param name="disableBackpressure">
         /// Disables write throttling (HTTP 429 responses) during high-volume ingestion.
+        /// </param>
+        /// <param name="createNamespace">
+        /// If `true`, ensures the namespace is created, even if the request writes no documents. Creating an empty namespace requires the `id` type to be declared in `schema`. If `false`, a namespace is never created, and a 404 is returned if it does not exist. If omitted, a namespace is created by the first request that writes documents.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -189,14 +218,17 @@ namespace Turbopuffer
             object? deleteCondition,
             global::Turbopuffer.DistanceMetric? distanceMetric,
             global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>? schema,
-            global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>? copyFromNamespace,
+            global::Turbopuffer.BranchFromNamespaceParams? branchFromNamespace,
+            global::Turbopuffer.CopyFromNamespaceParams? copyFromNamespace,
             object? deleteByFilter,
             bool? deleteByFilterAllowPartial,
             global::Turbopuffer.PatchByFilter? patchByFilter,
             bool? patchByFilterAllowPartial,
             bool? returnAffectedIds,
-            global::Turbopuffer.Encryption2? encryption,
-            bool? disableBackpressure)
+            global::Turbopuffer.Encryption? encryption,
+            global::Turbopuffer.ShardingConfig? sharding,
+            bool? disableBackpressure,
+            bool? createNamespace)
         {
             this.UpsertColumns = upsertColumns;
             this.UpsertRows = upsertRows;
@@ -208,6 +240,7 @@ namespace Turbopuffer
             this.DeleteCondition = deleteCondition;
             this.DistanceMetric = distanceMetric;
             this.Schema = schema;
+            this.BranchFromNamespace = branchFromNamespace;
             this.CopyFromNamespace = copyFromNamespace;
             this.DeleteByFilter = deleteByFilter;
             this.DeleteByFilterAllowPartial = deleteByFilterAllowPartial;
@@ -215,7 +248,9 @@ namespace Turbopuffer
             this.PatchByFilterAllowPartial = patchByFilterAllowPartial;
             this.ReturnAffectedIds = returnAffectedIds;
             this.Encryption = encryption;
+            this.Sharding = sharding;
             this.DisableBackpressure = disableBackpressure;
+            this.CreateNamespace = createNamespace;
         }
 
         /// <summary>

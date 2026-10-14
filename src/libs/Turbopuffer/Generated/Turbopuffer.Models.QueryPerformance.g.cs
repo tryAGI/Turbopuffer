@@ -51,6 +51,18 @@ namespace Turbopuffer
         public required int ApproxNamespaceSize { get; set; }
 
         /// <summary>
+        /// The number of tokens embedded. Only set when using a native embedding model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("embedding_tokens")]
+        public int? EmbeddingTokens { get; set; }
+
+        /// <summary>
+        /// Time spent embedding text, in milliseconds. Only set when using a native embedding model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("embedding_ms")]
+        public int? EmbeddingMs { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -77,6 +89,12 @@ namespace Turbopuffer
         /// <param name="approxNamespaceSize">
         /// the approximate number of documents in the namespace.
         /// </param>
+        /// <param name="embeddingTokens">
+        /// The number of tokens embedded. Only set when using a native embedding model.
+        /// </param>
+        /// <param name="embeddingMs">
+        /// Time spent embedding text, in milliseconds. Only set when using a native embedding model.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -86,7 +104,9 @@ namespace Turbopuffer
             int serverTotalMs,
             int queryExecutionMs,
             int exhaustiveSearchCount,
-            int approxNamespaceSize)
+            int approxNamespaceSize,
+            int? embeddingTokens,
+            int? embeddingMs)
         {
             this.CacheHitRatio = cacheHitRatio;
             this.CacheTemperature = cacheTemperature ?? throw new global::System.ArgumentNullException(nameof(cacheTemperature));
@@ -94,6 +114,8 @@ namespace Turbopuffer
             this.QueryExecutionMs = queryExecutionMs;
             this.ExhaustiveSearchCount = exhaustiveSearchCount;
             this.ApproxNamespaceSize = approxNamespaceSize;
+            this.EmbeddingTokens = embeddingTokens;
+            this.EmbeddingMs = embeddingMs;
         }
 
         /// <summary>

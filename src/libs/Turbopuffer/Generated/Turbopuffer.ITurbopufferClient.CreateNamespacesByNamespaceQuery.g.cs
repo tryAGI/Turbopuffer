@@ -15,7 +15,7 @@ namespace Turbopuffer
         global::System.Threading.Tasks.Task<global::Turbopuffer.QueryResult> CreateNamespacesByNamespaceQueryAsync(
             string @namespace,
 
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request,
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -29,7 +29,7 @@ namespace Turbopuffer
         global::System.Threading.Tasks.Task<global::Turbopuffer.AutoSDKHttpResponse<global::Turbopuffer.QueryResult>> CreateNamespacesByNamespaceQueryAsResponseAsync(
             string @namespace,
 
-            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query> request,
+            global::Turbopuffer.AllOf<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query, global::Turbopuffer.CreateNamespacesQueryRequest2> request,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>

@@ -23,6 +23,13 @@ namespace Turbopuffer
         public required long UnindexedBytes { get; set; }
 
         /// <summary>
+        /// The number of rows in the write-ahead log that have not yet been indexed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("unindexed_rows")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required int UnindexedRows { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -34,16 +41,21 @@ namespace Turbopuffer
         /// <param name="unindexedBytes">
         /// The number of bytes in the namespace that are in the write-ahead log but have not yet been indexed.
         /// </param>
+        /// <param name="unindexedRows">
+        /// The number of rows in the write-ahead log that have not yet been indexed.
+        /// </param>
         /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamespaceMetadataIndexIndexUpdating(
             long unindexedBytes,
+            int unindexedRows,
             string status = "updating")
         {
             this.Status = status;
             this.UnindexedBytes = unindexedBytes;
+            this.UnindexedRows = unindexedRows;
         }
 
         /// <summary>
@@ -51,18 +63,6 @@ namespace Turbopuffer
         /// </summary>
         public NamespaceMetadataIndexIndexUpdating()
         {
-        }
-
-        /// <summary>
-        /// Creates a new <see cref="NamespaceMetadataIndexIndexUpdating"/> from its single non-const required field,
-        /// hardcoding any const discriminator fields.
-        /// </summary>
-        public static NamespaceMetadataIndexIndexUpdating FromUnindexedBytes(long unindexedBytes)
-        {
-            return new NamespaceMetadataIndexIndexUpdating
-            {
-                UnindexedBytes = unindexedBytes,
-            };
         }
 
     }

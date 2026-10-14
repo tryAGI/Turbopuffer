@@ -505,6 +505,7 @@ namespace Turbopuffer
         /// <param name="schema">
         /// The schema of the attributes attached to the documents.
         /// </param>
+        /// <param name="branchFromNamespace"></param>
         /// <param name="copyFromNamespace"></param>
         /// <param name="deleteByFilter">
         /// The filter specifying which documents to delete.
@@ -525,8 +526,15 @@ namespace Turbopuffer
         /// <param name="encryption">
         /// The encryption configuration for a namespace.
         /// </param>
+        /// <param name="sharding">
+        /// Configuration for namespace sharding, which partitions a namespace's documents across multiple internal shards to scale indexing and query throughput beyond a single machine.<br/>
+        /// Sharding can only be configured on a namespace's inaugural write, and cannot be added to or changed on an existing namespace.
+        /// </param>
         /// <param name="disableBackpressure">
         /// Disables write throttling (HTTP 429 responses) during high-volume ingestion.
+        /// </param>
+        /// <param name="createNamespace">
+        /// If `true`, ensures the namespace is created, even if the request writes no documents. Creating an empty namespace requires the `id` type to be declared in `schema`. If `false`, a namespace is never created, and a 404 is returned if it does not exist. If omitted, a namespace is created by the first request that writes documents.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -543,14 +551,17 @@ namespace Turbopuffer
             object? deleteCondition = default,
             global::Turbopuffer.DistanceMetric? distanceMetric = default,
             global::System.Collections.Generic.Dictionary<string, global::Turbopuffer.AttributeSchema>? schema = default,
-            global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>? copyFromNamespace = default,
+            global::Turbopuffer.BranchFromNamespaceParams? branchFromNamespace = default,
+            global::Turbopuffer.CopyFromNamespaceParams? copyFromNamespace = default,
             object? deleteByFilter = default,
             bool? deleteByFilterAllowPartial = default,
             global::Turbopuffer.PatchByFilter? patchByFilter = default,
             bool? patchByFilterAllowPartial = default,
             bool? returnAffectedIds = default,
-            global::Turbopuffer.Encryption2? encryption = default,
+            global::Turbopuffer.Encryption? encryption = default,
+            global::Turbopuffer.ShardingConfig? sharding = default,
             bool? disableBackpressure = default,
+            bool? createNamespace = default,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -566,6 +577,7 @@ namespace Turbopuffer
                 DeleteCondition = deleteCondition,
                 DistanceMetric = distanceMetric,
                 Schema = schema,
+                BranchFromNamespace = branchFromNamespace,
                 CopyFromNamespace = copyFromNamespace,
                 DeleteByFilter = deleteByFilter,
                 DeleteByFilterAllowPartial = deleteByFilterAllowPartial,
@@ -573,7 +585,9 @@ namespace Turbopuffer
                 PatchByFilterAllowPartial = patchByFilterAllowPartial,
                 ReturnAffectedIds = returnAffectedIds,
                 Encryption = encryption,
+                Sharding = sharding,
                 DisableBackpressure = disableBackpressure,
+                CreateNamespace = createNamespace,
             };
 
             return await CreateNamespacesByNamespaceAsync(

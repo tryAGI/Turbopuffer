@@ -82,6 +82,43 @@ namespace Turbopuffer
         public global::Turbopuffer.AttributeSchemaConfig PickConfig() => Config is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Config' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Drops the attribute from the namespace. Cannot be combined with other schema settings.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Turbopuffer.AttributeSchemaDrop? Drop { get; init; }
+#else
+        public global::Turbopuffer.AttributeSchemaDrop? Drop { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Drop))]
+#endif
+        public bool IsDrop => Drop != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickDrop(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Turbopuffer.AttributeSchemaDrop? value)
+        {
+            value = Drop;
+            return IsDrop;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Turbopuffer.AttributeSchemaDrop PickDrop() => Drop is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Drop' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -131,19 +168,45 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator AttributeSchema(global::Turbopuffer.AttributeSchemaDrop value) => new AttributeSchema((global::Turbopuffer.AttributeSchemaDrop?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Turbopuffer.AttributeSchemaDrop?(AttributeSchema @this) => @this.Drop;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AttributeSchema(global::Turbopuffer.AttributeSchemaDrop? value)
+        {
+            Drop = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static AttributeSchema FromDrop(global::Turbopuffer.AttributeSchemaDrop? value) => new AttributeSchema(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public AttributeSchema(
             string? attributeTypeName,
-            global::Turbopuffer.AttributeSchemaConfig? config
+            global::Turbopuffer.AttributeSchemaConfig? config,
+            global::Turbopuffer.AttributeSchemaDrop? drop
             )
         {
             AttributeTypeName = attributeTypeName;
             Config = config;
+            Drop = drop;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            Drop as object ??
             Config as object ??
             AttributeTypeName as object
             ;
@@ -153,7 +216,8 @@ namespace Turbopuffer
         /// </summary>
         public override string? ToString() =>
             AttributeTypeName?.ToString() ??
-            Config?.ToString()
+            Config?.ToString() ??
+            Drop?.ToString()
             ;
 
         /// <summary>
@@ -161,7 +225,7 @@ namespace Turbopuffer
         /// </summary>
         public bool Validate()
         {
-            return IsAttributeTypeName || IsConfig;
+            return IsAttributeTypeName || IsConfig || IsDrop;
         }
 
         /// <summary>
@@ -170,6 +234,7 @@ namespace Turbopuffer
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? attributeTypeName = null,
             global::System.Func<global::Turbopuffer.AttributeSchemaConfig, TResult>? config = null,
+            global::System.Func<global::Turbopuffer.AttributeSchemaDrop, TResult>? drop = null,
             bool validate = true)
         {
             if (validate)
@@ -185,6 +250,10 @@ namespace Turbopuffer
             {
                 return config(__value1);
             }
+            else if (Drop is { } __value2 && drop != null)
+            {
+                return drop(__value2);
+            }
 
             return default(TResult);
         }
@@ -196,6 +265,8 @@ namespace Turbopuffer
             global::System.Action<string>? attributeTypeName = null,
 
             global::System.Action<global::Turbopuffer.AttributeSchemaConfig>? config = null,
+
+            global::System.Action<global::Turbopuffer.AttributeSchemaDrop>? drop = null,
             bool validate = true)
         {
             if (validate)
@@ -210,6 +281,10 @@ namespace Turbopuffer
             else if (Config is { } __value1)
             {
                 config?.Invoke(__value1);
+            }
+            else if (Drop is { } __value2)
+            {
+                drop?.Invoke(__value2);
             }
         }
 
@@ -219,6 +294,7 @@ namespace Turbopuffer
         public void Switch(
             global::System.Action<string>? attributeTypeName = null,
             global::System.Action<global::Turbopuffer.AttributeSchemaConfig>? config = null,
+            global::System.Action<global::Turbopuffer.AttributeSchemaDrop>? drop = null,
             bool validate = true)
         {
             if (validate)
@@ -233,6 +309,10 @@ namespace Turbopuffer
             else if (Config is { } __value1)
             {
                 config?.Invoke(__value1);
+            }
+            else if (Drop is { } __value2)
+            {
+                drop?.Invoke(__value2);
             }
         }
 
@@ -247,6 +327,8 @@ namespace Turbopuffer
                 typeof(string),
                 Config,
                 typeof(global::Turbopuffer.AttributeSchemaConfig),
+                Drop,
+                typeof(global::Turbopuffer.AttributeSchemaDrop),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -264,7 +346,8 @@ namespace Turbopuffer
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(AttributeTypeName, other.AttributeTypeName) &&
-                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Config, other.Config)
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaConfig?>.Default.Equals(Config, other.Config) &&
+                global::System.Collections.Generic.EqualityComparer<global::Turbopuffer.AttributeSchemaDrop?>.Default.Equals(Drop, other.Drop)
                 ;
         }
 

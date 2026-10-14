@@ -49,6 +49,9 @@ namespace Turbopuffer
         /// Include ground truth data (query vectors and true nearest neighbors) in the response.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="rankBy">
+        /// The ranking function to evaluate recall for. If provided, `num` must be either null or 1.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -58,6 +61,7 @@ namespace Turbopuffer
             int? topK = default,
             object? filters = default,
             bool? includeGroundTruth = default,
+            object? rankBy = default,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
