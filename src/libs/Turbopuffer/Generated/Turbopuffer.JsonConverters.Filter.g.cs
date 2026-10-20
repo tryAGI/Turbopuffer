@@ -489,6 +489,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 1)
@@ -505,6 +509,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -523,6 +531,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 3)
@@ -539,6 +551,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -557,6 +573,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 5)
@@ -573,6 +593,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -591,6 +615,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 7)
@@ -607,6 +635,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -625,6 +657,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 9)
@@ -641,6 +677,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -659,6 +699,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 11)
@@ -675,6 +719,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -693,6 +741,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 13)
@@ -709,6 +761,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -727,6 +783,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 15)
@@ -743,6 +803,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -761,6 +825,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 17)
@@ -777,6 +845,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -795,6 +867,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 19)
@@ -811,6 +887,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -829,6 +909,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 21)
@@ -845,6 +929,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -863,6 +951,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 23)
@@ -879,6 +971,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -897,6 +993,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 25)
@@ -913,6 +1013,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -931,6 +1035,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 27)
@@ -947,6 +1055,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -965,6 +1077,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 29)
@@ -981,6 +1097,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -999,6 +1119,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 31)
@@ -1015,6 +1139,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -1033,6 +1161,10 @@ namespace Turbopuffer.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 33)
@@ -1049,6 +1181,10 @@ namespace Turbopuffer.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -1068,6 +1204,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1084,6 +1224,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1102,6 +1246,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1118,6 +1266,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1136,6 +1288,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1152,6 +1308,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1170,6 +1330,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1186,6 +1350,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1204,6 +1372,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1220,6 +1392,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1238,6 +1414,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1254,6 +1434,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1272,6 +1456,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1288,6 +1476,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1306,6 +1498,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1322,6 +1518,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1340,6 +1540,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1356,6 +1560,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1374,6 +1582,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1390,6 +1602,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1408,6 +1624,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1424,6 +1644,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1442,6 +1666,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1458,6 +1686,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1476,6 +1708,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1492,6 +1728,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1510,6 +1750,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1526,6 +1770,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1544,6 +1792,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1560,6 +1812,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1578,6 +1834,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1594,6 +1854,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -1612,6 +1876,10 @@ namespace Turbopuffer.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (filterVariant1 == null && filterVariant2 == null && filterVariant3 == null && filterVariant4 == null && filterVariant5 == null && filterVariant6 == null && filterVariant7 == null && filterVariant8 == null && filterVariant9 == null && filterVariant10 == null && filterVariant11 == null && filterVariant12 == null && filterVariant13 == null && filterVariant14 == null && filterVariant15 == null && filterVariant16 == null && filterVariant17 == null && filterVariant18 == null && filterVariant19 == null && filterVariant20 == null && filterVariant21 == null && filterVariant22 == null && filterVariant23 == null && filterVariant24 == null && filterVariant25 == null && filterVariant26 == null && filterVariant27 == null && filterVariant28 == null && filterVariant29 == null && filterVariant30 == null && filterVariant31 == null && filterVariant32 == null && filterVariant33 == null && filterVariant34 == null)
@@ -1628,6 +1896,10 @@ namespace Turbopuffer.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
