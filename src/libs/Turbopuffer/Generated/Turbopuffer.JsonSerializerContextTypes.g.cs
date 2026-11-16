@@ -150,7 +150,7 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.Encryption2? Type28 { get; set; }
+        public global::Turbopuffer.Encryption? Type28 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -182,11 +182,11 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit2>? Type36 { get; set; }
+        public global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit>? Type36 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.Limit2? Type37 { get; set; }
+        public global::Turbopuffer.Limit? Type37 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -242,15 +242,15 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? Type51 { get; set; }
+        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>? Type51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>? Type52 { get; set; }
+        public global::System.Collections.Generic.IList<global::Turbopuffer.Vector>? Type52 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.Vector2? Type53 { get; set; }
+        public global::Turbopuffer.Vector? Type53 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -431,11 +431,11 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? ListType6 { get; set; }
+        public global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>? ListType6 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Turbopuffer.Vector2>? ListType7 { get; set; }
+        public global::System.Collections.Generic.List<global::Turbopuffer.Vector>? ListType7 { get; set; }
         /// <summary>
         ///
         /// </summary>

@@ -6,7 +6,7 @@ namespace Turbopuffer
     /// <summary>
     /// The encryption configuration for a namespace.
     /// </summary>
-    public sealed partial class Encryption2
+    public sealed partial class Encryption
     {
         /// <summary>
         ///
@@ -21,22 +21,22 @@ namespace Turbopuffer
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Encryption2" /> class.
+        /// Initializes a new instance of the <see cref="Encryption" /> class.
         /// </summary>
         /// <param name="cmek"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public Encryption2(
+        public Encryption(
             global::Turbopuffer.EncryptionCmek? cmek)
         {
             this.Cmek = cmek;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Encryption2" /> class.
+        /// Initializes a new instance of the <see cref="Encryption" /> class.
         /// </summary>
-        public Encryption2()
+        public Encryption()
         {
         }
 

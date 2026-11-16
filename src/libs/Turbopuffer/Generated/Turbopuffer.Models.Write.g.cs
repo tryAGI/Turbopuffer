@@ -111,7 +111,7 @@ namespace Turbopuffer
         /// The encryption configuration for a namespace.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("encryption")]
-        public global::Turbopuffer.Encryption2? Encryption { get; set; }
+        public global::Turbopuffer.Encryption? Encryption { get; set; }
 
         /// <summary>
         /// Disables write throttling (HTTP 429 responses) during high-volume ingestion.
@@ -195,7 +195,7 @@ namespace Turbopuffer
             global::Turbopuffer.PatchByFilter? patchByFilter,
             bool? patchByFilterAllowPartial,
             bool? returnAffectedIds,
-            global::Turbopuffer.Encryption2? encryption,
+            global::Turbopuffer.Encryption? encryption,
             bool? disableBackpressure)
         {
             this.UpsertColumns = upsertColumns;

@@ -104,7 +104,7 @@ namespace Turbopuffer
             global::Turbopuffer.PatchByFilter? patchByFilter = default,
             bool? patchByFilterAllowPartial = default,
             bool? returnAffectedIds = default,
-            global::Turbopuffer.Encryption2? encryption = default,
+            global::Turbopuffer.Encryption? encryption = default,
             bool? disableBackpressure = default,
             global::Turbopuffer.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

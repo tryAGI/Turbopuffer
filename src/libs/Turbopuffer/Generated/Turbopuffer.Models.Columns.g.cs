@@ -19,8 +19,8 @@ namespace Turbopuffer
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vector")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>))]
-        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? Vector { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>))]
+        public global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>? Vector { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,7 +40,7 @@ namespace Turbopuffer
 #endif
         public Columns(
             global::System.Collections.Generic.IList<global::Turbopuffer.Id> id,
-            global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>? vector)
+            global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>? vector)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Vector = vector;

@@ -20,8 +20,8 @@ namespace Turbopuffer
         /// A vector embedding associated with a document.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vector")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.Vector2JsonConverter))]
-        public global::Turbopuffer.Vector2? Vector { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.VectorJsonConverter))]
+        public global::Turbopuffer.Vector? Vector { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,7 +43,7 @@ namespace Turbopuffer
 #endif
         public Row(
             global::Turbopuffer.Id id,
-            global::Turbopuffer.Vector2? vector)
+            global::Turbopuffer.Vector? vector)
         {
             this.Id = id;
             this.Vector = vector;
