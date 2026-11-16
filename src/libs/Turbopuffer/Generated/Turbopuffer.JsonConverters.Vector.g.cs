@@ -4,10 +4,10 @@
 namespace Turbopuffer.JsonConverters
 {
     /// <inheritdoc />
-    public class Vector2JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Turbopuffer.Vector2>
+    public class VectorJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Turbopuffer.Vector>
     {
         /// <inheritdoc />
-        public override global::Turbopuffer.Vector2 Read(
+        public override global::Turbopuffer.Vector Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -143,7 +143,7 @@ namespace Turbopuffer.JsonConverters
                 }
             }
 
-            var __value = new global::Turbopuffer.Vector2(
+            var __value = new global::Turbopuffer.Vector(
                 vectorVariant1,
 
                 vectorVariant2
@@ -155,7 +155,7 @@ namespace Turbopuffer.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Turbopuffer.Vector2 value,
+            global::Turbopuffer.Vector value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));

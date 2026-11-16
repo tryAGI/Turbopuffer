@@ -7,7 +7,7 @@ namespace Turbopuffer
     /// <summary>
     /// A vector embedding associated with a document.
     /// </summary>
-    public readonly partial struct Vector2 : global::System.IEquatable<Vector2>
+    public readonly partial struct Vector : global::System.IEquatable<Vector>
     {
         /// <summary>
         /// A dense vector encoded as an array of floats.
@@ -85,17 +85,17 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator Vector2(string value) => new Vector2((string?)value);
+        public static implicit operator Vector(string value) => new Vector((string?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator string?(Vector2 @this) => @this.VectorVariant2;
+        public static implicit operator string?(Vector @this) => @this.VectorVariant2;
 
         /// <summary>
         ///
         /// </summary>
-        public Vector2(string? value)
+        public Vector(string? value)
         {
             VectorVariant2 = value;
         }
@@ -103,12 +103,12 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public static Vector2 FromVectorVariant2(string? value) => new Vector2(value);
+        public static Vector FromVectorVariant2(string? value) => new Vector(value);
 
         /// <summary>
         ///
         /// </summary>
-        public Vector2(
+        public Vector(
             global::System.Collections.Generic.IList<double>? vectorVariant1,
             string? vectorVariant2
             )
@@ -237,7 +237,7 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public bool Equals(Vector2 other)
+        public bool Equals(Vector other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<double>?>.Default.Equals(VectorVariant1, other.VectorVariant1) &&
@@ -248,15 +248,15 @@ namespace Turbopuffer
         /// <summary>
         ///
         /// </summary>
-        public static bool operator ==(Vector2 obj1, Vector2 obj2)
+        public static bool operator ==(Vector obj1, Vector obj2)
         {
-            return global::System.Collections.Generic.EqualityComparer<Vector2>.Default.Equals(obj1, obj2);
+            return global::System.Collections.Generic.EqualityComparer<Vector>.Default.Equals(obj1, obj2);
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static bool operator !=(Vector2 obj1, Vector2 obj2)
+        public static bool operator !=(Vector obj1, Vector obj2)
         {
             return !(obj1 == obj2);
         }
@@ -266,7 +266,7 @@ namespace Turbopuffer
         /// </summary>
         public override bool Equals(object? obj)
         {
-            return obj is Vector2 o && Equals(o);
+            return obj is Vector o && Equals(o);
         }
     }
 }

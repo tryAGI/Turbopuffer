@@ -15,7 +15,7 @@ namespace Turbopuffer
 
             typeof(global::Turbopuffer.JsonConverters.IdJsonConverter),
 
-            typeof(global::Turbopuffer.JsonConverters.Vector2JsonConverter),
+            typeof(global::Turbopuffer.JsonConverters.VectorJsonConverter),
 
             typeof(global::Turbopuffer.JsonConverters.VectorEncodingJsonConverter),
 
@@ -51,9 +51,9 @@ namespace Turbopuffer
 
             typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<string, global::Turbopuffer.WriteCopyFromNamespace>),
 
-            typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit2>),
+            typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit>),
 
-            typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>),
+            typeof(global::Turbopuffer.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>),
 
             typeof(global::Turbopuffer.JsonConverters.AllOfJsonConverter<global::Turbopuffer.QueryConfig, global::Turbopuffer.Query>),
 
@@ -95,7 +95,7 @@ namespace Turbopuffer
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<string, global::Turbopuffer.WriteCopyFromNamespace>), TypeInfoPropertyName = "OneOfStringWriteCopyFromNamespace2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.WriteCopyFromNamespace))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.PatchByFilter))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Encryption2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Encryption))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.WriteBilling))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.QueryBilling))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.WriteResult))]
@@ -103,8 +103,8 @@ namespace Turbopuffer
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Query))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.IncludeAttributes), TypeInfoPropertyName = "IncludeAttributes2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit2>), TypeInfoPropertyName = "AnyOfInt32Limit22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Limit2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit>), TypeInfoPropertyName = "AnyOfInt32Limit2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Limit))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.QueryConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.VectorEncoding), TypeInfoPropertyName = "VectorEncoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.QueryConfigConsistency))]
@@ -118,9 +118,9 @@ namespace Turbopuffer
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Turbopuffer.AggregationGroup>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.AggregationGroup))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>), TypeInfoPropertyName = "OneOfIListVector2Vector22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Turbopuffer.Vector2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Vector2), TypeInfoPropertyName = "Vector22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<global::System.Collections.Generic.IList<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>), TypeInfoPropertyName = "OneOfIListVectorVector2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Turbopuffer.Vector>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.Vector), TypeInfoPropertyName = "Vector2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.LimitPer))]
@@ -164,8 +164,8 @@ namespace Turbopuffer
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Turbopuffer.SingleQueryResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Turbopuffer.AggregationGroup>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector2>, global::Turbopuffer.Vector2?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Turbopuffer.Vector2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Turbopuffer.OneOf<global::System.Collections.Generic.List<global::Turbopuffer.Vector>, global::Turbopuffer.Vector?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Turbopuffer.Vector>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<byte[]>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Turbopuffer.Query>))]

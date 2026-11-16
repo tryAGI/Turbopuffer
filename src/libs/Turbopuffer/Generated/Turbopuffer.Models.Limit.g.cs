@@ -6,7 +6,7 @@ namespace Turbopuffer
     /// <summary>
     /// Limits the documents returned by a query.
     /// </summary>
-    public sealed partial class Limit2
+    public sealed partial class Limit
     {
         /// <summary>
         /// Limits the total number of documents returned.
@@ -28,7 +28,7 @@ namespace Turbopuffer
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Limit2" /> class.
+        /// Initializes a new instance of the <see cref="Limit" /> class.
         /// </summary>
         /// <param name="total">
         /// Limits the total number of documents returned.
@@ -39,7 +39,7 @@ namespace Turbopuffer
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public Limit2(
+        public Limit(
             int total,
             global::Turbopuffer.LimitPer? per)
         {
@@ -48,9 +48,9 @@ namespace Turbopuffer
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Limit2" /> class.
+        /// Initializes a new instance of the <see cref="Limit" /> class.
         /// </summary>
-        public Limit2()
+        public Limit()
         {
         }
 

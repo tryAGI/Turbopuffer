@@ -62,8 +62,8 @@ namespace Turbopuffer
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("limit")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit2>))]
-        public global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit2>? Limit { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Turbopuffer.JsonConverters.AnyOfJsonConverter<int?, global::Turbopuffer.Limit>))]
+        public global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit>? Limit { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -111,7 +111,7 @@ namespace Turbopuffer
             object? aggregateBy,
             global::System.Collections.Generic.IList<string>? groupBy,
             global::Turbopuffer.DistanceMetric? distanceMetric,
-            global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit2>? limit)
+            global::Turbopuffer.AnyOf<int?, global::Turbopuffer.Limit>? limit)
         {
             this.RankBy = rankBy;
             this.TopK = topK;
